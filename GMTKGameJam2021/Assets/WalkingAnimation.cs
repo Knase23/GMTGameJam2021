@@ -21,11 +21,12 @@ public class WalkingAnimation : MonoBehaviour
     public float bobbingHeight;
 
     public Vector3 localLerpPos;
+    public Vector3 prevPos;
 
     void Update()
     {
 
-        walking = true;// prevPos != this.transform.position;
+        walking = prevPos != transform.position;
 
         transform.localRotation = Quaternion.identity;
         localLerpPos = Vector3.zero;
@@ -45,5 +46,6 @@ public class WalkingAnimation : MonoBehaviour
         }
 
         transform.localPosition = localLerpPos;
+        prevPos = this.transform.position;
     }
 }
