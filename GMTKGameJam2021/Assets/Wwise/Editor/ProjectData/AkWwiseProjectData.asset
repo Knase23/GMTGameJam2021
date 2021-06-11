@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3eb2497b700fa34790251fb3be309b1c
     GuidInternal: 
-    m_lastTime: -8585781638559389384
+    m_lastTime: -8585781623764708730
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e012963ddb375c4ebd4697ab3496e3bb
     GuidInternal: 
-    m_lastTime: -8585781638559438886
+    m_lastTime: -8585781623764978039
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -71,7 +71,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8f30e11f2bf23b4b9abd663eebae314f
     GuidInternal: 
-    m_lastTime: -8585781638559409335
+    m_lastTime: -8585781623764748649
     List:
     - name: Den_coola_starka_banken
       guid: f299cb7c5118024fa5830dbe60acfe40
@@ -90,7 +90,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585781638559608789
+    m_lastTime: -8585781623765167491
     List:
     - name: META
       guid: 6927e3909cea8d438fc1b32fffd04eb1
@@ -116,8 +116,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_All
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: stop_Music
       guid: e6de4e6960bb3f4581446b92d3d491ab
       id: 2837384057
@@ -130,8 +130,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: stop_SFX
       guid: 139c34a1a13dad4796e720ed76c76b12
       id: 287728669
@@ -144,8 +144,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_SFX
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: TEst
       guid: 0955ef0abb1b5f44a9f9c17a06a18dbd
       id: 3157003241
@@ -170,8 +170,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\TEst\test1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 10.948209
+      minDuration: 10.948209
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -180,7 +180,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585781638559598820
+    m_lastTime: -8585781623765137613
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -190,7 +190,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fd58f679bc2bbe4680ffe5a3d7242dc0
     GuidInternal: 
-    m_lastTime: -8585781638559399361
+    m_lastTime: -8585781623764728721
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -200,7 +200,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 674718c66bb81d4f94c8e83d6ab1cc7f
     GuidInternal: 
-    m_lastTime: -8585781638559399361
+    m_lastTime: -8585781623764718741
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -210,7 +210,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ae17c7f6e2275f4d95ce6e06cdb587bc
     GuidInternal: 
-    m_lastTime: -8585781638559389384
+    m_lastTime: -8585781623764718741
     List: []
   ExpandedItems:
   - /GMT Jam II

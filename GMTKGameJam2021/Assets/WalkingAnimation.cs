@@ -27,7 +27,7 @@ public class WalkingAnimation : MonoBehaviour
 
         walking = true;// prevPos != this.transform.position;
 
-        transform.rotation = Quaternion.identity;
+        transform.localRotation = Quaternion.identity;
         localLerpPos = Vector3.zero;
 
         if (walking)
@@ -36,7 +36,7 @@ public class WalkingAnimation : MonoBehaviour
             bobbingTimer += Time.deltaTime;
             bobbingSine = Mathf.Sin(bobbingTimer * speed * 2);
             rotationSine = Mathf.Sin(rotationTimer + 0.5f);
-            transform.Rotate(Vector3.forward, rotationSine * rotationAngle);
+            transform.localRotation = Quaternion.Euler(Vector3.forward * rotationSine * rotationAngle);
             localLerpPos = (Vector3.up * bobbingHeight) * (bobbingSine + 1f);
         }
         else

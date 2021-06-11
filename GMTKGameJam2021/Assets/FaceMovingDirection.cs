@@ -8,7 +8,8 @@ public class FaceMovingDirection : MonoBehaviour
     SpriteRenderer rend;
     public bool baseSpriteIsFacingLeft;
 
-    private float deltaPosX;
+    public float deltaPosX;
+    public float prevPosX;
 
     void Start()
     {
@@ -17,10 +18,17 @@ public class FaceMovingDirection : MonoBehaviour
 
     void Update()
     {
-        if (deltaPosX != transform.position.x)
+
+        deltaPosX = transform.position.x - prevPosX;
+
+
+        if (Mathf.Abs(deltaPosX) < 0.05f)
         {
-            deltaPosX = transform.position.x;
-            if (deltaPosX < 0)
+            // do nothing
+        }
+        else if (deltaPosX != 0)
+        {
+            if (deltaPosX > 0)
             {
                 rend.flipX = baseSpriteIsFacingLeft ? false : true;
             }
@@ -29,5 +37,7 @@ public class FaceMovingDirection : MonoBehaviour
                 rend.flipX = baseSpriteIsFacingLeft ? true : false;
             }
         }
+
+        prevPosX = transform.position.x;
     }
 }
