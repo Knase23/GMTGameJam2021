@@ -21,10 +21,10 @@
 			<ShortName>Den_coola_starka_banken</ShortName>
 			<Path>Den_coola_starka_banken.bnk</Path>
 			<IncludedEvents>
-				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All"/>
-				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music"/>
-				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX"/>
-				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1">
+				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1" DurationType="OneShot" DurationMin="10.948209" DurationMax="10.948209">
 					<IncludedMemoryFiles>
 						<File Id="261746829" Language="SFX">
 							<ShortName>heavy-pissbaby.wav</ShortName>

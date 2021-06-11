@@ -3,7 +3,7 @@
     <CreateWwiseGlobal>true</CreateWwiseGlobal>
     <CreateWwiseListener>true</CreateWwiseListener>
     <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-    <WwiseProjectPath>../../../../../Desktop/CASTLEwwise/GMTK JAM/GMTK JAM.wproj</WwiseProjectPath>
+    <WwiseProjectPath>../../Wwise/GMT Jam/GMT Jam II/GMT Jam II.wproj</WwiseProjectPath>
     <WwiseInstallationPathWindows></WwiseInstallationPathWindows>
     <WwiseInstallationPathMac></WwiseInstallationPathMac>
 </WwiseSettings>
