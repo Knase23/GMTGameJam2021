@@ -652,13 +652,13 @@ TextureImporter:
     second: GMTK_sprites_215
   - first:
       213: -6396621336978715622
-    second: GMTK_sprites_216
+    second: Health_Full
   - first:
       213: 6527740082796076140
-    second: GMTK_sprites_217
+    second: Health_half
   - first:
       213: 7776669989387766326
-    second: GMTK_sprites_218
+    second: Health_Empty
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -5332,7 +5332,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_216
+      name: Health_Full
       rect:
         serializedVersion: 2
         x: 0
@@ -5353,7 +5353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_217
+      name: Health_half
       rect:
         serializedVersion: 2
         x: 16
@@ -5374,7 +5374,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_218
+      name: Health_Empty
       rect:
         serializedVersion: 2
         x: 32
