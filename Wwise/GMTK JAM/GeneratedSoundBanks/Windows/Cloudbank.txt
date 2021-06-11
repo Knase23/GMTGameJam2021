@@ -1,9 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	287728669	stop_SFX			\Default Work Unit\META\stop_SFX	
-	452547817	stop_All			\Default Work Unit\META\stop_All	
-	576110586	test1			\Default Work Unit\TEST\test1	
-	2837384057	stop_Music			\Default Work Unit\META\stop_Music	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	630400723	8bitfriend	C:\Users\vikto\Desktop\CASTLEwwise\GMTK JAM\.cache\Windows\SFX\8bitfriend_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\test\test\8bitfriend		14394304
-

@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	287728669	stop_SFX			\Default Work Unit\META\stop_SFX	
+	452547817	stop_All			\Default Work Unit\META\stop_All	
+	576110586	test1			\Default Work Unit\TEst\test1	
+	2837384057	stop_Music			\Default Work Unit\META\stop_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	261746829	heavy-pissbaby	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\heavy-pissbaby_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\heavy-pissbaby		965696
+

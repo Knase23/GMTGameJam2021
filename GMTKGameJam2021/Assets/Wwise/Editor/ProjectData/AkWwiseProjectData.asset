@@ -18,9 +18,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: b19d532d3627da4d866868ecaedf8500
+    guid: 3eb2497b700fa34790251fb3be309b1c
     GuidInternal: 
-    m_lastTime: -8585781716820519524
+    m_lastTime: -8585781638559389384
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -28,19 +28,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: a8d4045bc8212648ba3852080fc8169b
+    guid: e012963ddb375c4ebd4697ab3496e3bb
     GuidInternal: 
-    m_lastTime: -8585781714163674452
+    m_lastTime: -8585781638559438886
     List:
-    - name: BUSSAR
-      guid: 33eaf8ce9a9d204cae25339c9859120f
-      id: 1552326669
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: BUSSAR
-        ObjectType: 4
-      Path: Default Work Unit\BUSSAR
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -50,19 +41,19 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
-    - name: MUSIC
-      guid: 93609ffb57a1bc4a8b7c77c4cf1a25b6
+    - name: Music
+      guid: 88bed3c381aab5478bb2a51e18ce1213
       id: 3991942870
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: MUSIC
+      - ElementName: Music
         ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus\MUSIC
+      Path: Default Work Unit\Master Audio Bus\Music
     - name: SFX
-      guid: 4ac9c7e4a74f754f9052c19278b70774
+      guid: 115e9849d70a1b449bf2190acb22b5ff
       id: 393239870
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -78,31 +69,31 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: c3cbee4ec7e7e9458facbf0868d745a4
+    guid: 8f30e11f2bf23b4b9abd663eebae314f
     GuidInternal: 
-    m_lastTime: -8585781713867870317
+    m_lastTime: -8585781638559409335
     List:
-    - name: Cloudbank
-      guid: 28fbd5f2f803f94d9e086722283d58e7
-      id: 2130403990
+    - name: Den_coola_starka_banken
+      guid: f299cb7c5118024fa5830dbe60acfe40
+      id: 2773919638
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Cloudbank
+      - ElementName: Den_coola_starka_banken
         ObjectType: 7
-      Path: Default Work Unit\Cloudbank
+      Path: Default Work Unit\Den_coola_starka_banken
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 6cfbff2bba58d74fa7d2067140070623
+    guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585781713867770571
+    m_lastTime: -8585781638559608789
     List:
     - name: META
-      guid: 2cd0de0390b71244840b71739b20820a
+      guid: 6927e3909cea8d438fc1b32fffd04eb1
       id: 2976663622
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -114,7 +105,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: stop_All
-      guid: cfbfa2be7b936a4fa6b6513e017914ec
+      guid: 6a8c2e7486356f4f9f4c5b9b2b53acbd
       id: 452547817
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -128,7 +119,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: stop_Music
-      guid: 85339708b5ebfc4686412c15f3cf596a
+      guid: e6de4e6960bb3f4581446b92d3d491ab
       id: 2837384057
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -142,7 +133,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: stop_SFX
-      guid: 5c60bce846783e4e8ebb62bd3981517e
+      guid: 139c34a1a13dad4796e720ed76c76b12
       id: 287728669
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -155,29 +146,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: TEST
-      guid: efe9384c396a90438c63198c5282dfe9
+    - name: TEst
+      guid: 0955ef0abb1b5f44a9f9c17a06a18dbd
       id: 3157003241
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: TEST
+      - ElementName: TEst
         ObjectType: 4
-      Path: Default Work Unit\TEST
+      Path: Default Work Unit\TEst
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: test1
-      guid: 59c163eb81114241884aac5d48a8fb06
+      guid: 70df22a8be183f4ebffbad073d74c4f5
       id: 576110586
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: TEST
+      - ElementName: TEst
         ObjectType: 4
       - ElementName: test1
         ObjectType: 3
-      Path: Default Work Unit\TEST\test1
+      Path: Default Work Unit\TEst\test1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -187,9 +178,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 6f8d3fc83a10004397007af1e823392f
+    guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585781716821686404
+    m_lastTime: -8585781638559598820
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -197,9 +188,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: f4e2d261be639046b835f2a165fbfd72
+    guid: fd58f679bc2bbe4680ffe5a3d7242dc0
     GuidInternal: 
-    m_lastTime: -8585781716821965667
+    m_lastTime: -8585781638559399361
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -207,9 +198,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 06deb0eced60774aac7210da6981e24b
+    guid: 674718c66bb81d4f94c8e83d6ab1cc7f
     GuidInternal: 
-    m_lastTime: -8585781716821885877
+    m_lastTime: -8585781638559399361
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -217,10 +208,11 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: edfbfe5bf8ea12459d81cce5fe74db02
+    guid: ae17c7f6e2275f4d95ce6e06cdb587bc
     GuidInternal: 
-    m_lastTime: -8585781716820808760
+    m_lastTime: -8585781638559389384
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GMT Jam II
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

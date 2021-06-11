@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{35450022-E82E-483B-A80B-78D1CCB68E75}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{35450022-E82E-483B-A80B-78D1CCB68E75}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="META" ID="{90E32769-EA9C-438D-8FC1-B32FFFD04EB1}" ShortID="619435307">
+					<ChildrenList>
+						<Event Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}">
+							<ChildrenList>
+								<Action Name="" ID="{00373C24-45A1-4BA2-A876-7E9661EF5ABC}" ShortID="1059908362">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}">
+							<ChildrenList>
+								<Action Name="" ID="{6DDE95C7-51C5-4A61-BB7A-EC6294ACD028}" ShortID="915949577">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{C3D3BE88-AA81-47B5-8BB2-A51E18CE1213}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_SFX" ID="{A1349C13-3DA1-47AD-96E7-20ED76C76B12}">
+							<ChildrenList>
+								<Action Name="" ID="{5E35F37A-5686-4A10-BAB7-9624E7B2A0E8}" ShortID="374658810">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" ShortID="801514613">
+					<ChildrenList>
+						<Event Name="test1" ID="{A822DF70-18BE-4E3F-BFFB-AD073D74C4F5}">
+							<ChildrenList>
+								<Action Name="" ID="{26AA8D3A-1E48-409C-98D7-3EF5AFF8CF3D}" ShortID="14092176">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TEST" ID="{2C756807-602B-4F93-8D18-F13C5F4141E2}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

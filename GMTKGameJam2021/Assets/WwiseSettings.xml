@@ -10,5 +10,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../../../Desktop/CASTLEwwise/GMTK JAM/GMTK JAM.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Wwise/GMT Jam/GMT Jam II/GMT Jam II.wproj</WwiseProjectPath>
 </WwiseSettings>

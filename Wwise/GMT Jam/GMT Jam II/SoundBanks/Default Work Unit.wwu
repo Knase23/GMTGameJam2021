@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1FE1308F-F22B-4B3B-9ABD-663EEBAE314F}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{1FE1308F-F22B-4B3B-9ABD-663EEBAE314F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Den_coola_starka_banken" ID="{7CCB99F2-1851-4F02-A583-0DBE60ACFE40}">
+					<ObjectInclusionList>
+						<ObjectRef Name="META" ID="{90E32769-EA9C-438D-8FC1-B32FFFD04EB1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" WorkUnitID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_SFX" ID="{A1349C13-3DA1-47AD-96E7-20ED76C76B12}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{35450022-E82E-483B-A80B-78D1CCB68E75}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="test1" ID="{A822DF70-18BE-4E3F-BFFB-AD073D74C4F5}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
