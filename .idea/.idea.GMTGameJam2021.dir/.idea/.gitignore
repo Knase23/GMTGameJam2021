@@ -1,0 +1,11 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/.idea.GMTGameJam2021.iml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../:\Repository\GMTGameJam2021\.idea\.idea.GMTGameJam2021.dir\.idea/dataSources/
+/dataSources.local.xml
