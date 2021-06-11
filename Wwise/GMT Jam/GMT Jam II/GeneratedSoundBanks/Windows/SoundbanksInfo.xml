@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2773919638" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Den_coola_starka_banken</ObjectPath>
+			<ShortName>Den_coola_starka_banken</ShortName>
+			<Path>Den_coola_starka_banken.bnk</Path>
+			<IncludedEvents>
+				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All"/>
+				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music"/>
+				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX"/>
+				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1">
+					<IncludedMemoryFiles>
+						<File Id="261746829" Language="SFX">
+							<ShortName>heavy-pissbaby.wav</ShortName>
+							<Path>SFX\heavy-pissbaby_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
