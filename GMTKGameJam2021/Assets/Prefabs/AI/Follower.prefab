@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2951247977885392856}
   - component: {fileID: 1731761576019118471}
   m_Layer: 8
-  m_Name: Bullet Follower
+  m_Name: Follower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,34 +196,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 81df0f2a7e396d941a19ccd9b49003c8, type: 3}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7453759133000580795, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
