@@ -135,23 +135,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="725847329" Name="step_03" ObjectPath="\Events\Default Work Unit\SFX\steps\step_03" DurationType="OneShot" DurationMin="0.181127" DurationMax="0.264727">
+				<Event Id="725847329" Name="step_03" ObjectPath="\Events\Default Work Unit\SFX\steps\step_03" DurationType="OneShot" DurationMin="0.066176" DurationMax="0.100485">
 					<IncludedMemoryFiles>
-						<File Id="372728728" Language="SFX">
-							<ShortName>small step-02.wav</ShortName>
-							<Path>SFX\small step-02_10C4C929.wem</Path>
+						<File Id="519834809" Language="SFX">
+							<ShortName>blopstep1.wav</ShortName>
+							<Path>SFX\blopstep1_10C4C929.wem</Path>
 						</File>
-						<File Id="676078513" Language="SFX">
-							<ShortName>small step-08.wav</ShortName>
-							<Path>SFX\small step-08_10C4C929.wem</Path>
+						<File Id="544908918" Language="SFX">
+							<ShortName>blopstep3.wav</ShortName>
+							<Path>SFX\blopstep3_10C4C929.wem</Path>
 						</File>
-						<File Id="715365920" Language="SFX">
-							<ShortName>small step-05.wav</ShortName>
-							<Path>SFX\small step-05_10C4C929.wem</Path>
-						</File>
-						<File Id="776213843" Language="SFX">
-							<ShortName>small step-11.wav</ShortName>
-							<Path>SFX\small step-11_10C4C929.wem</Path>
+						<File Id="995230590" Language="SFX">
+							<ShortName>blopstep2.wav</ShortName>
+							<Path>SFX\blopstep2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

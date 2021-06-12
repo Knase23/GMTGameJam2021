@@ -14,8 +14,8 @@
 				</GameParameter>
 				<GameParameter Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}">
 					<PropertyList>
-						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>

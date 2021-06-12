@@ -106,6 +106,20 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="steptester" ID="{1B114239-ADA9-4D63-94E5-A2D18583DA92}" ShortID="506974836">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C380524A-705F-4EA5-8CE3-B313422989F4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -315,6 +329,9 @@
 										<RandomSequenceContainer Name="step_03" ID="{5C9F1610-9856-494A-897F-81A0B8CE7D48}" ShortID="285380930">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-30</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{54DB8AE9-C166-4B57-88A5-3D5F98D4F6FA}">
@@ -329,8 +346,18 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>-9</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E5A62C59-6BD9-43CD-880C-B3A61F3F9698}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -342,106 +369,79 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="small step-05" ID="{1F233BF8-82B3-4E9F-AF44-E0C2B4E4B242}" ShortID="12908953">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>1</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="blopstep2" ID="{9C984184-157B-46FD-A2CD-C8F49A1C4E17}" ShortID="339367894">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+															<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="small step-05" ID="{329D07F2-3898-470F-AEBB-F2B037823938}">
+														<AudioFileSource Name="blopstep2" ID="{74D7A4EF-F208-4D4E-9809-5F1AD771912A}">
 															<Language>SFX</Language>
-															<AudioFile>small step-05.wav</AudioFile>
+															<AudioFile>blopstep2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="715365920"/>
+																<MediaID ID="995230590"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="small step-05" ID="{329D07F2-3898-470F-AEBB-F2B037823938}" Platform="Linked"/>
+														<ActiveSource Name="blopstep2" ID="{74D7A4EF-F208-4D4E-9809-5F1AD771912A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="small step-08" ID="{C7EE2504-BDA1-4991-98D3-95EF615E7018}" ShortID="615206158">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="blopstep3" ID="{8164B280-0EAE-4D7D-8D93-E424DE353D27}" ShortID="348501850">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+															<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="small step-08" ID="{F0F9934F-90CC-4507-806A-87BDBADD674F}">
+														<AudioFileSource Name="blopstep3" ID="{1132524F-7041-4A26-893F-123B436D3EB6}">
 															<Language>SFX</Language>
-															<AudioFile>small step-08.wav</AudioFile>
+															<AudioFile>blopstep3.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="676078513"/>
+																<MediaID ID="544908918"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="small step-08" ID="{F0F9934F-90CC-4507-806A-87BDBADD674F}" Platform="Linked"/>
+														<ActiveSource Name="blopstep3" ID="{1132524F-7041-4A26-893F-123B436D3EB6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="small step-02" ID="{26E2F8B8-C53F-4F22-A231-1C6ECCE2E6CD}" ShortID="860048183">
+												<Sound Name="blopstep1" ID="{0282149E-0F0C-4A6C-9F88-5AC62924E9A8}" ShortID="92422819">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+															<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="small step-02" ID="{DD4DE026-588E-4376-A3D3-6B63B20FC462}">
+														<AudioFileSource Name="blopstep1" ID="{54A0A213-8248-4F2A-8C3B-8664D6ECFFE9}">
 															<Language>SFX</Language>
-															<AudioFile>small step-02.wav</AudioFile>
+															<AudioFile>blopstep1.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="372728728"/>
+																<MediaID ID="519834809"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="small step-02" ID="{DD4DE026-588E-4376-A3D3-6B63B20FC462}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="small step-11" ID="{6444CEF5-CBB6-4F7E-BA76-CA09754156D0}" ShortID="667659612">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="small step-11" ID="{3D856636-71D1-4F18-9B5E-1919BFF48413}">
-															<Language>SFX</Language>
-															<AudioFile>small step-11.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="776213843"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="small step-11" ID="{3D856636-71D1-4F18-9B5E-1919BFF48413}" Platform="Linked"/>
+														<ActiveSource Name="blopstep1" ID="{54A0A213-8248-4F2A-8C3B-8664D6ECFFE9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -762,6 +762,21 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{31DB6B98-13A0-46C6-A1B2-3B8597D922DD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -935,9 +950,14 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="pickup" ID="{014F558F-CDC0-42B1-9584-B1C95245EF24}" ShortID="993201362">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
