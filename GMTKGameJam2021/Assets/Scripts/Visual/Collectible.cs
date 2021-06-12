@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider), typeof(Billboard))]
-public class Collectible : MonoBehaviour
+public abstract class Collectible : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -29,4 +29,6 @@ public class Collectible : MonoBehaviour
     {
 
     }
+
+    public abstract int getNumericValue();
 }

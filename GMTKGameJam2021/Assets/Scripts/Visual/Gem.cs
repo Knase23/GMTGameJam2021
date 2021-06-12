@@ -11,4 +11,9 @@ public class Gem : Collectible
         // add exp based on value;
         Destroy(this.transform.parent.gameObject);
     }
+
+    public override int getNumericValue()
+    {
+        return value;
+    }
 }
