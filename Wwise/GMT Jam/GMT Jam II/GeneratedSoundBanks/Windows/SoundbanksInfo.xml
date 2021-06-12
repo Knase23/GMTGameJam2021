@@ -24,6 +24,62 @@
 			<ShortName>Den_coola_starka_banken</ShortName>
 			<Path>Den_coola_starka_banken.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2633060887" Name="bgm_main" ObjectPath="\Events\Default Work Unit\MUSIC\bgm_main" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="126464705" Language="SFX">
+							<ShortName>Bas.wav</ShortName>
+							<Path>SFX\Bas_D79FB2B7.wem</Path>
+						</File>
+						<File Id="289605687" Language="SFX">
+							<ShortName>3+ followers.wav</ShortName>
+							<Path>SFX\3+ followers_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1051104496" Language="SFX">
+							<ShortName>1 follower.wav</ShortName>
+							<Path>SFX\1 follower_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="591441934" Name="follower_pickup" ObjectPath="\Events\Default Work Unit\SFX\follower interaction\follower_pickup" DurationType="OneShot" DurationMin="0.772766" DurationMax="0.772766">
+					<IncludedMemoryFiles>
+						<File Id="478791765" Language="SFX">
+							<ShortName>pickupfriend.wav</ShortName>
+							<Path>SFX\pickupfriend_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3054631418" Name="follower_throw" ObjectPath="\Events\Default Work Unit\SFX\follower interaction\follower_throw" DurationType="OneShot" DurationMin="0.240005" DurationMax="0.660715">
+					<IncludedMemoryFiles>
+						<File Id="789381214" Language="SFX">
+							<ShortName>kast21.wav</ShortName>
+							<Path>SFX\kast21_10C4C929.wem</Path>
+						</File>
+						<File Id="907579787" Language="SFX">
+							<ShortName>kast3.wav</ShortName>
+							<Path>SFX\kast3_10C4C929.wem</Path>
+						</File>
+						<File Id="974860179" Language="SFX">
+							<ShortName>kast1.wav</ShortName>
+							<Path>SFX\kast1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2360929475" Name="follower_throw_impact" ObjectPath="\Events\Default Work Unit\SFX\follower interaction\follower_throw_impact" DurationType="OneShot" DurationMin="0.194928" DurationMax="0.305621">
+					<IncludedMemoryFiles>
+						<File Id="545198411" Language="SFX">
+							<ShortName>landa-05.wav</ShortName>
+							<Path>SFX\landa-05_10C4C929.wem</Path>
+						</File>
+						<File Id="545480175" Language="SFX">
+							<ShortName>landa-08.wav</ShortName>
+							<Path>SFX\landa-08_10C4C929.wem</Path>
+						</File>
+						<File Id="866110534" Language="SFX">
+							<ShortName>landa-02.wav</ShortName>
+							<Path>SFX\landa-02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="573298149" Name="reverb_large" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_large" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4066469909" Name="reverb_medium" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_medium" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2902570199" Name="reverb_off" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_off" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
