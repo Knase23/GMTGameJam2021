@@ -28,16 +28,16 @@ public class Reverb : MonoBehaviour
                     audioService.PlaySFX("reverb_off", this.gameObject);
                     break;
                 case ReverbLevels.Small:
-                    AkSoundEngine.PostEvent("reverb_small", this.gameObject);
-                    AkSoundEngine.PostEvent("player_enter", this.gameObject);
+                    audioService.PlaySFX("reverb_small", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 case ReverbLevels.Medium:
-                    AkSoundEngine.PostEvent("reverb_medium", this.gameObject);
-                    AkSoundEngine.PostEvent("player_enter", this.gameObject);
+                    audioService.PlaySFX("reverb_medium", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 case ReverbLevels.Large:
-                    AkSoundEngine.PostEvent("reverb_large", this.gameObject);
-                    AkSoundEngine.PostEvent("player_enter", this.gameObject);
+                    audioService.PlaySFX("reverb_large", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 default:
                     break;
@@ -47,10 +47,12 @@ public class Reverb : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        IAudioService audioService = ServiceLocator.GetService<IAudioService>();
+
         if (other.CompareTag("Player"))
         {
-            AkSoundEngine.PostEvent("reverb_off", this.gameObject);
-            AkSoundEngine.PostEvent("player_exit", this.gameObject);
+            audioService.PlaySFX("reverb_off", this.gameObject);
+            audioService.PlaySFX("player_exit", this.gameObject);
 
         }
     }
