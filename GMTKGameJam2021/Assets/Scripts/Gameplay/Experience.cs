@@ -14,7 +14,7 @@ namespace Gameplay
 
         public void Add(int value)
         {
-            points.value += value;
+            points += value;
         }
     }
 }

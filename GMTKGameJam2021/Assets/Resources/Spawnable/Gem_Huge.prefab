@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3662098684010830568
+--- !u!1001 &914739004459900079
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -51,13 +51,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4350870413576622017, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 922107602936362038, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
     - target: {fileID: 6127825937026659623, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
       propertyPath: m_Name
-      value: Gem_Gigantic
+      value: Gem_Huge
       objectReference: {fileID: 0}
     - target: {fileID: 7549329064816129047, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
       propertyPath: value
-      value: 25
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549329064816129047, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
+      propertyPath: spawnType
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}

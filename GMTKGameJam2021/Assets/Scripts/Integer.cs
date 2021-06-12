@@ -11,7 +11,6 @@ public class Integer : ScriptableObject
     {
         return integer.value;
     }
-
     public static Integer operator +(Integer a, int b)
     {
         a.value += b;

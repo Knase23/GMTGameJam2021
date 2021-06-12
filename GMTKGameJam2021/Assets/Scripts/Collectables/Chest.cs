@@ -22,18 +22,18 @@ namespace Collectables
             do
             {
                 List<Collectible> availableAlternatives = contentPrefabs.Where(x => x.GetNumericValue() <= totalChestValue).ToList();
+                
                 if (availableAlternatives.Count == 0) break;
                 availableAlternatives = availableAlternatives.OrderBy(x => Guid.NewGuid()).ToList();
                 Collectible collectibleToSpawn = availableAlternatives.Take(1).ToList()[0];
                 
-                
-                GameObject spawned = Instantiate(collectibleToSpawn.gameObject);
-                spawned.transform.position = this.transform.position;
+                Vector3 spawnPosition = this.transform.position;
                 Vector3 circularOffset = UnityEngine.Random.insideUnitCircle * 2;
-                spawned.transform.position += Vector3.right * circularOffset.x;
-                spawned.transform.position += Vector3.forward * circularOffset.y;
+                spawnPosition += Vector3.right * circularOffset.x;
+                spawnPosition += Vector3.forward * circularOffset.y;
                 
                 
+                SpawnManager.Spawn(collectibleToSpawn.spawnType,spawnPosition);
                 rend.sprite = openChestSprite;
                 
                 LeanTween.moveLocalY(rend.gameObject, 0.5f, 1f).setEase(LeanTweenType.punch);
