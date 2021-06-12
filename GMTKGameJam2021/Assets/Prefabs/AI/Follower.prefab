@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2951247977885392856}
   - component: {fileID: 1731761576019118471}
   m_Layer: 8
-  m_Name: Bullet Follower
+  m_Name: Follower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
