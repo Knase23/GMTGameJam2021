@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public class FollowersHandler : MonoBehaviour
 {
+    public int amountOfFollowers;
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -14,8 +17,11 @@ public class FollowersHandler : MonoBehaviour
             Follower thrown = first;
             if (thrown)
             {
+                amountOfFollowers--;
+                ServiceLocator.GetService<IAudioService>().SetRTPC("followers",amountOfFollowers);
                 first = thrown.behindFollower;
                 thrown.thrownBehaviour.GetThrown(throwDirection);
+                
             }
         }
     }
@@ -23,6 +29,10 @@ public class FollowersHandler : MonoBehaviour
     public Follower first;
     public void AddFollower(Follower follower)
     {
+        amountOfFollowers++;
+        ServiceLocator.GetService<IAudioService>().SetRTPC("followers",amountOfFollowers);
+        
+        ServiceLocator.GetService<IAudioService>().PlaySFX("follower_pickup");
         enabled = true;
         follower._handler = this;
         if (first)

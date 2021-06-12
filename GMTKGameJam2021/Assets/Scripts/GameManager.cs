@@ -25,10 +25,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        //AkSoundEngine.PostEvent("bgm_main", this.gameObject);
-        AkSoundEngine.PostEvent("reverb_off", this.gameObject);
         ServiceLocator.Initialize();
+        IAudioService audioService = ServiceLocator.GetService<IAudioService>();
+        audioService.PlayMusic("bgm_main");
+        audioService.PlayMusic("reverb_off");
     }
 
     // Update is called once per frame

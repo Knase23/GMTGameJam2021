@@ -42,6 +42,11 @@ namespace Global.ServiceLocators.AudioServices
             //Debug.Log($" {mixer} volume set to : {volume}");
         }
 
+        public void SetRTPC(string name, float value)
+        {
+            
+        }
+
         public void StopAll()
         {
             Debug.Log("Stop All Sound");

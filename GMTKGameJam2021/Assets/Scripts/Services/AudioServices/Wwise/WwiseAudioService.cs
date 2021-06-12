@@ -46,6 +46,12 @@ namespace Global.ServiceLocators.AudioServices
             AkSoundEngine.PostEvent(clipName, gameObject);
         }
 
+        public void SetRTPC(string name, float value)
+        {
+            AkSoundEngine.SetRTPCValue(name, value);
+        }
+        
+        
         public void SetVolume(MixerName mixer, float volume)
         {
             switch (mixer)

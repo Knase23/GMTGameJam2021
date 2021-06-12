@@ -39,6 +39,11 @@ namespace Global.ServiceLocators.AudioServices
         
         }
 
+        public void SetRTPC(string name, float value)
+        {
+            
+        }
+
         public void StopAll()
         {
         
