@@ -14,6 +14,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 	613032218	medium	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
 	867382597	off	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2629562184	inside_building			\Default Work Unit\inside_building	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

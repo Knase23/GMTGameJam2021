@@ -18,6 +18,9 @@
 			<IncludedAuxBusses>
 				<AuxBus Id="2943096322" Name="SFXreverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="2629562184" Name="inside_building" ObjectPath="\Game Parameters\Default Work Unit\inside_building"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2773919638" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Den_coola_starka_banken</ObjectPath>
@@ -85,6 +88,22 @@
 						<File Id="866110534" Language="SFX">
 							<ShortName>landa-02.wav</ShortName>
 							<Path>SFX\landa-02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1802791965" Name="player_enter" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_enter" DurationType="OneShot" DurationMin="0.230792" DurationMax="0.230792">
+					<IncludedMemoryFiles>
+						<File Id="360293457" Language="SFX">
+							<ShortName>in.wav</ShortName>
+							<Path>SFX\in_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="202487633" Name="player_exit" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_exit" DurationType="OneShot" DurationMin="0.318708" DurationMax="0.318708">
+					<IncludedMemoryFiles>
+						<File Id="831402325" Language="SFX">
+							<ShortName>ut.wav</ShortName>
+							<Path>SFX\ut_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

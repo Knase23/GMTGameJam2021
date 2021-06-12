@@ -364,6 +364,53 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="world interaction" ID="{BD5011AC-CCFD-4478-A00F-E22ECA91B64C}" ShortID="235677080">
+							<ChildrenList>
+								<Event Name="player_exit" ID="{1D19579A-3731-45DE-8269-322D6E035F08}">
+									<ChildrenList>
+										<Action Name="" ID="{E708509E-E14A-4A1B-BB5B-E8B92BBEEF9D}" ShortID="515088966">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="out" ID="{4644C545-7AE7-42AB-BCB5-40D65D7F503A}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F1F5592D-8F55-43EA-8D53-BB493DC5B007}" ShortID="999171444">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}" WorkUnitID="{6DFD65F8-088B-4582-8656-B878ECB437F5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="player_enter" ID="{E64E7F85-2111-4673-B4E8-3DF9E0E1C39C}">
+									<ChildrenList>
+										<Action Name="" ID="{C0CFAF28-42A7-42F7-9E7C-979F33ADB61A}" ShortID="326695578">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="in" ID="{5A43D6B6-62B8-4193-8B3E-4FEE763907E1}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CAC5BA05-6C3D-4823-8157-961A6A8BE342}" ShortID="793592959">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}" WorkUnitID="{6DFD65F8-088B-4582-8656-B878ECB437F5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MUSIC" ID="{2906232E-1965-4009-BBEF-8D8C45FF5DCC}" ShortID="151014170">
