@@ -350,6 +350,50 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &1095308137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095308139}
+  - component: {fileID: 1095308138}
+  m_Layer: 0
+  m_Name: SceneAdder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1095308138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095308137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e012f6e7fa5a74fa6bb7c2f1c77ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  additiveSceneIndex: 0
+--- !u!4 &1095308139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095308137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6515356, y: 11.261623, z: -12.246924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126603643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,17 +547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ff512fe6a8e0e42b305ffe81624c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabsToUse:
-  - Name: 1
-    Prefab: {fileID: 8638822121737805798, guid: ef5bbadc57f268c4e9af715f0e7fc854, type: 3}
-  - Name: 2
-    Prefab: {fileID: 8230336987501098457, guid: 58248e06651053047a25c36a9f9754d4, type: 3}
-  - Name: 3
-    Prefab: {fileID: 4965752107242737153, guid: 2021cabdfd0825f4b83e3282545fa2d3, type: 3}
-  - Name: 4
-    Prefab: {fileID: 8230336987501098457, guid: 58248e06651053047a25c36a9f9754d4, type: 3}
-  - Name: 5
-    Prefab: {fileID: 7482742191077601231, guid: 135912a9cb2fd0444a26b715848f9d28, type: 3}
 --- !u!114 &1846482420
 MonoBehaviour:
   m_ObjectHideFlags: 0
