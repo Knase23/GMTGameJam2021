@@ -18,6 +18,7 @@ namespace Collectables
         public override void OnCollect(Collect collector)
         {
             if (opened) return;
+            Debug.Log("Chest Spit out!");
             opened = true;
             do
             {
