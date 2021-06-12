@@ -7,6 +7,7 @@ public interface IAudioService
     void StopAll();
     void Stop(StopEvents stopEvent);
     void SetVolume(MixerName mixer, float volume);
+    public void SetRTPC(string name, float value);
 }
 
 public enum MusicState

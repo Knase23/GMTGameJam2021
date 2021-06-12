@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f244180bd507b97409677c81004947fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountOfFollowers: 0
   first: {fileID: 0}
 --- !u!114 &5589313732266921908
 MonoBehaviour:
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storedBullets: []
   currentAmmoCount: {fileID: 11400000, guid: 63c0231319ccad54ca9840f70759e937, type: 2}
-  maxAmmo: {fileID: 11400000, guid: d2727194561c08d4497499b67eaea149, type: 2}
+  maxAmmo: {fileID: 0}
 --- !u!1001 &844768290201529428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +167,10 @@ PrefabInstance:
       propertyPath: fartDust
       value: 
       objectReference: {fileID: 7838561573408290281}
+    - target: {fileID: 7453759133000580788, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
+      propertyPath: stepType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7453759134397702392, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
       propertyPath: m_RootOrder
       value: 0

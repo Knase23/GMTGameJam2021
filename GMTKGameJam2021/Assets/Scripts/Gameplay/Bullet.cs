@@ -26,20 +26,24 @@ namespace Gameplay
             current = State.Bullet;
             transform.position = startPosition + direction;
             _rigidbody.velocity = direction * speed;
+            _rigidbody.isKinematic = false;
         }
 
         public void OnTriggerEnter(Collider other)
         {
+            Debug.Log("Bullet collides");
             if (current == State.Bullet)
             {
                 Health health = other.GetComponent<Health>();
                 if (health)
                 {
+                    Debug.Log("Destroy!");
                     health.TakeDamage(1);
                     Destroy(gameObject);
                 }
-
                 current = State.Collect;
+                _rigidbody.velocity = Vector3.zero;
+                _rigidbody.isKinematic = true;
             }
             if (current == State.Collect)
             {
@@ -47,11 +51,7 @@ namespace Gameplay
                 if (collect)
                 {
                     //Do Something
-                    
                 }
-
-
-
             }
             
         }

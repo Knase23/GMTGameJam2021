@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public enum StepType { None, Player, zero, one, two, three, four, five };
@@ -52,33 +53,32 @@ public class WalkingAnimation : MonoBehaviour
                 {
                     readyForTouch = false;
                     fartDust.Emit(1);
+                    IAudioService audioService = ServiceLocator.GetService<IAudioService>();
                     switch (stepType)
                     {
                         case StepType.None:
                             break;
                         case StepType.Player:
-                            AkSoundEngine.PostEvent("step_player", this.gameObject);
+                            audioService.PlaySFX("step_player", this.gameObject);
                             break;
                         case StepType.zero:
-                            AkSoundEngine.PostEvent("step_00", this.gameObject);
+                            audioService.PlaySFX("step_00", this.gameObject);
                             break;
                         case StepType.one:
-                            AkSoundEngine.PostEvent("step_01", this.gameObject);
+                            audioService.PlaySFX("step_01", this.gameObject);
                             break;
                         case StepType.two:
-                            AkSoundEngine.PostEvent("step_02", this.gameObject);
+                            audioService.PlaySFX("step_02", this.gameObject);
                             break;
                         case StepType.three:
-                            AkSoundEngine.PostEvent("step_03", this.gameObject);
+                            audioService.PlaySFX("step_03", this.gameObject);
                             break;
                         case StepType.four:
-                            AkSoundEngine.PostEvent("step_04", this.gameObject);
+                            audioService.PlaySFX("step_04", this.gameObject);
                             break;
                         case StepType.five:
-                            AkSoundEngine.PostEvent("step_05", this.gameObject);
-
+                            audioService.PlaySFX("step_05", this.gameObject);
                             break;
-
                     }
                 }
             }

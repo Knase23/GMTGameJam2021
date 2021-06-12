@@ -103,8 +103,84 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585781016245354866
+    m_lastTime: -8585780970118613984
     List:
+    - name: bgm_main
+      guid: 7eb0616277ab86419fd59cdc7c82a89d
+      id: 2633060887
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUSIC
+        ObjectType: 4
+      - ElementName: bgm_main
+        ObjectType: 3
+      Path: Default Work Unit\MUSIC\bgm_main
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: follower interaction
+      guid: 450df7ae087e354786452df4e1498b06
+      id: 790796959
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: follower interaction
+        ObjectType: 4
+      Path: Default Work Unit\SFX\follower interaction
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: follower_pickup
+      guid: a7381e13503a0f42b684228df7b76097
+      id: 591441934
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: follower interaction
+        ObjectType: 4
+      - ElementName: follower_pickup
+        ObjectType: 3
+      Path: Default Work Unit\SFX\follower interaction\follower_pickup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: follower_throw
+      guid: 84365e063617804d902426f5c0287e44
+      id: 3054631418
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: follower interaction
+        ObjectType: 4
+      - ElementName: follower_throw
+        ObjectType: 3
+      Path: Default Work Unit\SFX\follower interaction\follower_throw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: follower_thrrow_impat
+      guid: 85ad6c0146d0f543bba671c9f0fa8e73
+      id: 1416389536
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: follower interaction
+        ObjectType: 4
+      - ElementName: follower_thrrow_impat
+        ObjectType: 3
+      Path: Default Work Unit\SFX\follower interaction\follower_thrrow_impat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: META
       guid: 6927e3909cea8d438fc1b32fffd04eb1
       id: 2976663622
@@ -114,6 +190,18 @@ MonoBehaviour:
       - ElementName: META
         ObjectType: 4
       Path: Default Work Unit\META
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUSIC
+      guid: 2e23062965190940bbef8d8c45ff5dcc
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUSIC
+        ObjectType: 4
+      Path: Default Work Unit\MUSIC
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -423,7 +511,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585781016245265091
+    m_lastTime: -8585780970118604324
     List:
     - name: followers
       guid: 91df98568236984c9cd5641b5c72dc8d

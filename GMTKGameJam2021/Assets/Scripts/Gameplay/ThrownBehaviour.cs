@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public class ThrownBehaviour : MonoBehaviour
@@ -28,6 +29,7 @@ public class ThrownBehaviour : MonoBehaviour
 
     public void GetThrown(Vector3 dir)
     {
+        ServiceLocator.GetService<IAudioService>().PlaySFX("follower_throw");
         nav.enabled = false;
         enabled = true;
         hitSomething = false;
@@ -83,6 +85,7 @@ public class ThrownBehaviour : MonoBehaviour
         nav.enabled = true;
         nav.inputDirection = Vector3.zero;
         enabled = false;
+        ServiceLocator.GetService<IAudioService>().PlaySFX("follower_throw_Impact");
     }
     public void OnCollisionEnter(Collision other)
     {

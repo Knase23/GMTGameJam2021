@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cb2651bada40f41be20e7b39abb7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stepType: 0
   speed: 6
   rotationAngle: 15
   bobbingHeight: 0.3
