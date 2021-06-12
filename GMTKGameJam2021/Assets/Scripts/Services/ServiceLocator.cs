@@ -8,6 +8,7 @@ Where's the SetService Function(s)?
 */
 
 using Global.ServiceLocators.AudioServices;
+using Services.AudioServices.Wwise;
 
 namespace Services
 {
