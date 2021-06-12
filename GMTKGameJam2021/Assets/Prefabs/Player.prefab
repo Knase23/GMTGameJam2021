@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: {fileID: 11400000, guid: 18d50f8c647c41e4c89db2b904c7d764, type: 2}
+  maxExp: {fileID: 0}
 --- !u!1 &8696100743209754555
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +210,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 844768291179892258}
     m_Modifications:
+    - target: {fileID: 7453759133000580788, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7453759133000580788, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
+      propertyPath: fartDust
+      value: 
+      objectReference: {fileID: 7838561573408290281}
     - target: {fileID: 7453759134397702392, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -257,10 +266,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7453759133000580790, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
 --- !u!4 &7838561572952788140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7453759134397702392, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
+  m_PrefabInstance: {fileID: 844768290201529428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7838561573408290281 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7453759133942995389, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
   m_PrefabInstance: {fileID: 844768290201529428}
   m_PrefabAsset: {fileID: 0}

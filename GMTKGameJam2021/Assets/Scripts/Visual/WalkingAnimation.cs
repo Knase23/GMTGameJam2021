@@ -24,6 +24,9 @@ public class WalkingAnimation : MonoBehaviour
     public Vector3 prevPos;
 
     public bool readyForTouch;
+
+    public ParticleSystem fartDust;
+
     void FixedUpdate()
     {
 
@@ -46,6 +49,7 @@ public class WalkingAnimation : MonoBehaviour
                 if (bobbingSine < -0.9f)
                 {
                     readyForTouch = false;
+                    fartDust.Emit(1);
                 }
             }
             else

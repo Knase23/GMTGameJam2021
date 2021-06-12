@@ -100,22 +100,22 @@ TextureImporter:
     second: GMTK_sprites_31
   - first:
       213: -3863994937034763973
-    second: GMTK_sprites_32
+    second: ExperienceBar_Left_Empty
   - first:
       213: -4996359471685176455
-    second: GMTK_sprites_33
+    second: ExperienceBar_Middle_Empty
   - first:
       213: -6209039465225460902
-    second: GMTK_sprites_34
+    second: ExperienceBar_Right_Empty
   - first:
       213: -5408655696135700132
-    second: GMTK_sprites_35
+    second: ExperienceBar_Left_Filled
   - first:
       213: -3131809805946570327
-    second: GMTK_sprites_36
+    second: ExperienceBar_Middle_Filled
   - first:
       213: -2154311201333315625
-    second: GMTK_sprites_37
+    second: ExperienceBar_Right_Filled
   - first:
       213: 8148946737820721073
     second: GMTK_sprites_38
@@ -1468,7 +1468,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_32
+      name: ExperienceBar_Left_Empty
       rect:
         serializedVersion: 2
         x: 0
@@ -1489,7 +1489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_33
+      name: ExperienceBar_Middle_Empty
       rect:
         serializedVersion: 2
         x: 16
@@ -1510,7 +1510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_34
+      name: ExperienceBar_Right_Empty
       rect:
         serializedVersion: 2
         x: 32
@@ -1531,7 +1531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_35
+      name: ExperienceBar_Left_Filled
       rect:
         serializedVersion: 2
         x: 48
@@ -1552,7 +1552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_36
+      name: ExperienceBar_Middle_Filled
       rect:
         serializedVersion: 2
         x: 64
@@ -1573,7 +1573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_37
+      name: ExperienceBar_Right_Filled
       rect:
         serializedVersion: 2
         x: 80
