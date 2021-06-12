@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            ServiceLocator.GetService<IAudioService>().PlaySFX("test1");
+            //ServiceLocator.GetService<IAudioService>().PlaySFX("test1");
         }
     }
 }

@@ -10,6 +10,8 @@ public class SceneLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        if(SceneManager.sceneCount > 1) return;
         if (SceneManager.GetActiveScene().buildIndex != additiveSceneIndex)
             SceneManager.LoadScene(additiveSceneIndex, LoadSceneMode.Additive);
     }
