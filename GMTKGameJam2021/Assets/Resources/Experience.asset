@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5768c442a6e98084085786a213d0c38a, type: 3}
   m_Name: Experience
   m_EditorClassIdentifier: 
-  value: 11
+  value: 0
