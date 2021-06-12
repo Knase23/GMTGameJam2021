@@ -31,15 +31,27 @@ namespace Collectables
                 spawned.transform.position += Vector3.right * circularOffset.x;
                 spawned.transform.position += Vector3.forward * circularOffset.y;
                 rend.sprite = openChestSprite;
+                LeanTween.moveLocalY(rend.gameObject, 0.5f, 1f).setEase(LeanTweenType.punch);
+                LeanTween.scale(this.gameObject, Vector3.one * 1.5f, 1f).setEase(LeanTweenType.punch);
                 totalChestValue -= collectibleToSpawn.GetNumericValue();
 
             } while (totalChestValue > 0);
-            base.OnCollect(collector);
+            // base.OnCollect(collector);
         }
-    
+
         public override int GetNumericValue()
         {
             return totalChestValue;
+        }
+
+        private void Update()
+        {
+#if UNITY_EDITOR
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                OnCollect(null);
+            }
+#endif
         }
     }
 }
