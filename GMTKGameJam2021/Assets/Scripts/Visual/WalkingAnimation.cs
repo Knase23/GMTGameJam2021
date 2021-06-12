@@ -11,6 +11,8 @@ public class WalkingAnimation : MonoBehaviour
 
     public StepType stepType;
 
+    public Rigidbody rigi;
+    
     private float rotationTimer;
     private float rotationSine;
     private float bobbingTimer;
@@ -32,9 +34,7 @@ public class WalkingAnimation : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        walking = prevPos != transform.position;
-
+        walking = rigi.velocity != Vector3.zero;
         transform.localRotation = Quaternion.identity;
         localLerpPos = Vector3.zero;
 
@@ -93,6 +93,8 @@ public class WalkingAnimation : MonoBehaviour
         else
         {
             localLerpPos = Vector3.Lerp(localLerpPos, Vector3.zero, Time.fixedDeltaTime * 6);
+            rotationTimer = 0;
+            bobbingTimer = 0;
         }
 
         transform.localPosition = localLerpPos;

@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.09
+      value: 4.52
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.y
@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.8
+      value: -17.11
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalRotation.w
@@ -517,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.2
+      value: 19.43
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.y
@@ -525,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.13
+      value: -6.65
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1529,7 +1529,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1651,6 +1651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1949736836}
+  - component: {fileID: 1949736835}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1658,6 +1659,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1949736835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949736834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473b36ed7e89b9f49a3e474ed7ce1977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 2edc5bd71466f4043ae73b8499873319, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  diffractionFlags: 11
+  engineLogging: 0
 --- !u!4 &1949736836
 Transform:
   m_ObjectHideFlags: 0
@@ -1721,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.87
+      value: -7.05
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1729,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.29
+      value: -12.67
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalRotation.w

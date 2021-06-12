@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e012963ddb375c4ebd4697ab3496e3bb
     GuidInternal: 
-    m_lastTime: -8585781016245225215
+    m_lastTime: -8585780877235511607
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -84,7 +84,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8f30e11f2bf23b4b9abd663eebae314f
     GuidInternal: 
-    m_lastTime: -8585781016245125478
+    m_lastTime: -8585780877233881499
     List:
     - name: Den_coola_starka_banken
       guid: f299cb7c5118024fa5830dbe60acfe40
@@ -103,7 +103,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585780970118613984
+    m_lastTime: -8585780877235531545
     List:
     - name: bgm_main
       guid: 7eb0616277ab86419fd59cdc7c82a89d
@@ -165,9 +165,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: follower_thrrow_impat
+    - name: follower_throw_impact
       guid: 85ad6c0146d0f543bba671c9f0fa8e73
-      id: 1416389536
+      id: 2360929475
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -175,9 +175,9 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: follower interaction
         ObjectType: 4
-      - ElementName: follower_thrrow_impat
+      - ElementName: follower_throw_impact
         ObjectType: 3
-      Path: Default Work Unit\SFX\follower interaction\follower_thrrow_impat
+      Path: Default Work Unit\SFX\follower interaction\follower_throw_impact
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -511,7 +511,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585780970118604324
+    m_lastTime: -8585780877235531545
     List:
     - name: followers
       guid: 91df98568236984c9cd5641b5c72dc8d
