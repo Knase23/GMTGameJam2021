@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -175,7 +175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318268300}
   m_LocalRotation: {x: 0, y: -0.3420201, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: -1.18, y: 5.8, z: 0.55}
+  m_LocalPosition: {x: -1.18, y: 0, z: 0.55}
   m_LocalScale: {x: 12.191, y: 1, z: 13.646}
   m_Children: []
   m_Father: {fileID: 0}
@@ -234,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4612569989753038400, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4612569989753038400, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -272,9 +272,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building
       objectReference: {fileID: 0}
+    - target: {fileID: 4612569989763982303, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612569989969991916, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4612569990077869661, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612569990104640736, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612569991060285100, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612569991215768937, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4612569990077869661, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
