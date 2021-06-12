@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Global.ServiceLocators.AudioServices
+namespace Services.AudioServices.Wwise
 {
     public class WwiseAudioService : IAudioService
     {
@@ -13,6 +13,7 @@ namespace Global.ServiceLocators.AudioServices
 
         public void PlayMusic(string musicName)
         {
+            Debug.Log("Start " + musicName);
             AkSoundEngine.PostEvent(musicName, objRef);
         }
 

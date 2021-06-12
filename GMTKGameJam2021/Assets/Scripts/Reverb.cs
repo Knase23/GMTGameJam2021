@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public enum ReverbLevels { None, Small, Medium, Large };
@@ -20,20 +21,20 @@ public class Reverb : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("reverberate!");
+            IAudioService audioService = ServiceLocator.GetService<IAudioService>();
             switch (level)
             {
                 case ReverbLevels.None:
-                    AkSoundEngine.PostEvent("reverb_off", this.gameObject);
+                    audioService.PlaySFX("reverb_off", this.gameObject);
                     break;
                 case ReverbLevels.Small:
-                    AkSoundEngine.PostEvent("reverb_small", this.gameObject);
+                    audioService.PlaySFX("reverb_small", this.gameObject);
                     break;
                 case ReverbLevels.Medium:
-                    AkSoundEngine.PostEvent("reverb_medium", this.gameObject);
+                    audioService.PlaySFX("reverb_medium", this.gameObject);
                     break;
                 case ReverbLevels.Large:
-                    AkSoundEngine.PostEvent("reverb_large", this.gameObject);
+                    audioService.PlaySFX("reverb_large", this.gameObject);
                     break;
                 default:
                     break;
@@ -45,7 +46,7 @@ public class Reverb : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AkSoundEngine.PostEvent("reverb_off", this.gameObject);
+            ServiceLocator.GetService<IAudioService>().PlaySFX("reverb_off", this.gameObject);
         }
     }
 
