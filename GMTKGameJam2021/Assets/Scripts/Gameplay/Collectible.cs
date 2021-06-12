@@ -9,7 +9,6 @@ namespace Gameplay
         public SpawnManager.Spawnable spawnType;
         private void OnTriggerEnter(Collider collision)
         {
-            Debug.Log($"{collision.name} hit {name}");
             Collect collector = collision.GetComponent<Collect>();
             if (collector)
             {

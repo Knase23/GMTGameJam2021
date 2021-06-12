@@ -33,7 +33,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}"/>
-							<Value>0</Value>
+							<Value>1.41446342465625E-311</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
