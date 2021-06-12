@@ -17,6 +17,8 @@
 						<ObjectRef Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="player_exit" ID="{1D19579A-3731-45DE-8269-322D6E035F08}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="player_enter" ID="{E64E7F85-2111-4673-B4E8-3DF9E0E1C39C}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower interaction" ID="{AEF70D45-7E08-4735-8645-2DF4E1498B06}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" WorkUnitID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_SFX" ID="{A1349C13-3DA1-47AD-96E7-20ED76C76B12}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>

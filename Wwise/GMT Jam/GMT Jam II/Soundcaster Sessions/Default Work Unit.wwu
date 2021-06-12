@@ -65,7 +65,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
+						<CurrentStateRef Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

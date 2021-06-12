@@ -11,6 +11,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}">
 									<PropertyList>
