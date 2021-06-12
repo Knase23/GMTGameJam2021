@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class Collect : MonoBehaviour
+namespace Gameplay
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Collect : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public Experience experience;
+        public Health health;
+        public void Start()
+        {
+            experience = GetComponent<Experience>();
+            health = GetComponent<Health>();
+        }
     }
 }

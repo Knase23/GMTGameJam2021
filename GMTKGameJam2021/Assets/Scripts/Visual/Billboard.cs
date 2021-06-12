@@ -13,8 +13,7 @@ public class Billboard : MonoBehaviour
             cam = Camera.main;
         }
     }
-
-    void LateUpdate()
+    void FixedUpdate()
     {
         transform.LookAt(cam.transform.position, Vector3.up);
     }

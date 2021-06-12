@@ -24,8 +24,7 @@ public class WalkingAnimation : MonoBehaviour
     public Vector3 prevPos;
 
     public bool readyForTouch;
-
-    void Update()
+    void FixedUpdate()
     {
 
         walking = prevPos != transform.position;
@@ -35,8 +34,8 @@ public class WalkingAnimation : MonoBehaviour
 
         if (walking)
         {
-            rotationTimer += Time.deltaTime * speed;
-            bobbingTimer += Time.deltaTime;
+            rotationTimer += Time.fixedDeltaTime * speed;
+            bobbingTimer += Time.fixedDeltaTime;
             bobbingSine = Mathf.Sin(bobbingTimer * speed * 2);
             rotationSine = Mathf.Sin(rotationTimer + 0.5f);
             transform.localRotation = Quaternion.Euler(Vector3.forward * rotationSine * rotationAngle);
@@ -46,7 +45,6 @@ public class WalkingAnimation : MonoBehaviour
             {
                 if (bobbingSine < -0.9f)
                 {
-                    Debug.Log("touch");
                     readyForTouch = false;
                 }
             }
@@ -60,7 +58,7 @@ public class WalkingAnimation : MonoBehaviour
         }
         else
         {
-            localLerpPos = Vector3.Lerp(localLerpPos, Vector3.zero, Time.deltaTime * 1);
+            localLerpPos = Vector3.Lerp(localLerpPos, Vector3.zero, Time.fixedDeltaTime * 6);
         }
 
         transform.localPosition = localLerpPos;

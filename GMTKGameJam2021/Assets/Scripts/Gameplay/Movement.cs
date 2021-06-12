@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+namespace Gameplay
 {
-    // Start is called before the first frame update
-    void Start()
+    [RequireComponent(typeof(Rigidbody))]
+    public class Movement : MonoBehaviour
     {
-        
-    }
+        private Rigidbody _rigidbody;
 
-    // Update is called once per frame
-    void Update()
-    {
+        public int speed;
+        // Start is called before the first frame update
+        void Start()
+        {
+            _rigidbody = GetComponent<Rigidbody>();
+        }
         
+        // Update is called once per frame
+        void Update()
+        {
+            Vector2 inputDirection = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
+            Vector3 velocity = new Vector3(inputDirection.x, 0, inputDirection.y);
+            _rigidbody.velocity = velocity * speed;
+        }
     }
 }

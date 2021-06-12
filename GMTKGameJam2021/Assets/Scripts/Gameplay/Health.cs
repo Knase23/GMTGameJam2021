@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+namespace Gameplay
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Health : MonoBehaviour
     {
-        
-    }
+        public Integer healthScore;
+        public void TakeDamage(int value)
+        {
+            healthScore.value -= value;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void Heal(int value)
+        {
+            healthScore.value += value;
+        }
     }
 }
