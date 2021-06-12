@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e012963ddb375c4ebd4697ab3496e3bb
     GuidInternal: 
-    m_lastTime: -8585780871318718729
+    m_lastTime: -8585780841557569948
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -84,7 +84,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8f30e11f2bf23b4b9abd663eebae314f
     GuidInternal: 
-    m_lastTime: -8585780877233881499
+    m_lastTime: -8585780841554987031
     List:
     - name: Den_coola_starka_banken
       guid: f299cb7c5118024fa5830dbe60acfe40
@@ -103,7 +103,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585780877235531545
+    m_lastTime: -8585780841561180436
     List:
     - name: bgm_main
       guid: 7eb0616277ab86419fd59cdc7c82a89d
@@ -205,6 +205,38 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: player_enter
+      guid: 857f4ee611217346b4e83df9e0e1c39c
+      id: 1802791965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      - ElementName: player_enter
+        ObjectType: 3
+      Path: Default Work Unit\SFX\world interaction\player_enter
+      maxAttenuation: 0
+      maxDuration: 0.230792
+      minDuration: 0.230792
+    - name: player_exit
+      guid: 9a57191d3137de458269322d6e035f08
+      id: 202487633
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      - ElementName: player_exit
+        ObjectType: 3
+      Path: Default Work Unit\SFX\world interaction\player_exit
+      maxAttenuation: 0
+      maxDuration: 0.318708
+      minDuration: 0.318708
     - name: reverb states
       guid: e6cfb693155b6241a2bb2fb46247c27d
       id: 3044001965
@@ -503,6 +535,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: world interaction
+      guid: ac1150bdfdcc7844a00fe22eca91b64c
+      id: 1107840263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      Path: Default Work Unit\SFX\world interaction
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -511,7 +557,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585780877235531545
+    m_lastTime: -8585780841561011019
     List:
     - name: followers
       guid: 91df98568236984c9cd5641b5c72dc8d
@@ -522,6 +568,15 @@ MonoBehaviour:
       - ElementName: followers
         ObjectType: 13
       Path: Default Work Unit\followers
+    - name: inside_building
+      guid: 2bdca00a12f3474093c845238f7540ad
+      id: 2629562184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: inside_building
+        ObjectType: 13
+      Path: Default Work Unit\inside_building
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -595,7 +650,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585781623764718741
     List: []
-  ExpandedItems:
-  - /GMT Jam II
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

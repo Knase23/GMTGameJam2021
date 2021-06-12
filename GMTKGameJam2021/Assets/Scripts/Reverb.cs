@@ -29,12 +29,15 @@ public class Reverb : MonoBehaviour
                     break;
                 case ReverbLevels.Small:
                     audioService.PlaySFX("reverb_small", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 case ReverbLevels.Medium:
                     audioService.PlaySFX("reverb_medium", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 case ReverbLevels.Large:
                     audioService.PlaySFX("reverb_large", this.gameObject);
+                    audioService.PlaySFX("player_enter", this.gameObject);
                     break;
                 default:
                     break;
@@ -44,9 +47,13 @@ public class Reverb : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        IAudioService audioService = ServiceLocator.GetService<IAudioService>();
+
         if (other.CompareTag("Player"))
         {
-            ServiceLocator.GetService<IAudioService>().PlaySFX("reverb_off", this.gameObject);
+            audioService.PlaySFX("reverb_off", this.gameObject);
+            audioService.PlaySFX("player_exit", this.gameObject);
+
         }
     }
 
