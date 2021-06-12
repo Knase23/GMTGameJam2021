@@ -31,7 +31,6 @@ namespace Gameplay
         public bool CollectBullet(Bullet bullet)
         {
             if (storedBullets.Count > maxAmmo || storedBullets.Contains(bullet)) return false;
-
             storedBullets.Add(bullet);
             bullet.gameObject.SetActive(false);
             currentAmmoCount.value = storedBullets.Count;
@@ -46,6 +45,7 @@ namespace Gameplay
             Vector3 inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             bullet.gameObject.SetActive(true);
             bullet.Throw(transform.position, inputDirection);
+            currentAmmoCount.value = storedBullets.Count;
         }
     }
 }

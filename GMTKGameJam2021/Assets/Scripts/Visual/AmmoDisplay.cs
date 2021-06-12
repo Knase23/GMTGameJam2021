@@ -103,8 +103,8 @@ public class AmmoDisplay : MonoBehaviour
     {
         if (lastKnownCurrent != current.value || lastKnownMaximum != maxAmmo.value)
         {
-            lastKnownCurrent = current;
-            lastKnownMaximum = maxAmmo;
+            lastKnownCurrent = current.value;
+            lastKnownMaximum = maxAmmo.value;
             idleTimer = 2.5f;
             UpdateAmmoSprite();
             LeanTween.scale(this.gameObject, Vector3.one * 1.20f, 0.35f).setEase(LeanTweenType.punch);

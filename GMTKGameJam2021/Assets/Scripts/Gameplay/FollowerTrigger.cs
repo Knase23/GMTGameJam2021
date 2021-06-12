@@ -8,7 +8,7 @@ public class FollowerTrigger : MonoBehaviour
     public Follower orign;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"{other.name} hit {name}");
+        //Debug.Log($"{other.name} hit {name}");
         FollowersHandler handler = other.GetComponent<FollowersHandler>();
         if (handler)
         {

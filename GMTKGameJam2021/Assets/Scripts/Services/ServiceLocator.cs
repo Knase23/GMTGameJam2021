@@ -1,4 +1,4 @@
-/*[Note]:
+﻿/*[Note]:
 The service locator should maybe not initialize services by looking at GameManager. GameManager should probably tell the Locator
 What to initialize
 
@@ -24,7 +24,7 @@ namespace Services
         private static IAudioService audioService;
         public static void Initialize()
         {
-            audioService = new WwiseAudioService();
+            audioService = new NullAudioService();
         }
 
         /// <summary>
