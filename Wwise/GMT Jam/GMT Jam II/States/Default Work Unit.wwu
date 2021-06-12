@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="reverbstates" ID="{39647334-4660-4E21-B222-8115E0C5C314}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{D73D277F-1D44-422D-9B57-A194C6AE6327}"/>
+						<State Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
+						<State Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}"/>
+						<State Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}"/>
+						<State Name="large" ID="{DE3DB0DD-36C0-4A2A-A740-6712C49815DC}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

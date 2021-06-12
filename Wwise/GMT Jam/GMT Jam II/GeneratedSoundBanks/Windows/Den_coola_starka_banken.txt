@@ -1,9 +1,33 @@
 Event	ID	Name			Wwise Object Path	Notes
 	287728669	stop_SFX			\Default Work Unit\META\stop_SFX	
 	452547817	stop_All			\Default Work Unit\META\stop_All	
+	573298149	reverb_large			\Default Work Unit\META\reverb states\reverb_large	
+	576110585	test2			\Default Work Unit\TEst\test2	
 	576110586	test1			\Default Work Unit\TEst\test1	
+	725847328	step_02			\Default Work Unit\SFX\steps\step_02	
+	725847329	step_03			\Default Work Unit\SFX\steps\step_03	
+	725847330	step_00			\Default Work Unit\SFX\steps\step_00	
+	725847331	step_01			\Default Work Unit\SFX\steps\step_01	
+	725847334	step_04			\Default Work Unit\SFX\steps\step_04	
+	725847335	step_05			\Default Work Unit\SFX\steps\step_05	
+	933527613	reverb_small			\Default Work Unit\META\reverb states\reverb_small	
 	2837384057	stop_Music			\Default Work Unit\META\stop_Music	
+	2902570199	reverb_off			\Default Work Unit\META\reverb states\reverb_off	
+	3589785957	step_player			\Default Work Unit\SFX\steps\step_player	
+	4066469909	reverb_medium			\Default Work Unit\META\reverb states\reverb_medium	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1840721638	followers			\Default Work Unit\followers	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	261746829	heavy-pissbaby	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\heavy-pissbaby_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\heavy-pissbaby		965696
+	265196047	bouncy step pitch varify me	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\bouncy step pitch varify me_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_01\bouncy step pitch varify me		21664
+	372728728	small step-02	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\small step-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_03\small step-02		39264
+	519834809	blopstep1	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_04\blopstep1		14140
+	544908918	blopstep3	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_04\blopstep3		14688
+	676078513	small step-08	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\small step-08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_03\small step-08		39264
+	715365920	small step-05	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\small step-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_03\small step-05		39264
+	776213843	small step-11	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\small step-11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_03\small step-11		39264
+	863113306	Powerup4	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\Powerup4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_player\Powerup4		10208
+	995230590	blopstep2	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_04\blopstep2		14328
 

@@ -1,7 +1,31 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3366828627	reverbstates			\Default Work Unit\reverbstates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	reverbstates			
+	930712164	off	reverbstates			
+	1846755610	small	reverbstates			
+	2849147824	medium	reverbstates			
+	4284352190	large	reverbstates			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	415203114	large	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
+	463604902	small	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
+	613032218	medium	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
+	867382597	off	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2943096322	SFXreverb			\Default Work Unit\Master Audio Bus\SFX\SFXreverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+	2849147824	Medium	Wwise RoomVerb			
+	3164629247	Holy	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

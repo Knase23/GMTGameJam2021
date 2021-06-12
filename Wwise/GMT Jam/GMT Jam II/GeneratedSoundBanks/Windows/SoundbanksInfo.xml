@@ -15,12 +15,103 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2943096322" Name="SFXreverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="2773919638" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Den_coola_starka_banken</ObjectPath>
 			<ShortName>Den_coola_starka_banken</ShortName>
 			<Path>Den_coola_starka_banken.bnk</Path>
 			<IncludedEvents>
+				<Event Id="573298149" Name="reverb_large" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_large" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4066469909" Name="reverb_medium" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_medium" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2902570199" Name="reverb_off" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_off" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="933527613" Name="reverb_small" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_small" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="725847330" Name="step_00" ObjectPath="\Events\Default Work Unit\SFX\steps\step_00" DurationType="OneShot" DurationMin="0.059499" DurationMax="0.108243">
+					<IncludedMemoryFiles>
+						<File Id="863113306" Language="SFX">
+							<ShortName>Powerup4.wav</ShortName>
+							<Path>SFX\Powerup4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="725847331" Name="step_01" ObjectPath="\Events\Default Work Unit\SFX\steps\step_01" DurationType="OneShot" DurationMin="0.139928" DurationMax="0.233164">
+					<IncludedMemoryFiles>
+						<File Id="265196047" Language="SFX">
+							<ShortName>bouncy step pitch varify me.wav</ShortName>
+							<Path>SFX\bouncy step pitch varify me_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="725847328" Name="step_02" ObjectPath="\Events\Default Work Unit\SFX\steps\step_02" DurationType="OneShot" DurationMin="0.172821" DurationMax="0.275606">
+					<IncludedMemoryFiles>
+						<File Id="863113306" Language="SFX">
+							<ShortName>Powerup4.wav</ShortName>
+							<Path>SFX\Powerup4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="725847329" Name="step_03" ObjectPath="\Events\Default Work Unit\SFX\steps\step_03" DurationType="OneShot" DurationMin="0.181127" DurationMax="0.264727">
+					<IncludedMemoryFiles>
+						<File Id="372728728" Language="SFX">
+							<ShortName>small step-02.wav</ShortName>
+							<Path>SFX\small step-02_10C4C929.wem</Path>
+						</File>
+						<File Id="676078513" Language="SFX">
+							<ShortName>small step-08.wav</ShortName>
+							<Path>SFX\small step-08_10C4C929.wem</Path>
+						</File>
+						<File Id="715365920" Language="SFX">
+							<ShortName>small step-05.wav</ShortName>
+							<Path>SFX\small step-05_10C4C929.wem</Path>
+						</File>
+						<File Id="776213843" Language="SFX">
+							<ShortName>small step-11.wav</ShortName>
+							<Path>SFX\small step-11_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="725847334" Name="step_04" ObjectPath="\Events\Default Work Unit\SFX\steps\step_04" DurationType="OneShot" DurationMin="0.044423" DurationMax="0.064557">
+					<IncludedMemoryFiles>
+						<File Id="519834809" Language="SFX">
+							<ShortName>blopstep1.wav</ShortName>
+							<Path>SFX\blopstep1_10C4C929.wem</Path>
+						</File>
+						<File Id="544908918" Language="SFX">
+							<ShortName>blopstep3.wav</ShortName>
+							<Path>SFX\blopstep3_10C4C929.wem</Path>
+						</File>
+						<File Id="995230590" Language="SFX">
+							<ShortName>blopstep2.wav</ShortName>
+							<Path>SFX\blopstep2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="725847335" Name="step_05" ObjectPath="\Events\Default Work Unit\SFX\steps\step_05" DurationType="OneShot" DurationMin="0.077704" DurationMax="0.126897">
+					<IncludedMemoryFiles>
+						<File Id="519834809" Language="SFX">
+							<ShortName>blopstep1.wav</ShortName>
+							<Path>SFX\blopstep1_10C4C929.wem</Path>
+						</File>
+						<File Id="544908918" Language="SFX">
+							<ShortName>blopstep3.wav</ShortName>
+							<Path>SFX\blopstep3_10C4C929.wem</Path>
+						</File>
+						<File Id="995230590" Language="SFX">
+							<ShortName>blopstep2.wav</ShortName>
+							<Path>SFX\blopstep2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3589785957" Name="step_player" ObjectPath="\Events\Default Work Unit\SFX\steps\step_player" DurationType="OneShot" DurationMin="0.107000" DurationMax="0.170638">
+					<IncludedMemoryFiles>
+						<File Id="863113306" Language="SFX">
+							<ShortName>Powerup4.wav</ShortName>
+							<Path>SFX\Powerup4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -32,7 +123,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="576110585" Name="test2" ObjectPath="\Events\Default Work Unit\TEst\test2" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1840721638" Name="followers" ObjectPath="\Game Parameters\Default Work Unit\followers"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
