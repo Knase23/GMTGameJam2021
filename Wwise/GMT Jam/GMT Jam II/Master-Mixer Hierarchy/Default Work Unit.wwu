@@ -10,7 +10,75 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}"/>
+						<Bus Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}">
+							<ChildrenList>
+								<AuxBus Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect2" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="BusVolume"/>
+											<Property Name="BypassEffect0"/>
+											<Property Name="BypassEffect1"/>
+											<Property Name="BypassEffect2"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="reverbstates" ID="{39647334-4660-4E21-B222-8115E0C5C314}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
+												<CustomState Name="" ID="{33BEAD41-67C6-466F-83A8-2085B54EF6FE}" ShortID="867382597">
+													<PropertyList>
+														<Property Name="BypassEffect0" Type="bool" Value="True"/>
+														<Property Name="BypassEffect1" Type="bool" Value="True"/>
+														<Property Name="BypassEffect2" Type="bool" Value="True"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}"/>
+												<CustomState Name="" ID="{4D993E1D-552D-45DE-812F-7BF1BA189259}" ShortID="463604902">
+													<PropertyList>
+														<Property Name="BypassEffect1" Type="bool" Value="True"/>
+														<Property Name="BypassEffect2" Type="bool" Value="True"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}"/>
+												<CustomState Name="" ID="{D6BEF83E-0C50-4572-84ED-0A8330C3FBEC}" ShortID="613032218">
+													<PropertyList>
+														<Property Name="BypassEffect0" Type="bool" Value="True"/>
+														<Property Name="BypassEffect2" Type="bool" Value="True"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="large" ID="{DE3DB0DD-36C0-4A2A-A740-6712C49815DC}"/>
+												<CustomState Name="" ID="{9E3FB9C8-8E32-4761-AE23-2C15727648BE}" ShortID="415203114">
+													<PropertyList>
+														<Property Name="BypassEffect0" Type="bool" Value="True"/>
+														<Property Name="BypassEffect1" Type="bool" Value="True"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="Music" ID="{C3D3BE88-AA81-47B5-8BB2-A51E18CE1213}"/>
 					</ChildrenList>
 				</Bus>

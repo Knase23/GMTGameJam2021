@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{759FA247-002D-4675-AE00-AB4677881956}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{759FA247-002D-4675-AE00-AB4677881956}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{759FA247-002D-4675-AE00-AB4677881956}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{C68C9C36-64D3-44E9-9BAA-5C4354996C96}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="steptester" ID="{1B114239-ADA9-4D63-94E5-A2D18583DA92}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="reverb_small" ID="{9A4800F8-8C97-4445-A484-4B8F0B33F46B}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="reverb_medium" ID="{A048D6FA-EE9B-47EC-BDD1-24ADFD03F14D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

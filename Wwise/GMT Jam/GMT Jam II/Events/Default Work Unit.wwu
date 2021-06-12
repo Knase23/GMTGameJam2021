@@ -43,6 +43,66 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="reverb states" ID="{93B6CFE6-5B15-4162-A2BB-2FB46247C27D}" ShortID="156295851">
+							<ChildrenList>
+								<Event Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}">
+									<ChildrenList>
+										<Action Name="" ID="{5DF76968-DE0A-41D9-9D15-AFE8894A667F}" ShortID="51661199">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="reverb_small" ID="{9A4800F8-8C97-4445-A484-4B8F0B33F46B}">
+									<ChildrenList>
+										<Action Name="" ID="{62A7CAC1-2FEE-42AB-B588-63BAC5BF0852}" ShortID="430918458">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="reverb_medium" ID="{A048D6FA-EE9B-47EC-BDD1-24ADFD03F14D}">
+									<ChildrenList>
+										<Action Name="" ID="{1360D09C-1349-40E1-B701-D77B237A23CD}" ShortID="771095688">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}">
+									<ChildrenList>
+										<Action Name="" ID="{A28E9A34-5D5C-4BF4-B63E-EB4793733BE4}" ShortID="632566966">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="large" ID="{DE3DB0DD-36C0-4A2A-A740-6712C49815DC}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" ShortID="801514613">
@@ -58,6 +118,215 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}">
+							<ChildrenList>
+								<Action Name="" ID="{8A970AB8-CDF6-4777-B6B9-7CE86B41C08E}" ShortID="961582046">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83852B63-7C8C-43A4-A07B-1ACD18D26F22}" ShortID="207016032">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_01" ID="{C8F48258-2486-4DD2-982A-FEA721FD22CC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5F891231-8822-4140-BDFD-105CC9DB0AD2}" ShortID="1009849289">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_03" ID="{ABF3698A-6996-4D5A-9D2A-D57AC0F70EF1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C73971B3-5F3D-4764-96B9-84E41F6D5537}" ShortID="157937053">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{22F41189-8CC8-4818-A4A8-085DA7603858}" ShortID="249377293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_05" ID="{91D043A9-4E4A-4E20-9C04-BFB2F5CA801E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B8E2B825-D70B-43E7-9A9E-0973D695D37D}" ShortID="1046542603">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{958836B8-419E-4611-9DA5-69CAF6B0ED0F}" ShortID="1019431874">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_01" ID="{C8F48258-2486-4DD2-982A-FEA721FD22CC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A61DCF9-FC20-45AD-8785-EFDE3E586F01}" ShortID="492649424">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="3.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4371EA61-CDBA-4E72-859E-785C91D52C2D}" ShortID="368522906">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_03" ID="{ABF3698A-6996-4D5A-9D2A-D57AC0F70EF1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{941DC87B-6BA3-4FAA-AD2F-727D222AE80E}" ShortID="720717168">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="4.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E177ECB2-2DC3-4EFF-A3D2-A505F1D2C645}" ShortID="916032845">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="step_05" ID="{91D043A9-4E4A-4E20-9C04-BFB2F5CA801E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{DE8E64AE-B82F-4CA9-BDBE-A5E9A7EE014E}" ShortID="856945632">
+					<ChildrenList>
+						<Folder Name="steps" ID="{EBF72494-481F-4314-AFA7-98FBFB53AE2E}" ShortID="1054017371">
+							<ChildrenList>
+								<Event Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}">
+									<ChildrenList>
+										<Action Name="" ID="{5C5A7618-F7BA-466F-8591-A61B351735A1}" ShortID="447551495">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_0" ID="{74CDC544-427C-4A10-8260-7CA2A921EF62}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_01" ID="{C8F48258-2486-4DD2-982A-FEA721FD22CC}">
+									<ChildrenList>
+										<Action Name="" ID="{EDDB0DC3-1E16-4337-9070-DCCB53FAC727}" ShortID="306958185">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_01" ID="{521F8623-9185-4FFB-88F1-CAB504958816}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}">
+									<ChildrenList>
+										<Action Name="" ID="{3D577B8D-3953-4A5C-87B6-65479A680649}" ShortID="324405219">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_02" ID="{9D520B4A-C46C-4BFB-A4A7-661020A595DB}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_03" ID="{ABF3698A-6996-4D5A-9D2A-D57AC0F70EF1}">
+									<ChildrenList>
+										<Action Name="" ID="{484089A3-56D3-4514-B2A4-FDEEEDE4D162}" ShortID="895921643">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_03" ID="{5C9F1610-9856-494A-897F-81A0B8CE7D48}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}">
+									<ChildrenList>
+										<Action Name="" ID="{80D37068-1559-4C14-BFDC-66B931EE035D}" ShortID="164211360">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_04" ID="{172A7DF6-5E2B-4D8C-B653-116218F69565}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_05" ID="{91D043A9-4E4A-4E20-9C04-BFB2F5CA801E}">
+									<ChildrenList>
+										<Action Name="" ID="{0A4C1F03-5AF2-4086-8863-F695B122A17D}" ShortID="607285703">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_05" ID="{2ED833B7-2C59-4789-9650-7911C9DD516D}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="step_player" ID="{F29E5D9F-7F3D-4D93-AA35-36DDF71343F0}">
+									<ChildrenList>
+										<Action Name="" ID="{7DF253A4-D59A-4313-B6FA-645166C919AD}" ShortID="23756635">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="step_player" ID="{BC64E908-0C78-4C65-AB7C-BC2DFBED5BE3}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

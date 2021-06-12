@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6DFD65F8-088B-4582-8656-B878ECB437F5}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{6DFD65F8-088B-4582-8656-B878ECB437F5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6DFD65F8-088B-4582-8656-B878ECB437F5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -5,15 +5,30 @@
 			<ChildrenList>
 				<SoundBank Name="Den_coola_starka_banken" ID="{7CCB99F2-1851-4F02-A583-0DBE60ACFE40}">
 					<ObjectInclusionList>
+						<ObjectRef Name="reverb states" ID="{93B6CFE6-5B15-4162-A2BB-2FB46247C27D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="steps" ID="{EBF72494-481F-4314-AFA7-98FBFB53AE2E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="META" ID="{90E32769-EA9C-438D-8FC1-B32FFFD04EB1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="reverb_small" ID="{9A4800F8-8C97-4445-A484-4B8F0B33F46B}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" WorkUnitID="{BA0EEF0F-F00A-474D-9865-379CA1F607F3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_SFX" ID="{A1349C13-3DA1-47AD-96E7-20ED76C76B12}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="reverb_medium" ID="{A048D6FA-EE9B-47EC-BDD1-24ADFD03F14D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{35450022-E82E-483B-A80B-78D1CCB68E75}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX" ID="{DE8E64AE-B82F-4CA9-BDBE-A5E9A7EE014E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_03" ID="{ABF3698A-6996-4D5A-9D2A-D57AC0F70EF1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_player" ID="{F29E5D9F-7F3D-4D93-AA35-36DDF71343F0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_01" ID="{C8F48258-2486-4DD2-982A-FEA721FD22CC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_05" ID="{91D043A9-4E4A-4E20-9C04-BFB2F5CA801E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test1" ID="{A822DF70-18BE-4E3F-BFFB-AD073D74C4F5}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
