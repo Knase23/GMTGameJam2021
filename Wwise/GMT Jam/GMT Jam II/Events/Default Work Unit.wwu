@@ -413,6 +413,32 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" ShortID="264608202">
+							<ChildrenList>
+								<Event Name="rock_throw" ID="{1BC4B39B-44F1-4DD7-B125-71D9B68B8033}">
+									<ChildrenList>
+										<Action Name="" ID="{19E18A77-71A2-42C4-8FD2-058C39013E8E}" ShortID="84358985">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="throw" ID="{B05EDE7D-6A03-4376-ACF8-83F770F20D7F}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="rock_throw_impact" ID="{A57C21FB-4A0A-4CC5-8B10-B4FAD5926738}">
+									<ChildrenList>
+										<Action Name="" ID="{6BD27EC6-A9C8-4CEC-A053-1B95FCB4D983}" ShortID="427585507">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="throw_impact" ID="{0CDD9C63-617A-4E3A-AE0E-AAAB90A68FC2}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MUSIC" ID="{2906232E-1965-4009-BBEF-8D8C45FF5DCC}" ShortID="151014170">

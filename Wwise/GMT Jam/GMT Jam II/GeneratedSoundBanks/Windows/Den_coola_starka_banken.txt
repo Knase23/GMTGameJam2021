@@ -13,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	725847334	step_04			\Default Work Unit\SFX\steps\step_04	
 	725847335	step_05			\Default Work Unit\SFX\steps\step_05	
 	933527613	reverb_small			\Default Work Unit\META\reverb states\reverb_small	
+	1372558188	rock_throw_impact			\Default Work Unit\SFX\throwing rocks\rock_throw_impact	
 	1802791965	player_enter			\Default Work Unit\SFX\world interaction\player_enter	
 	2360929475	follower_throw_impact			\Default Work Unit\SFX\follower interaction\follower_throw_impact	
 	2633060887	bgm_main			\Default Work Unit\MUSIC\bgm_main	
@@ -20,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2902570199	reverb_off			\Default Work Unit\META\reverb states\reverb_off	
 	3054631418	follower_throw			\Default Work Unit\SFX\follower interaction\follower_throw	
 	3589785957	step_player			\Default Work Unit\SFX\steps\step_player	
+	4064012791	rock_throw			\Default Work Unit\SFX\throwing rocks\rock_throw	
 	4066469909	reverb_medium			\Default Work Unit\META\reverb states\reverb_medium	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
