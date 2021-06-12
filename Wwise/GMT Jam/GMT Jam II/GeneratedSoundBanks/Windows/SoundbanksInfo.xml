@@ -111,6 +111,38 @@
 				<Event Id="4066469909" Name="reverb_medium" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_medium" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2902570199" Name="reverb_off" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_off" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="933527613" Name="reverb_small" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_small" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4064012791" Name="rock_throw" ObjectPath="\Events\Default Work Unit\SFX\throwing rocks\rock_throw" DurationType="OneShot" DurationMin="0.137847" DurationMax="0.379481">
+					<IncludedMemoryFiles>
+						<File Id="789381214" Language="SFX">
+							<ShortName>kast21.wav</ShortName>
+							<Path>SFX\kast21_10C4C929.wem</Path>
+						</File>
+						<File Id="907579787" Language="SFX">
+							<ShortName>kast3.wav</ShortName>
+							<Path>SFX\kast3_10C4C929.wem</Path>
+						</File>
+						<File Id="974860179" Language="SFX">
+							<ShortName>kast1.wav</ShortName>
+							<Path>SFX\kast1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1372558188" Name="rock_throw_impact" ObjectPath="\Events\Default Work Unit\SFX\throwing rocks\rock_throw_impact" DurationType="OneShot" DurationMin="0.106901" DurationMax="0.167606">
+					<IncludedMemoryFiles>
+						<File Id="545198411" Language="SFX">
+							<ShortName>landa-05.wav</ShortName>
+							<Path>SFX\landa-05_10C4C929.wem</Path>
+						</File>
+						<File Id="545480175" Language="SFX">
+							<ShortName>landa-08.wav</ShortName>
+							<Path>SFX\landa-08_10C4C929.wem</Path>
+						</File>
+						<File Id="866110534" Language="SFX">
+							<ShortName>landa-02.wav</ShortName>
+							<Path>SFX\landa-02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="725847330" Name="step_00" ObjectPath="\Events\Default Work Unit\SFX\steps\step_00" DurationType="OneShot" DurationMin="0.059499" DurationMax="0.108243">
 					<IncludedMemoryFiles>
 						<File Id="863113306" Language="SFX">

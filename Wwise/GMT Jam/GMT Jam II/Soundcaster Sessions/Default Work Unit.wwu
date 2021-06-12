@@ -54,8 +54,16 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="rock_throw" ID="{1BC4B39B-44F1-4DD7-B125-71D9B68B8033}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="rock_throw_impact" ID="{A57C21FB-4A0A-4CC5-8B10-B4FAD5926738}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -65,11 +73,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}"/>
-							<Value>13.2</Value>
+							<Value>8.62982962933922</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}"/>
+						<CurrentStateRef Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
