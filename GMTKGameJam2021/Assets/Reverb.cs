@@ -16,10 +16,11 @@ public class Reverb : MonoBehaviour
         col.isTrigger = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            Debug.Log("reverberate!");
             switch (level)
             {
                 case ReverbLevels.None:
@@ -37,6 +38,14 @@ public class Reverb : MonoBehaviour
                 default:
                     break;
             }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            AkSoundEngine.PostEvent("reverb_off", this.gameObject);
         }
     }
 

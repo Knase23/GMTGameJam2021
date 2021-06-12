@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+public enum StepType { None, Player, zero, one, two, three, four, five };
 // this script moves a character back and forth to simulate movement (lol)
 
 public class WalkingAnimation : MonoBehaviour
 {
+
+    public StepType stepType;
 
     private float rotationTimer;
     private float rotationSine;
@@ -50,6 +52,34 @@ public class WalkingAnimation : MonoBehaviour
                 {
                     readyForTouch = false;
                     fartDust.Emit(1);
+                    switch (stepType)
+                    {
+                        case StepType.None:
+                            break;
+                        case StepType.Player:
+                            AkSoundEngine.PostEvent("step_player", this.gameObject);
+                            break;
+                        case StepType.zero:
+                            AkSoundEngine.PostEvent("step_00", this.gameObject);
+                            break;
+                        case StepType.one:
+                            AkSoundEngine.PostEvent("step_01", this.gameObject);
+                            break;
+                        case StepType.two:
+                            AkSoundEngine.PostEvent("step_02", this.gameObject);
+                            break;
+                        case StepType.three:
+                            AkSoundEngine.PostEvent("step_03", this.gameObject);
+                            break;
+                        case StepType.four:
+                            AkSoundEngine.PostEvent("step_04", this.gameObject);
+                            break;
+                        case StepType.five:
+                            AkSoundEngine.PostEvent("step_05", this.gameObject);
+
+                            break;
+
+                    }
                 }
             }
             else

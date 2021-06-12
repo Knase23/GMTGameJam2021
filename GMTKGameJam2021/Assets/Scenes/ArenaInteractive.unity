@@ -623,21 +623,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7838561572202697441, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
-      propertyPath: baseSpriteIsFacingLeft
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838561572202697455, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838561572202697455, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838561572202697455, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 5298375809036496601, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ed78325a190e0f4b9cf88de5ca45624, type: 3}
@@ -913,6 +901,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1949736836}
+  - component: {fileID: 1949736835}
+  - component: {fileID: 1949736837}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -920,6 +910,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1949736835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949736834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cde74b282d4df49be2fe49241fc455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f91ddff8744ddb547b3a2a3384083729, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!4 &1949736836
 Transform:
   m_ObjectHideFlags: 0
@@ -934,6 +948,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1949736837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949736834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473b36ed7e89b9f49a3e474ed7ce1977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 2edc5bd71466f4043ae73b8499873319, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  diffractionFlags: 11
+  engineLogging: 0
 --- !u!1001 &3510287038014250952
 PrefabInstance:
   m_ObjectHideFlags: 0

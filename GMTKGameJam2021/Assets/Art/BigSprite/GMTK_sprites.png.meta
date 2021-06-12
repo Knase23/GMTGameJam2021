@@ -124,34 +124,34 @@ TextureImporter:
     second: GMTK_sprites_39
   - first:
       213: 6639257182586293868
-    second: Progress_3_0
+    second: zero_three
   - first:
       213: -9165077644661613832
-    second: Progress_3_1
+    second: One_Three
   - first:
       213: -6040423525268079797
-    second: Progress_3_2
+    second: Two_Three
   - first:
       213: -2261552370774502565
-    second: Progress_3_3
+    second: Three_Three
   - first:
       213: -7079543484325095602
-    second: Progress_2_0
+    second: Zero_Two
   - first:
       213: 7792101704251993010
-    second: Progress_2_1
+    second: One_Two
   - first:
       213: 3323586273051796990
-    second: Progress_2_2
+    second: Two_Two
   - first:
       213: -8913051826899330772
     second: GMTK_sprites_47
   - first:
       213: -6715011636492993099
-    second: Progress_1_0
+    second: Zero_One
   - first:
       213: 314747283571515514
-    second: Progress_1_1
+    second: One_One
   - first:
       213: -7881886128668449639
     second: GMTK_sprites_50
@@ -571,13 +571,13 @@ TextureImporter:
     second: GMTK_sprites_188
   - first:
       213: -4680758835935017947
-    second: GMTK_sprites_189
+    second: Border_06
   - first:
       213: 6744359106702008379
-    second: GMTK_sprites_190
+    second: Border_05
   - first:
       213: 5080627253613032343
-    second: GMTK_sprites_191
+    second: Border_04
   - first:
       213: 1377432038140893516
     second: GMTK_sprites_192
@@ -595,13 +595,13 @@ TextureImporter:
     second: GMTK_sprites_196
   - first:
       213: -6611941745297057531
-    second: GMTK_sprites_197
+    second: Border_03
   - first:
       213: 5018500179093107377
-    second: GMTK_sprites_198
+    second: Border_02
   - first:
       213: 7540870866314352351
-    second: GMTK_sprites_199
+    second: Border_01
   - first:
       213: 4995402051786817590
     second: GMTK_sprites_200
@@ -1636,7 +1636,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_3_0
+      name: zero_three
       rect:
         serializedVersion: 2
         x: 0
@@ -1657,7 +1657,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_3_1
+      name: One_Three
       rect:
         serializedVersion: 2
         x: 16
@@ -1678,7 +1678,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_3_2
+      name: Two_Three
       rect:
         serializedVersion: 2
         x: 32
@@ -1699,7 +1699,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_3_3
+      name: Three_Three
       rect:
         serializedVersion: 2
         x: 48
@@ -1720,7 +1720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_2_0
+      name: Zero_Two
       rect:
         serializedVersion: 2
         x: 64
@@ -1741,7 +1741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_2_1
+      name: One_Two
       rect:
         serializedVersion: 2
         x: 80
@@ -1762,7 +1762,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_2_2
+      name: Two_Two
       rect:
         serializedVersion: 2
         x: 96
@@ -1804,7 +1804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_1_0
+      name: Zero_One
       rect:
         serializedVersion: 2
         x: 0
@@ -1825,7 +1825,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Progress_1_1
+      name: One_One
       rect:
         serializedVersion: 2
         x: 16
@@ -4765,7 +4765,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_189
+      name: Border_06
       rect:
         serializedVersion: 2
         x: 80
@@ -4786,7 +4786,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_190
+      name: Border_05
       rect:
         serializedVersion: 2
         x: 96
@@ -4807,7 +4807,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_191
+      name: Border_04
       rect:
         serializedVersion: 2
         x: 112
@@ -4933,7 +4933,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_197
+      name: Border_03
       rect:
         serializedVersion: 2
         x: 80
@@ -4954,7 +4954,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_198
+      name: Border_02
       rect:
         serializedVersion: 2
         x: 96
@@ -4975,7 +4975,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_199
+      name: Border_01
       rect:
         serializedVersion: 2
         x: 112
