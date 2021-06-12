@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: -5752744938997089989}
   - component: {fileID: 5198322054336319028}
   - component: {fileID: 3946769209832548437}
+  - component: {fileID: 7701344324456481159}
+  - component: {fileID: 5589313732266921908}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -121,6 +123,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: {fileID: 11400000, guid: 18d50f8c647c41e4c89db2b904c7d764, type: 2}
   maxExp: {fileID: 0}
+--- !u!114 &7701344324456481159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844768291179892261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f244180bd507b97409677c81004947fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  first: {fileID: 0}
+--- !u!114 &5589313732266921908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844768291179892261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f873d35fbfe7b934c8553fae594fb93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storedBullets: []
+  currentAmmoCount: {fileID: 11400000, guid: 63c0231319ccad54ca9840f70759e937, type: 2}
+  maxAmmo: {fileID: 11400000, guid: d2727194561c08d4497499b67eaea149, type: 2}
 --- !u!1001 &844768290201529428
 PrefabInstance:
   m_ObjectHideFlags: 0
