@@ -13,7 +13,7 @@ namespace Services
 {
     public static class ServiceLocator
     {
-        
+
         public enum AudioOptions
         {
             Null,
@@ -24,7 +24,8 @@ namespace Services
         private static IAudioService audioService;
         public static void Initialize()
         {
-            audioService = new WwiseAudioService();
+            audioService = new NullAudioService();
+            // audioService = new WwiseAudioService();
         }
 
         /// <summary>
