@@ -11,6 +11,9 @@ namespace Gameplay
         public State current;
 
         public float speed;
+
+        private float timer;
+        
         public enum State
         {
             Bullet,
@@ -23,15 +26,45 @@ namespace Gameplay
         }
         public void Throw(Vector3 startPosition, Vector3 direction)
         {
-            current = State.Bullet;
             transform.position = startPosition + direction;
             _rigidbody.velocity = direction * speed;
-            _rigidbody.isKinematic = false;
+            BulletState();
         }
 
+        private void Update()
+        {
+            if (current == State.Bullet)
+            {
+
+                timer += Time.deltaTime;
+
+                if (timer > 1)
+                {
+                    timer = 0;
+                    CollectState();
+                }
+            }
+        }
+
+        public void CollectState()
+        {
+            current = State.Collect;
+            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.isKinematic = true;
+            int layer = 10; // Collectable
+            gameObject.layer = layer;
+        }
+
+        public void BulletState()
+        {
+            current = State.Bullet;
+            _rigidbody.isKinematic = false;
+            int layer = 7; // Bullets
+            gameObject.layer = layer;
+        }
+        
         public void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Bullet collides");
             if (current == State.Bullet)
             {
                 Health health = other.GetComponent<Health>();
@@ -41,15 +74,17 @@ namespace Gameplay
                     health.TakeDamage(1);
                     Destroy(gameObject);
                 }
-                current = State.Collect;
-                _rigidbody.velocity = Vector3.zero;
-                _rigidbody.isKinematic = true;
+
+                CollectState();
+
+                
             }
             if (current == State.Collect)
             {
                 Collect collect = other.GetComponent<Collect>();
                 if (collect)
                 {
+                    collect.shooter.CollectBullet(this);
                     //Do Something
                 }
             }

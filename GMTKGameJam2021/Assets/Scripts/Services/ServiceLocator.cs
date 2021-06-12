@@ -1,4 +1,4 @@
-/*[Note]:
+﻿/*[Note]:
 The service locator should maybe not initialize services by looking at GameManager. GameManager should probably tell the Locator
 What to initialize
 
@@ -8,6 +8,7 @@ Where's the SetService Function(s)?
 */
 
 using Global.ServiceLocators.AudioServices;
+using Services.AudioServices.Wwise;
 
 namespace Services
 {

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   current: 1
-  speed: 50
+  speed: 20
 --- !u!54 &3408736947692246005
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5563984507349847695, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.8088379, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

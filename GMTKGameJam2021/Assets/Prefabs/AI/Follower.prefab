@@ -185,6 +185,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 9169827813387069339}
     m_Modifications:
     - target: {fileID: 7453759133000580788, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
+      propertyPath: rigi
+      value: 
+      objectReference: {fileID: 9169827813387069413}
+    - target: {fileID: 7453759133000580788, guid: 3bf80a8915853b34eb955fbbe88a3ef3, type: 3}
       propertyPath: fartDust
       value: 
       objectReference: {fileID: 1743130273129480981}

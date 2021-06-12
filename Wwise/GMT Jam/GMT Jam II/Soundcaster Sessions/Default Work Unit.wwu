@@ -14,12 +14,32 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="follower_throw" ID="{065E3684-1736-4D80-9024-26F5C0287E44}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="follower_throw_impact" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="player_exit" ID="{1D19579A-3731-45DE-8269-322D6E035F08}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="reverb_medium" ID="{A048D6FA-EE9B-47EC-BDD1-24ADFD03F14D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="follower_pickup" ID="{131E38A7-3A50-420F-B684-228DF7B76097}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="player_enter" ID="{E64E7F85-2111-4673-B4E8-3DF9E0E1C39C}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
@@ -29,11 +49,19 @@
 							<ObjectRef Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="2" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}"/>
-							<Value>1.41446342465625E-311</Value>
+							<Value>10.5</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

@@ -13,6 +13,13 @@
 						<Bus Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}">
 							<ChildrenList>
 								<AuxBus Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -41,6 +48,7 @@
 												<StateRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
 												<CustomState Name="" ID="{33BEAD41-67C6-466F-83A8-2085B54EF6FE}" ShortID="867382597">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-108"/>
 														<Property Name="BypassEffect0" Type="bool" Value="True"/>
 														<Property Name="BypassEffect1" Type="bool" Value="True"/>
 														<Property Name="BypassEffect2" Type="bool" Value="True"/>
@@ -51,6 +59,7 @@
 												<StateRef Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}"/>
 												<CustomState Name="" ID="{4D993E1D-552D-45DE-812F-7BF1BA189259}" ShortID="463604902">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-5"/>
 														<Property Name="BypassEffect1" Type="bool" Value="True"/>
 														<Property Name="BypassEffect2" Type="bool" Value="True"/>
 													</PropertyList>
@@ -60,6 +69,7 @@
 												<StateRef Name="medium" ID="{CDE3D7BB-DFAE-436F-A30E-B2C5894A93A0}"/>
 												<CustomState Name="" ID="{D6BEF83E-0C50-4572-84ED-0A8330C3FBEC}" ShortID="613032218">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-3"/>
 														<Property Name="BypassEffect0" Type="bool" Value="True"/>
 														<Property Name="BypassEffect2" Type="bool" Value="True"/>
 													</PropertyList>
@@ -69,6 +79,7 @@
 												<StateRef Name="large" ID="{DE3DB0DD-36C0-4A2A-A740-6712C49815DC}"/>
 												<CustomState Name="" ID="{9E3FB9C8-8E32-4761-AE23-2C15727648BE}" ShortID="415203114">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-2"/>
 														<Property Name="BypassEffect0" Type="bool" Value="True"/>
 														<Property Name="BypassEffect1" Type="bool" Value="True"/>
 													</PropertyList>
@@ -79,7 +90,71 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="Music" ID="{C3D3BE88-AA81-47B5-8BB2-A51E18CE1213}"/>
+						<Bus Name="Music" ID="{C3D3BE88-AA81-47B5-8BB2-A51E18CE1213}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{28D6B5CF-5FAE-448A-BCE6-B4E09945A693}" ShortID="873055126">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}" WorkUnitID="{6DFD65F8-088B-4582-8656-B878ECB437F5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{CBABA1F1-DB1B-45E0-9DBC-48714D3F8DB2}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>72</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{DED9BD06-7FF5-4CC8-B33A-094082B0A2E6}" ShortID="604251169">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}" WorkUnitID="{6DFD65F8-088B-4582-8656-B878ECB437F5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{03F817A1-BDE3-417F-A627-8180C1A47AD7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-3</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
