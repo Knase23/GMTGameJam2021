@@ -637,19 +637,19 @@ TextureImporter:
     second: GMTK_sprites_210
   - first:
       213: 6190014564494258976
-    second: GMTK_sprites_211
+    second: Gem_Small
   - first:
       213: 9056072376174606161
-    second: GMTK_sprites_212
+    second: Gem_Medium
   - first:
       213: -5895002165314082188
-    second: GMTK_sprites_213
+    second: Gem_Large
   - first:
       213: 922107602936362038
-    second: GMTK_sprites_214
+    second: Gem_Huge
   - first:
       213: 6186348855547963462
-    second: GMTK_sprites_215
+    second: Gem_Gigantic
   - first:
       213: -6396621336978715622
     second: Health_Full
@@ -5227,7 +5227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_211
+      name: Gem_Small
       rect:
         serializedVersion: 2
         x: 48
@@ -5248,7 +5248,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_212
+      name: Gem_Medium
       rect:
         serializedVersion: 2
         x: 64
@@ -5269,7 +5269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_213
+      name: Gem_Large
       rect:
         serializedVersion: 2
         x: 80
@@ -5290,7 +5290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_214
+      name: Gem_Huge
       rect:
         serializedVersion: 2
         x: 96
@@ -5311,7 +5311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_215
+      name: Gem_Gigantic
       rect:
         serializedVersion: 2
         x: 112
