@@ -340,7 +340,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="follower_thrrow_impat" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}">
+								<Event Name="follower_throw_impact" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}">
 									<ChildrenList>
 										<Action Name="" ID="{28B11B16-7BFE-4429-A5D0-1033F94AB3FB}" ShortID="866532257">
 											<ReferenceList>

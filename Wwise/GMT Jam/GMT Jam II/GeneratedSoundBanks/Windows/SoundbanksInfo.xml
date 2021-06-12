@@ -34,6 +34,14 @@
 							<ShortName>3+ followers.wav</ShortName>
 							<Path>SFX\3+ followers_D79FB2B7.wem</Path>
 						</File>
+						<File Id="602874163" Language="SFX">
+							<ShortName>5+ followers_2.wav</ShortName>
+							<Path>SFX\5+ followers_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="610486827" Language="SFX">
+							<ShortName>7+ followers.wav</ShortName>
+							<Path>SFX\7+ followers_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1051104496" Language="SFX">
 							<ShortName>1 follower.wav</ShortName>
 							<Path>SFX\1 follower_D79FB2B7.wem</Path>

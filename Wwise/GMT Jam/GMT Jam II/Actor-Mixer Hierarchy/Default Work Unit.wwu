@@ -61,20 +61,20 @@
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>15.14285</XPos>
-														<YPos>-6.24237</YPos>
+														<XPos>5</XPos>
+														<YPos>-6</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>15.2857142857143</XPos>
-														<YPos>-6.26907426629844</YPos>
+														<XPos>15.10831</XPos>
+														<YPos>-13.27114</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Exp1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>50</XPos>
-														<YPos>-12.26298</YPos>
+														<YPos>-20.68309</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -713,12 +713,27 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="followers" ID="{BE6F5E31-AF9B-4174-BB05-1739FF66A3C2}" ShortID="711709421">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+									<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="SFXreverb" ID="{EBF3F018-ADCD-41DC-AF91-C73C872A8D28}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -830,11 +845,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -917,7 +927,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
