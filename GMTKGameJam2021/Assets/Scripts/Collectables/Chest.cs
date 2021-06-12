@@ -34,7 +34,7 @@ namespace Collectables
                 totalChestValue -= collectibleToSpawn.GetNumericValue();
 
             } while (totalChestValue > 0);
-            base.OnCollect(collector);
+            //base.OnCollect(collector);
         }
     
         public override int GetNumericValue()
