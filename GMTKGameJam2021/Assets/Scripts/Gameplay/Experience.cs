@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Gameplay
@@ -6,9 +7,15 @@ namespace Gameplay
     {
         public Integer points;
         public Integer maxExp;
+
+        public void OnDestroy()
+        {
+          points.value = 0;
+        }
+
         public void Add(int value)
         {
-            points.value += value;
+            points += value;
         }
     }
 }
