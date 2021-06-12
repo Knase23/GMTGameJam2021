@@ -6,7 +6,7 @@ using UnityEngine;
 public class AINavigation : MonoBehaviour
 {
     private Rigidbody _rigidbody;
-    public int speed;
+    public float speed;
 
     public Vector3 inputDirection;
     // Start is called before the first frame update
