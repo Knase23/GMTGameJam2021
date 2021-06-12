@@ -517,10 +517,10 @@ TextureImporter:
     second: GMTK_sprites_170
   - first:
       213: -5563984507349847695
-    second: GMTK_sprites_171
+    second: Rock_01
   - first:
       213: -1564926406804974399
-    second: GMTK_sprites_172
+    second: Rock_02
   - first:
       213: 1851892405447580803
     second: GMTK_sprites_173
@@ -529,7 +529,7 @@ TextureImporter:
     second: GMTK_sprites_174
   - first:
       213: 8874027158576717075
-    second: GMTK_sprites_175
+    second: Mushroom
   - first:
       213: 3775537160910153858
     second: GMTK_sprites_176
@@ -538,22 +538,22 @@ TextureImporter:
     second: GMTK_sprites_177
   - first:
       213: 7288303874394651222
-    second: GMTK_sprites_178
+    second: Bush_01
   - first:
       213: 2387515942389452222
-    second: GMTK_sprites_179
+    second: Bush_02
   - first:
       213: -3045404313122428973
-    second: GMTK_sprites_180
+    second: Bush_03
   - first:
       213: -2120744537567383255
-    second: GMTK_sprites_181
+    second: Bush_04
   - first:
       213: -126949395315089461
-    second: GMTK_sprites_182
+    second: Bush_05
   - first:
       213: -8350571797254303190
-    second: GMTK_sprites_183
+    second: Bush_06
   - first:
       213: 8293088592999487052
     second: GMTK_sprites_184
@@ -703,7 +703,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4387,15 +4387,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_171
+      name: Rock_01
       rect:
         serializedVersion: 2
         x: 48
         y: 160
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4408,15 +4408,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_172
+      name: Rock_02
       rect:
         serializedVersion: 2
         x: 64
         y: 160
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4471,15 +4471,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_175
+      name: Mushroom
       rect:
         serializedVersion: 2
         x: 112
         y: 160
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4534,15 +4534,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_178
+      name: Bush_01
       rect:
         serializedVersion: 2
         x: 32
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4555,15 +4555,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_179
+      name: Bush_02
       rect:
         serializedVersion: 2
         x: 48
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4576,15 +4576,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_180
+      name: Bush_03
       rect:
         serializedVersion: 2
         x: 64
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4597,15 +4597,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_181
+      name: Bush_04
       rect:
         serializedVersion: 2
         x: 80
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4618,15 +4618,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_182
+      name: Bush_05
       rect:
         serializedVersion: 2
         x: 96
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4639,15 +4639,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_183
+      name: Bush_06
       rect:
         serializedVersion: 2
         x: 112
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

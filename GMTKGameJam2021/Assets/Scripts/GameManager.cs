@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AkSoundEngine.PostEvent("reverb_off", this.gameObject);
         ServiceLocator.Initialize();
     }
 
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            ServiceLocator.GetService<IAudioService>().PlaySFX("Test");
+            ServiceLocator.GetService<IAudioService>().PlaySFX("test1");
         }
     }
 }
