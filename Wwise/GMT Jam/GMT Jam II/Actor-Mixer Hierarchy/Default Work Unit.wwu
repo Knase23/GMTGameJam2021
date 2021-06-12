@@ -41,6 +41,16 @@
 					<ChildrenList>
 						<ActorMixer Name="footsteps" ID="{FEB1ADDC-8076-4F58-AC2B-2FB27734DC3A}" ShortID="144519049">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{38D5D8C5-7598-4516-9C34-313BE79986A5}" ShortID="371475828">
@@ -62,7 +72,7 @@
 													</Point>
 													<Point>
 														<XPos>4</XPos>
-														<YPos>-9</YPos>
+														<YPos>-12</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
