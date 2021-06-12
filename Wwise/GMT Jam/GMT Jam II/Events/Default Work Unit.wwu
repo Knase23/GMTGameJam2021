@@ -378,6 +378,7 @@
 										<Action Name="" ID="{F1F5592D-8F55-43EA-8D53-BB493DC5B007}" ShortID="999171444">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -400,6 +401,7 @@
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
