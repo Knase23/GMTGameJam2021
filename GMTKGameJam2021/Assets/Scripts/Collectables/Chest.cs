@@ -18,6 +18,7 @@ namespace Collectables
         public override void OnCollect(Collect collector)
         {
             if (opened) return;
+            Debug.Log("Chest Spit out!");
             opened = true;
             do
             {
@@ -36,7 +37,7 @@ namespace Collectables
                 totalChestValue -= collectibleToSpawn.GetNumericValue();
 
             } while (totalChestValue > 0);
-            // base.OnCollect(collector);
+            //base.OnCollect(collector);
         }
 
         public override int GetNumericValue()

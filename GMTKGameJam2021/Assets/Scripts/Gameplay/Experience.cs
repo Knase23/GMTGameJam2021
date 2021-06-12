@@ -4,11 +4,11 @@ namespace Gameplay
 {
     public class Experience : MonoBehaviour
     {
-        private int _value;
+        public Integer points;
 
         public void Add(int value)
         {
-            _value += value;
+            points.value += value;
         }
     }
 }
