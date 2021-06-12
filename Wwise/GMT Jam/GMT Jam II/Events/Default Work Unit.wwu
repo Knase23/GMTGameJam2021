@@ -327,6 +327,58 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="follower interaction" ID="{AEF70D45-7E08-4735-8645-2DF4E1498B06}" ShortID="586373615">
+							<ChildrenList>
+								<Event Name="follower_pickup" ID="{131E38A7-3A50-420F-B684-228DF7B76097}">
+									<ChildrenList>
+										<Action Name="" ID="{8279230D-B91C-4EC5-8C7C-167512EE85BF}" ShortID="464876688">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="pickup" ID="{014F558F-CDC0-42B1-9584-B1C95245EF24}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="follower_thrrow_impat" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}">
+									<ChildrenList>
+										<Action Name="" ID="{28B11B16-7BFE-4429-A5D0-1033F94AB3FB}" ShortID="866532257">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="throw_impact" ID="{117B2635-BB15-4510-9F19-54A4F48F0EAA}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="follower_throw" ID="{065E3684-1736-4D80-9024-26F5C0287E44}">
+									<ChildrenList>
+										<Action Name="" ID="{A4542065-4F2A-4F25-B474-9E4AE9E578B4}" ShortID="631574058">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="throw" ID="{C973DAC3-0F26-42C2-A175-4331948E296F}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MUSIC" ID="{2906232E-1965-4009-BBEF-8D8C45FF5DCC}" ShortID="151014170">
+					<ChildrenList>
+						<Event Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}">
+							<ChildrenList>
+								<Action Name="" ID="{E0F66B8A-8E1E-4294-90AF-9BE8EA8C9662}" ShortID="874559148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main theme" ID="{20D08F30-F065-48C7-88B7-BDD6C3BF4E7C}" WorkUnitID="{39868383-51F9-4DD1-A233-EB69C730DBE5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
