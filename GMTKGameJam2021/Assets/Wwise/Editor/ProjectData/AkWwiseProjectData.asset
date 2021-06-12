@@ -147,8 +147,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\follower interaction\follower_pickup
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.772766
+      minDuration: 0.772766
     - name: follower_throw
       guid: 84365e063617804d902426f5c0287e44
       id: 3054631418
@@ -163,8 +163,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\follower interaction\follower_throw
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.660715
+      minDuration: 0.240005
     - name: follower_thrrow_impat
       guid: 85ad6c0146d0f543bba671c9f0fa8e73
       id: 1416389536
@@ -233,8 +233,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\reverb states\reverb_large
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: reverb_medium
       guid: fad648a09beeec47bdd124adfd03f14d
       id: 4066469909
@@ -249,8 +249,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\reverb states\reverb_medium
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: reverb_off
       guid: df642c1dcc9a874aa31050050fe658e3
       id: 2902570199
@@ -265,8 +265,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\reverb states\reverb_off
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: reverb_small
       guid: f800489a978c4544a4844b8f0b33f46b
       id: 933527613
@@ -281,8 +281,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\reverb states\reverb_small
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SFX
       guid: ae648ede2fb8a94cbdbea5e9a7ee014e
       id: 393239870
@@ -309,8 +309,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_00
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.108243
+      minDuration: 0.059499
     - name: step_01
       guid: 5882f4c88624d24d982afea721fd22cc
       id: 725847331
@@ -325,8 +325,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_01
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.233164
+      minDuration: 0.139928
     - name: step_02
       guid: 3f9ff3d8bbc8da45a40e8fdeeffd615f
       id: 725847328
@@ -341,8 +341,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_02
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.275606
+      minDuration: 0.172821
     - name: step_03
       guid: 8a69f3ab96695a4d9d2ad57ac0f70ef1
       id: 725847329
@@ -357,8 +357,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_03
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.264727
+      minDuration: 0.181127
     - name: step_04
       guid: abb7e9009fd0224a87d46098c56d2cf0
       id: 725847334
@@ -373,8 +373,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_04
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.064557
+      minDuration: 0.044423
     - name: step_05
       guid: a943d0914a4e204e9c04bfb2f5ca801e
       id: 725847335
@@ -389,8 +389,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_05
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.126897
+      minDuration: 0.077704
     - name: step_player
       guid: 9f5d9ef23d7f934daa3536ddf71343f0
       id: 3589785957
@@ -405,8 +405,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\steps\step_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.170638
+      minDuration: 0.107
     - name: steps
       guid: 9424f7eb1f481443afa798fbfb53ae2e
       id: 1718617278
@@ -433,8 +433,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_All
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: stop_Music
       guid: e6de4e6960bb3f4581446b92d3d491ab
       id: 2837384057
@@ -447,8 +447,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: stop_SFX
       guid: 139c34a1a13dad4796e720ed76c76b12
       id: 287728669
@@ -461,8 +461,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\META\stop_SFX
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: TEst
       guid: 0955ef0abb1b5f44a9f9c17a06a18dbd
       id: 3157003241
@@ -487,8 +487,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\TEst\test1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 10.948209
+      minDuration: 10.948209
     - name: test2
       guid: e7a5b0b45b18db4f89dfe658ed96e838
       id: 576110585
@@ -501,8 +501,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\TEst\test2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -595,7 +595,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585781623764718741
     List: []
-  ExpandedItems:
-  - /GMT Jam II
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
