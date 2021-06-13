@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChestPlacement.unity
     guid: b53932f38fe8ac744985aaae37ebcd7a
+  - enabled: 1
+    path: Assets/Scenes/Puzzles.unity
+    guid: 5b29eb280a53a2048b30124878bbf8ef
+  - enabled: 1
+    path: Assets/Scenes/EnemyPlacement.unity
+    guid: c26ebad64869a9f4684a6442b86745f2
   m_configObjects: {}

@@ -332,17 +332,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &875124607 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5552807079748247468, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
-  m_PrefabInstance: {fileID: 1297840169569738776}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f70233001d73c6f4a9e24106834106c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1064676640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,7 +5298,6 @@ GameObject:
   - component: {fileID: 1498175615}
   - component: {fileID: 1498175614}
   - component: {fileID: 1498175613}
-  - component: {fileID: 1498175612}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Ground
@@ -5317,20 +5305,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1498175612
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498175611}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1498175613
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5539,6 +5513,11 @@ Transform:
   m_Father: {fileID: 1102363806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 47.662, y: 0, z: 0}
+--- !u!64 &1887819706 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 1297840169428748034, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+  m_PrefabInstance: {fileID: 1297840169569738776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2015480429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,10 +5607,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1297840170677484241, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
-      propertyPath: wobble
+    - target: {fileID: 1297840170677484240, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297840170677484240, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297840170677484240, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_Size.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297840170890269344, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: colliders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297840170890269344, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 875124607}
+      objectReference: {fileID: 1887819706}
     - target: {fileID: 1297840170890269357, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: m_Name
       value: ImprovedSpinBuilding
@@ -5704,22 +5699,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: fadeAwaySprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 2015480430}
-    - target: {fileID: 0}
-      propertyPath: fadeAwaySprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 1827538707}
-    - target: {fileID: 0}
-      propertyPath: fadeAwaySprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 114229189}
-    - target: {fileID: 0}
-      propertyPath: fadeAwaySprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 1064676641}
     m_RemovedComponents:
     - {fileID: 1297840170439456609, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}

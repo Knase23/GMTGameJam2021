@@ -17,6 +17,7 @@ public class GapAndBridge : MonoBehaviour
     void Start()
     {
         bridgePiece.sprite = gapWithoutBridge;
+        bridgeBuilt.flag = false;
     }
 
     void Update()
@@ -30,7 +31,7 @@ public class GapAndBridge : MonoBehaviour
 
     private void UpdateBridge()
     {
-        barrier.enabled = !bridgeBuilt.flag;
+        barrier.gameObject.SetActive(!bridgeBuilt.flag);
         bridgePiece.sprite = bridgeBuilt.flag ? gapWithBridge : gapWithoutBridge;
     }
 }

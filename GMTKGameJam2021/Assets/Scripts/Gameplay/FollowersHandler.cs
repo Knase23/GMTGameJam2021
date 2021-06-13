@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Services;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FollowersHandler : MonoBehaviour
 {
     public int amountOfFollowers;
-    
+    public UnityEvent<int> OnAmountOfFollowersUpdate;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -18,6 +19,7 @@ public class FollowersHandler : MonoBehaviour
             if (thrown)
             {
                 amountOfFollowers--;
+                OnAmountOfFollowersUpdate?.Invoke(amountOfFollowers);
                 ServiceLocator.GetService<IAudioService>().SetRTPC("followers",amountOfFollowers);
                 first = thrown.behindFollower;
                 thrown.thrownBehaviour.GetThrown(throwDirection);
@@ -30,6 +32,7 @@ public class FollowersHandler : MonoBehaviour
     public void AddFollower(Follower follower)
     {
         amountOfFollowers++;
+        OnAmountOfFollowersUpdate?.Invoke(amountOfFollowers);
         ServiceLocator.GetService<IAudioService>().SetRTPC("followers",amountOfFollowers);
         
         ServiceLocator.GetService<IAudioService>().PlaySFX("follower_pickup");
