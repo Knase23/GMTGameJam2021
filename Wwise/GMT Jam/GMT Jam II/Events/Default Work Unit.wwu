@@ -103,6 +103,34 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="ogre_aggro" ID="{5E68FA88-C138-490F-B122-2AA4760636BA}">
+							<ChildrenList>
+								<Action Name="" ID="{A3CE1505-E42A-421C-B160-B7D0489A1D0C}" ShortID="596990855">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="yes" ID="{F1974978-CD87-4393-94C6-7B57B8831D76}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ogre_defeat" ID="{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}">
+							<ChildrenList>
+								<Action Name="" ID="{7D895149-8D91-418F-A3B0-D599ED5FC3C3}" ShortID="683273217">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="no" ID="{AF97F0AE-D6FE-49FE-B026-EE54BD86FCCB}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" ShortID="801514613">
@@ -411,6 +439,39 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="button_pressed" ID="{A681C926-3A8E-4106-8746-9FF6D2404FAE}">
+									<ChildrenList>
+										<Action Name="" ID="{1F8E5D7F-80EC-49EB-AFA4-F67E0193AEE4}" ShortID="340241620">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="button in" ID="{ABA71FDE-ECA9-44FF-B4D9-08965AC8BC0D}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="chest_open" ID="{6AB1B1E9-BF6F-4659-ACEA-54852575CA06}">
+									<ChildrenList>
+										<Action Name="" ID="{73E59478-2F62-461E-A64F-560E14BFC8D5}" ShortID="240780224">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="chestfriend" ID="{EA437719-EFF2-4B34-8DE7-EC7B7D7E467F}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="button_up" ID="{4E407FE3-1DE6-4FAE-8231-D27B0FF7C92F}">
+									<ChildrenList>
+										<Action Name="" ID="{16B5A4E8-B5D7-44D2-92E3-E84D4C5EB182}" ShortID="961354630">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="button up" ID="{4B858601-3F5D-464E-894A-2880281C0307}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" ShortID="264608202">
@@ -445,10 +506,23 @@
 					<ChildrenList>
 						<Event Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}">
 							<ChildrenList>
-								<Action Name="" ID="{E0F66B8A-8E1E-4294-90AF-9BE8EA8C9662}" ShortID="874559148">
+								<Action Name="" ID="{586DBDBA-724C-4034-B3D6-653171D1002F}" ShortID="880494470">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main theme" ID="{20D08F30-F065-48C7-88B7-BDD6C3BF4E7C}" WorkUnitID="{39868383-51F9-4DD1-A233-EB69C730DBE5}"/>
+											<ObjectRef Name="no" ID="{AF97F0AE-D6FE-49FE-B026-EE54BD86FCCB}" WorkUnitID="{79F658FD-2BBC-46BE-80FF-E5A3D7242DC0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E0F66B8A-8E1E-4294-90AF-9BE8EA8C9662}" ShortID="874559148">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main theme" ID="{3ECDF291-2B6E-4D2E-8DC0-8BA9CB8C2489}" WorkUnitID="{39868383-51F9-4DD1-A233-EB69C730DBE5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

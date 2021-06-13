@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3366828627	reverbstates			\Default Work Unit\reverbstates	
+	3461823680	ogre			\Default Work Unit\ogre	
 
 State	ID	Name	State Group			Notes
 	748895195	None	reverbstates			
@@ -7,6 +8,9 @@ State	ID	Name	State Group			Notes
 	1846755610	small	reverbstates			
 	2849147824	medium	reverbstates			
 	4284352190	large	reverbstates			
+	748895195	None	ogre			
+	979470758	yes	ogre			
+	1668749452	no	ogre			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	415203114	large	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
@@ -15,7 +19,10 @@ Custom State	ID	Name	State Group	Owner		Notes
 	867382597	off	reverbstates	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	508837873	music_v			\Default Work Unit\music_v	
+	1124208233	SFX_v			\Default Work Unit\SFX_v	
 	2629562184	inside_building			\Default Work Unit\inside_building	
+	4219476312	master_v			\Default Work Unit\master_v	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

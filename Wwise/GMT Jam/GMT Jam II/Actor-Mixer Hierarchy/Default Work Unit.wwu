@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}" PersistMode="Standalone">
 			<ChildrenList>
 				<RandomSequenceContainer Name="TEST" ID="{2C756807-602B-4F93-8D18-F13C5F4141E2}" ShortID="843117003">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -14,6 +17,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="heavy-pissbaby" ID="{EC2BDB0E-6B56-4C0B-A48E-1906CFD0ABD3}" ShortID="899683486">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -33,6 +43,35 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="heavy-pissbaby" ID="{8E29279E-770B-46F6-B4C3-86AA07CDEA21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="chest blip" ID="{4F11337F-6895-45F2-9378-2DFBF20F551B}" ShortID="361771626">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>70</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chest blip" ID="{7738B05E-74AD-4D7E-81EA-8C6D819E11DE}">
+									<Language>SFX</Language>
+									<AudioFile>chest blip.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="338668546"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chest blip" ID="{7738B05E-74AD-4D7E-81EA-8C6D819E11DE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1009,6 +1048,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="in n out" ID="{FD02D19D-1357-4579-AD39-C1EC00D50CF8}" ShortID="201266216">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -1336,6 +1382,283 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="misc world interaction" ID="{E4338D75-0B79-48D8-9970-B8E75DCFC1C8}" ShortID="617342901">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="button" ID="{8437E48C-5B41-49B0-A344-F6B785F972AA}" ShortID="1040787932">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{01C0A7AF-A70E-4D28-8F90-D58A33B1693E}" ShortID="655633422" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="84"/>
+														<Property Name="DistortionTone" Type="Real32" Value="42"/>
+														<Property Name="DistortionType" Type="int32" Value="3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="4"/>
+														<Property Name="PreEQBand1Gain" Type="Real32" Value="2"/>
+														<Property Name="Rectification" Type="Real32" Value="37"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="button in" ID="{ABA71FDE-ECA9-44FF-B4D9-08965AC8BC0D}" ShortID="1023368643">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-350</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1BCCECBD-ECDA-4352-BA02-C6E2686DC3EE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="227"/>
+																	<Property Name="Min" Type="Real64" Value="-202"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Medium Button 004" ID="{78F93961-51DA-4896-97EE-42D49A608C81}" ShortID="561155625">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Medium Button 004" ID="{AFE5BE5E-C422-447E-8DF1-4E35E292FBA6}">
+															<Language>SFX</Language>
+															<AudioFile>Medium Button 004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="848653732"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Medium Button 004" ID="{AFE5BE5E-C422-447E-8DF1-4E35E292FBA6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="button up" ID="{4B858601-3F5D-464E-894A-2880281C0307}" ShortID="620897652">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>280</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9AC71AFE-148E-4B97-BB00-18C07BCCC961}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="202"/>
+																	<Property Name="Min" Type="Real64" Value="-177"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Medium Button 004" ID="{7823E0F1-FFB6-4DB5-A398-BB752CCB52B5}" ShortID="1073474208">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Medium Button 004" ID="{D29E4495-BC10-4721-AE8A-F003847C3EE5}">
+															<Language>SFX</Language>
+															<AudioFile>Medium Button 004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="848653732"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Medium Button 004" ID="{D29E4495-BC10-4721-AE8A-F003847C3EE5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<BlendContainer Name="chestfriend" ID="{EA437719-EFF2-4B34-8DE7-EC7B7D7E467F}" ShortID="273579939">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="chest" ID="{37151C04-E3DD-4B09-A8D7-B2A40ED8DBF1}" ShortID="524759605">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="chest blip" ID="{76AA4692-049D-4435-8C1A-1DDEFEF4A433}" ShortID="707238640">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="chest blip" ID="{DAD5816F-CE90-4F19-9B72-4615E4C84E25}">
+															<Language>SFX</Language>
+															<AudioFile>chest blip.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338668546"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="chest blip" ID="{DAD5816F-CE90-4F19-9B72-4615E4C84E25}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="button in" ID="{AFC46865-A43A-4E80-AA2C-0E23B7BDE5B3}" ShortID="770311800">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-630</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CBF5B3A4-5599-42E2-9A3F-9DEF22DD2B3F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="227"/>
+																	<Property Name="Min" Type="Real64" Value="-202"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{49985E11-0AD7-441B-9BF2-190ACB22B5FF}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Medium Button 004" ID="{9DB64E8B-C10C-4BAA-8C7D-DCA9ED4D4F2A}" ShortID="470587374">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Medium Button 004" ID="{BC0E2503-D51C-4CEE-A3E5-E45ABE951DC6}">
+															<Language>SFX</Language>
+															<AudioFile>Medium Button 004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="848653732"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Medium Button 004" ID="{BC0E2503-D51C-4CEE-A3E5-E45ABE951DC6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

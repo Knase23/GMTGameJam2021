@@ -21,6 +21,21 @@
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="SFX_v" ID="{5BC15DD2-2A85-4333-8123-D890DEA53AD3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="80"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="music_v" ID="{17E3BFE2-6E77-481B-A539-A859526A9F08}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="80"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="master_v" ID="{10224D12-C424-4441-AD23-7CCFE7BDF168}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

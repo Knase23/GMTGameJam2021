@@ -54,30 +54,59 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="button up" ID="{4B858601-3F5D-464E-894A-2880281C0307}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="rock_throw" ID="{1BC4B39B-44F1-4DD7-B125-71D9B68B8033}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ogre_aggro" ID="{5E68FA88-C138-490F-B122-2AA4760636BA}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="button in" ID="{ABA71FDE-ECA9-44FF-B4D9-08965AC8BC0D}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="rock_throw_impact" ID="{A57C21FB-4A0A-4CC5-8B10-B4FAD5926738}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ogre_defeat" ID="{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="3" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="inside_building" ID="{0AA0DC2B-F312-4047-93C8-45238F7540AD}"/>
-							<Value>1.41462221983701E-311</Value>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_v" ID="{5BC15DD2-2A85-4333-8123-D890DEA53AD3}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="master_v" ID="{10224D12-C424-4441-AD23-7CCFE7BDF168}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="music_v" ID="{17E3BFE2-6E77-481B-A539-A859526A9F08}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}"/>
-							<Value>8.62982962933922</Value>
+							<Value>9.5</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="small" ID="{79B2BA79-3B9B-4177-B4CC-F4567AA7EE4B}"/>
+						<CurrentStateRef Name="off" ID="{B9C8F746-F8F7-40FF-BCC7-D57062495439}"/>
+						<CurrentStateRef Name="no" ID="{AF97F0AE-D6FE-49FE-B026-EE54BD86FCCB}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
