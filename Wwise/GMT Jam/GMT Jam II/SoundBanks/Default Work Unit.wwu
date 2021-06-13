@@ -6,6 +6,8 @@
 				<SoundBank Name="Den_coola_starka_banken" ID="{7CCB99F2-1851-4F02-A583-0DBE60ACFE40}">
 					<ObjectInclusionList>
 						<ObjectRef Name="MUSIC" ID="{2906232E-1965-4009-BBEF-8D8C45FF5DCC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="button_pressed" ID="{A681C926-3A8E-4106-8746-9FF6D2404FAE}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="item_pickup" ID="{1891C9F5-DD7A-410B-99D7-DF24674AFF07}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb states" ID="{93B6CFE6-5B15-4162-A2BB-2FB46247C27D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower_pickup" ID="{131E38A7-3A50-420F-B684-228DF7B76097}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
@@ -19,6 +21,7 @@
 						<ObjectRef Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_exit" ID="{1D19579A-3731-45DE-8269-322D6E035F08}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="chest_open" ID="{6AB1B1E9-BF6F-4659-ACEA-54852575CA06}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_enter" ID="{E64E7F85-2111-4673-B4E8-3DF9E0E1C39C}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower interaction" ID="{AEF70D45-7E08-4735-8645-2DF4E1498B06}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
@@ -27,6 +30,8 @@
 						<ObjectRef Name="reverb_medium" ID="{A048D6FA-EE9B-47EC-BDD1-24ADFD03F14D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{35450022-E82E-483B-A80B-78D1CCB68E75}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ogre_aggro" ID="{5E68FA88-C138-490F-B122-2AA4760636BA}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ogre_defeat" ID="{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{DE8E64AE-B82F-4CA9-BDBE-A5E9A7EE014E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
@@ -41,6 +46,7 @@
 						<ObjectRef Name="test1" ID="{A822DF70-18BE-4E3F-BFFB-AD073D74C4F5}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="button_up" ID="{4E407FE3-1DE6-4FAE-8231-D27B0FF7C92F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
