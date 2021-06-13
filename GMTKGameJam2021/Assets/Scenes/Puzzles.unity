@@ -5684,19 +5684,19 @@ PrefabInstance:
       propertyPath: smoke
       value: 
       objectReference: {fileID: 1483035652}
-    - target: {fileID: 1297840171367976316, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: fadeAwaySprites.Array.data[0]
       value: 
       objectReference: {fileID: 2015480430}
-    - target: {fileID: 1297840171367976316, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: fadeAwaySprites.Array.data[1]
       value: 
       objectReference: {fileID: 1827538707}
-    - target: {fileID: 1297840171367976316, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: fadeAwaySprites.Array.data[2]
       value: 
       objectReference: {fileID: 114229189}
-    - target: {fileID: 1297840171367976316, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: fadeAwaySprites.Array.data[3]
       value: 
       objectReference: {fileID: 1064676641}
@@ -5704,6 +5704,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fadeAwaySprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 2015480430}
+    - target: {fileID: 0}
+      propertyPath: fadeAwaySprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1827538707}
+    - target: {fileID: 0}
+      propertyPath: fadeAwaySprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 114229189}
+    - target: {fileID: 0}
+      propertyPath: fadeAwaySprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1064676641}
     m_RemovedComponents:
     - {fileID: 1297840170439456609, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}

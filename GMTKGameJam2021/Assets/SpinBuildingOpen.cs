@@ -13,7 +13,7 @@ public class SpinBuildingOpen : MonoBehaviour
     public bool condition_one;
     public bool condition_two;
 
-    public BoxCollider entryWayCollider;
+    public MeshCollider entryWayCollider;
 
     void Start()
     {
