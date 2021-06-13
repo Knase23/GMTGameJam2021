@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenShake : MonoBehaviour
 {
+    private static ScreenShake _instance; 
+    
     private float _shakeStrength;
     private float _shakeTimer;
     
@@ -22,7 +25,34 @@ public class ScreenShake : MonoBehaviour
 
     private float _fadeOut = 1f;
     // Start is called before the first frame update
-    
+
+    private void Awake()
+    {
+        if (!_instance)
+        {
+            _instance = this;
+        }
+    }
+
+    public static void Shake(float timer)
+    {
+        if (_instance)
+        {
+            _instance._shakeTimer = timer ;
+        }
+    }
+    public static void Shake(float timer,Vector2 seed = new Vector2(), float speed = 1, float maxMagnitude = 1, float noiseMagnitude = 1, Vector2 direction = new Vector2())
+    {
+        if (_instance)
+        {
+            _instance.seed = seed;
+            _instance.speed = speed;
+            _instance.maxMagnitude = maxMagnitude;
+            _instance.noiseMagnitude = noiseMagnitude;
+            _instance.direction = direction;
+            _instance._shakeTimer = timer;
+        }
+    }
     
     private void Shake(float str, float time)
     {

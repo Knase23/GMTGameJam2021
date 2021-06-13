@@ -17,6 +17,7 @@ public class PlayerDetection : MonoBehaviour
     void Start()
     {
         nav = GetComponent<AINavigation>();
+        target = Player.Instance.transform;
     }
 
     void Update()

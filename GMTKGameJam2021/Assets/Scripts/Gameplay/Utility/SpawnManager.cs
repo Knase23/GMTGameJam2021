@@ -51,7 +51,6 @@ namespace Gameplay.Utility
             foreach (GameObject o in gameObjects)
             {
                 Collectible c = o.GetComponent<Collectible>();
-                Debug.Log(c);
                 if (c)
                 {
                     if(c.spawnType == Spawnable.NONE) continue;
