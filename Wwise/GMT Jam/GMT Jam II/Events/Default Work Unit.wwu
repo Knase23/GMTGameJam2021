@@ -528,6 +528,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="player_lvlup" ID="{F4D5AC1C-51AB-4A65-8144-DCF22EAD3EFF}">
+									<ChildrenList>
+										<Action Name="" ID="{34A940F7-96E3-4D15-8D08-6DEB35C733E9}" ShortID="436250826">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="lvlup" ID="{FDF7B4EC-F7D3-47B3-8307-A84617CA3619}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" ShortID="264608202">
@@ -549,6 +560,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="throw_impact" ID="{0CDD9C63-617A-4E3A-AE0E-AAAB90A68FC2}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="rock_pickup" ID="{AE911B07-2B25-41F1-8764-10E137CF57AB}">
+									<ChildrenList>
+										<Action Name="" ID="{B2BD4480-1174-45E9-8304-5AEEB3A5EC38}" ShortID="384197240">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="pickup" ID="{D3E4B33D-E170-4A72-9697-914E6534CB1C}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

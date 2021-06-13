@@ -105,6 +105,10 @@
 							<ObjectRef Name="ogre_damaged" ID="{8C35975E-6467-4AA2-AF23-59DA2142A150}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="6"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="stop_all_with_fade" ID="{ACBAB4E4-9486-4739-9ED0-EFE3AD4B7FAC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

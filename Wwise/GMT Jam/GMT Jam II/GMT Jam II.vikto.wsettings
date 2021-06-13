@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{5B3A3D24-344A-42AD-84BC-E6C84152A865}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\vikto\Desktop\visa game jam kompisar\ljud exporterat\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\vikto\Desktop\visa game jam kompisar\"/>
 				<Property Name="Event Action List\{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{065E3684-1736-4D80-9024-26F5C0287E44}\x64_Expand States" Type="string" Value=""/>
@@ -35,6 +35,8 @@
 				<Property Name="Event Action List\{A681C926-3A8E-4106-8746-9FF6D2404FAE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A822DF70-18BE-4E3F-BFFB-AD073D74C4F5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{ABF3698A-6996-4D5A-9D2A-D57AC0F70EF1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{ACBAB4E4-9486-4739-9ED0-EFE3AD4B7FAC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AE911B07-2B25-41F1-8764-10E137CF57AB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C090AECF-E9B5-4357-BE0C-58C939910AD8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C8F48258-2486-4DD2-982A-FEA721FD22CC}\x64_Expand States" Type="string" Value=""/>
@@ -42,6 +44,7 @@
 				<Property Name="Event Action List\{E64E7F85-2111-4673-B4E8-3DF9E0E1C39C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EA55C6F2-B53C-414B-86B9-FBD135E42104}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F29E5D9F-7F3D-4D93-AA35-36DDF71343F0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F4D5AC1C-51AB-4A65-8144-DCF22EAD3EFF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
