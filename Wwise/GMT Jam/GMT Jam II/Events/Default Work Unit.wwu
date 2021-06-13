@@ -131,6 +131,18 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="stop_all_with_fade" ID="{ACBAB4E4-9486-4739-9ED0-EFE3AD4B7FAC}">
+							<ChildrenList>
+								<Action Name="" ID="{FB52CC59-E324-4F0E-9BCD-C10FE667CCA6}" ShortID="477526167">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" ShortID="801514613">
@@ -597,6 +609,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Main theme" ID="{3ECDF291-2B6E-4D2E-8DC0-8BA9CB8C2489}" WorkUnitID="{39868383-51F9-4DD1-A233-EB69C730DBE5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="bgm_game_over" ID="{86E9686C-806D-4FBF-9077-3B20B00EA224}">
+							<ChildrenList>
+								<Action Name="" ID="{77A7C9F3-641D-4440-AC48-6554DC1A0A97}" ShortID="208806885">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="game  over" ID="{BD225EF8-73DE-4693-8F69-B8003B5020B9}" WorkUnitID="{39868383-51F9-4DD1-A233-EB69C730DBE5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

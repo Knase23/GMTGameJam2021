@@ -54,6 +54,7 @@
 						<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="button_up" ID="{4E407FE3-1DE6-4FAE-8231-D27B0FF7C92F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="bgm_game_over" ID="{86E9686C-806D-4FBF-9077-3B20B00EA224}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
