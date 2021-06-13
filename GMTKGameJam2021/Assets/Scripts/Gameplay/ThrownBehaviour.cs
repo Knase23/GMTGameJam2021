@@ -14,11 +14,11 @@ public class ThrownBehaviour : MonoBehaviour
 
     public Transform billboardCharacter;
     public bool hitSomething;
-    
+
     public float timeInAir = 0.55f;
     public float timer;
     public float maxJumpHeight = 5;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,9 +49,9 @@ public class ThrownBehaviour : MonoBehaviour
 
             if (timer > timeInAir)
                 timer = timeInAir;
-            
-            float percentHalf = timer/(timeInAir *0.5f);
-            
+
+            float percentHalf = timer / (timeInAir * 0.5f);
+
             if (percentHalf > 1)
             {
                 float remover = percentHalf - 1;

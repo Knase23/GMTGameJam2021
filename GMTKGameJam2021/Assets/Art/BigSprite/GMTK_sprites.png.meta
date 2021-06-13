@@ -322,16 +322,16 @@ TextureImporter:
     second: GMTK_sprites_105
   - first:
       213: -6769221904418894149
-    second: GMTK_sprites_106
+    second: Button_Left
   - first:
       213: 710386083244611422
-    second: GMTK_sprites_107
+    second: Button_Left_Pressed
   - first:
       213: 2609041225830746574
-    second: GMTK_sprites_108
+    second: Button_Right_Pressed
   - first:
       213: 8228735524934738271
-    second: GMTK_sprites_109
+    second: Button_Right
   - first:
       213: 7436089577817196406
     second: GMTK_sprites_110
@@ -3022,15 +3022,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_106
+      name: Button_Left
       rect:
         serializedVersion: 2
         x: 32
         y: 288
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3043,15 +3043,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_107
+      name: Button_Left_Pressed
       rect:
         serializedVersion: 2
         x: 48
         y: 288
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3064,15 +3064,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_108
+      name: Button_Right_Pressed
       rect:
         serializedVersion: 2
         x: 64
         y: 288
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3085,15 +3085,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_109
+      name: Button_Right
       rect:
         serializedVersion: 2
         x: 80
         y: 288
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

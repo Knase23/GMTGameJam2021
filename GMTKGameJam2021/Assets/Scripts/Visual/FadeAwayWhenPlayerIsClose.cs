@@ -6,21 +6,27 @@ public class FadeAwayWhenPlayerIsClose : MonoBehaviour
 {
 
     public bool BlackOutCamera;
+
+    private Renderer ground;
+
     private Color cameraBackgroundBaseColor;
 
-    bool FadeOut;
+    public bool fadeOut;
+    public static bool fadeGround;
+    public static float fadeGroundLerp;
     public List<Renderer> fadeAwayWithMaterial;
     public List<SpriteRenderer> fadeAwaySprites;
 
     public List<SpriteRenderer> fadeInSprites;
 
-    float fadeTimer;
+    public float fadeTimer;
 
     private void OnTriggerEnter(Collider other)
     {
         if ((other.CompareTag("Player")))
         {
-            FadeOut = true;
+            fadeOut = true;
+            fadeGround = true;
         }
     }
 
@@ -28,18 +34,20 @@ public class FadeAwayWhenPlayerIsClose : MonoBehaviour
     {
         if ((other.CompareTag("Player")))
         {
-            FadeOut = false;
+            fadeOut = false;
+            fadeGround = false;
         }
     }
 
     private void Start()
     {
         cameraBackgroundBaseColor = Camera.main.backgroundColor;
+        ground = GameObject.FindWithTag("Ground").GetComponent<Renderer>();
     }
 
     private void Update()
     {
-        if (FadeOut)
+        if (fadeOut)
         {
             fadeTimer += Time.deltaTime * 2;
         }
@@ -77,6 +85,15 @@ public class FadeAwayWhenPlayerIsClose : MonoBehaviour
         if (BlackOutCamera)
         {
             Camera.main.backgroundColor = Color.Lerp(cameraBackgroundBaseColor, Color.black, fadeTimer);
+
+
         }
+
+        fadeGroundLerp += (fadeGround ? 1f : -1f) * Time.deltaTime;
+        fadeGroundLerp = fadeGroundLerp > 1 ? 1 : fadeGroundLerp;
+        fadeGroundLerp = fadeGroundLerp < 0 ? 0 : fadeGroundLerp;
+
+        ground.material.color = Color.Lerp(Color.white, Color.black, fadeGroundLerp);
+
     }
 }
