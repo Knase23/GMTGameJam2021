@@ -78,6 +78,10 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="ogre_attack" ID="{2FEF7B73-7937-45B2-ACBF-5BF59CDC0A0F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="2" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -92,6 +96,10 @@
 						<Module>
 							<ObjectRef Name="ogre_defeat" ID="{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
 							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ogre_damaged" ID="{8C35975E-6467-4AA2-AF23-59DA2142A150}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}"/>
+							<Position X="3" Y="6"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

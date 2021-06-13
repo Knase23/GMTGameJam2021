@@ -483,8 +483,39 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="building_y" ID="{EA55C6F2-B53C-414B-86B9-FBD135E42104}"/>
-								<Event Name="building_x" ID="{226709A3-480E-4361-8D94-DA4750ADD00F}"/>
+								<Event Name="building_updog" ID="{EA55C6F2-B53C-414B-86B9-FBD135E42104}">
+									<ChildrenList>
+										<Action Name="" ID="{DF95D024-CAA9-4DB2-B2F0-258248FD95C8}" ShortID="317607326">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="elevate" ID="{286EC384-2417-4BEC-BE69-BD493ACE1B4C}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="building_rotate" ID="{226709A3-480E-4361-8D94-DA4750ADD00F}">
+									<ChildrenList>
+										<Action Name="" ID="{B6C16F76-1F29-4164-9E71-EDC83DC26957}" ShortID="365539492">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="turn" ID="{6AAE40F9-C352-4C78-A95E-47E8A2940474}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="building_impact" ID="{3151A696-0D81-4344-BAD3-AB9B8A1869CC}">
+									<ChildrenList>
+										<Action Name="" ID="{BC79CD2A-8895-401E-A129-2EB3CEFA5B3F}" ShortID="132110461">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="loc" ID="{B4EA0486-3D67-4CDE-ABAA-A3DFE8E2CD26}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" ShortID="264608202">
@@ -511,6 +542,36 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="enemies" ID="{D70914DD-4721-40CD-9B32-D13ABD4C2584}" ShortID="238228615">
+							<ChildrenList>
+								<Folder Name="ogre" ID="{E8C652F1-2CB1-4214-8581-1313F0BD9C11}" ShortID="700320113">
+									<ChildrenList>
+										<Event Name="ogre_attack" ID="{2FEF7B73-7937-45B2-ACBF-5BF59CDC0A0F}">
+											<ChildrenList>
+												<Action Name="" ID="{486D6DA0-60D5-42E1-A489-82E5A666C166}" ShortID="976564394">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="attack" ID="{1F5BBAE5-097D-4029-98F0-656CDC4D3D11}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="ogre_damaged" ID="{8C35975E-6467-4AA2-AF23-59DA2142A150}">
+											<ChildrenList>
+												<Action Name="" ID="{B8D87E33-FFF9-49F9-8800-962CD0097795}" ShortID="672910788">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="damage" ID="{9926BC59-0140-4568-87B9-D2228538C66F}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

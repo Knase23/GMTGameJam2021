@@ -30,6 +30,14 @@
 			<ShortName>Den_coola_starka_banken</ShortName>
 			<Path>Den_coola_starka_banken.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2083141079" Name="bgm_game_over" ObjectPath="\Events\Default Work Unit\MUSIC\bgm_game_over" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="659446272" Language="SFX">
+							<ShortName>gaemovr.wav</ShortName>
+							<Path>SFX\gaemovr_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2633060887" Name="bgm_main" ObjectPath="\Events\Default Work Unit\MUSIC\bgm_main" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="126464705" Language="SFX">
@@ -208,6 +216,30 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1244648727" Name="ogre_aggro" ObjectPath="\Events\Default Work Unit\META\ogre_aggro" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="348796695" Name="ogre_attack" ObjectPath="\Events\Default Work Unit\SFX\enemies\ogre\ogre_attack" DurationType="OneShot" DurationMin="0.349771" DurationMax="0.364646">
+					<IncludedMemoryFiles>
+						<File Id="130264815" Language="SFX">
+							<ShortName>ogre attack1.wav</ShortName>
+							<Path>SFX\ogre attack1_10C4C929.wem</Path>
+						</File>
+						<File Id="548212384" Language="SFX">
+							<ShortName>ogre attack.wav</ShortName>
+							<Path>SFX\ogre attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3413990684" Name="ogre_damaged" ObjectPath="\Events\Default Work Unit\SFX\enemies\ogre\ogre_damaged" DurationType="OneShot" DurationMin="0.326542" DurationMax="0.380958">
+					<IncludedMemoryFiles>
+						<File Id="448428964" Language="SFX">
+							<ShortName>orgre damage.wav</ShortName>
+							<Path>SFX\orgre damage_10C4C929.wem</Path>
+						</File>
+						<File Id="890175924" Language="SFX">
+							<ShortName>orgre damage1.wav</ShortName>
+							<Path>SFX\orgre damage1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3884605250" Name="ogre_defeat" ObjectPath="\Events\Default Work Unit\META\ogre_defeat" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1802791965" Name="player_enter" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_enter" DurationType="OneShot" DurationMin="0.230792" DurationMax="0.230792">
 					<IncludedMemoryFiles>
@@ -217,7 +249,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="202487633" Name="player_exit" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_exit" DurationType="OneShot" DurationMin="0.318708" DurationMax="0.318708">
+				<Event Id="202487633" Name="player_exit" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_exit" DurationType="OneShot" DurationMin="0.818708" DurationMax="0.818708">
 					<IncludedMemoryFiles>
 						<File Id="831402325" Language="SFX">
 							<ShortName>ut.wav</ShortName>

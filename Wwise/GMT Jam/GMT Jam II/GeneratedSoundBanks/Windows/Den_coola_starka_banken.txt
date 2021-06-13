@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	202487633	player_exit			\Default Work Unit\SFX\world interaction\player_exit	
 	287728669	stop_SFX			\Default Work Unit\META\stop_SFX	
+	348796695	ogre_attack			\Default Work Unit\SFX\enemies\ogre\ogre_attack	
 	419618697	building_rotate			\Default Work Unit\SFX\world interaction\building_rotate	
 	452547817	stop_All			\Default Work Unit\META\stop_All	
 	566396871	item_pickup			\Default Work Unit\SFX\world interaction\item_pickup	
@@ -21,12 +22,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	1497713943	building_updog			\Default Work Unit\SFX\world interaction\building_updog	
 	1802791965	player_enter			\Default Work Unit\SFX\world interaction\player_enter	
 	1972958575	button_up			\Default Work Unit\SFX\world interaction\button_up	
+	2083141079	bgm_game_over			\Default Work Unit\MUSIC\bgm_game_over	
 	2360929475	follower_throw_impact			\Default Work Unit\SFX\follower interaction\follower_throw_impact	
 	2633060887	bgm_main			\Default Work Unit\MUSIC\bgm_main	
 	2728948375	chest_open			\Default Work Unit\SFX\world interaction\chest_open	
 	2837384057	stop_Music			\Default Work Unit\META\stop_Music	
 	2902570199	reverb_off			\Default Work Unit\META\reverb states\reverb_off	
 	3054631418	follower_throw			\Default Work Unit\SFX\follower interaction\follower_throw	
+	3413990684	ogre_damaged			\Default Work Unit\SFX\enemies\ogre\ogre_damaged	
 	3589785957	step_player			\Default Work Unit\SFX\steps\step_player	
 	3884605250	ogre_defeat			\Default Work Unit\META\ogre_defeat	
 	4064012791	rock_throw			\Default Work Unit\SFX\throwing rocks\rock_throw	
@@ -49,6 +52,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	126464705	Bas	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\Bas_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main theme\Main theme\Bas\Bas		11044236
+	130264815	ogre attack1	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\ogre attack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemies\ogre\attack\ogre attack1		67220
 	174708817	turn_1-01	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\turn_1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\misc world interaction\big building\turn\turn\turn_1-01		131220
 	213712804	vs ogre	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\vs ogre_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main theme\Main theme ogre chase\Bas with ogre\vs ogre		11319720
 	261746829	heavy-pissbaby	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\heavy-pissbaby_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\heavy-pissbaby		965696
@@ -57,19 +61,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	321108963	building-07	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\building-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\misc world interaction\big building\turn\elevate\building-07		341292
 	338668546	chest blip	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\chest blip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\chest blip		265916
 	360293457	in	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\in_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\in n out\in\in		44376
+	448428964	orgre damage	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\orgre damage_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemies\ogre\damage\orgre damage		62760
 	478791765	pickupfriend	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\pickupfriend_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\pickup\pickupfriend		136380
 	519834809	blopstep1	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_05\blopstep1		14140
 	544908918	blopstep3	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_05\blopstep3		14688
 	545198411	landa-05	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\landa-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw_impact\landa-05		49444
 	545480175	landa-08	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\landa-08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw_impact\landa-08		39860
+	548212384	ogre attack	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\ogre attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemies\ogre\attack\ogre attack		70076
 	602874163	5+ followers_2	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\5+ followers_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main theme\Main theme\Bas\5+ followers_2		11319720
 	610486827	7+ followers	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\7+ followers_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main theme\Main theme\Bas\7+ followers		11319720
+	659446272	gaemovr	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\gaemovr_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\game  over\gaemovr\gaemovr		7312764
 	764476897	turn_1-04	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\turn_1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\misc world interaction\big building\turn\turn\turn_1-04		131220
 	789381214	kast21	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\kast21_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw\kast21		49694
 	831402325	ut	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\ut_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\in n out\out\ut		61256
 	848653732	Medium Button 004	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\Medium Button 004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\misc world interaction\button\button up\Medium Button 004		71844
 	863113306	Powerup4	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\Powerup4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_02\Powerup4		10208
 	866110534	landa-02	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\landa-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw_impact\landa-02		43876
+	890175924	orgre damage1	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\orgre damage1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemies\ogre\damage\orgre damage1		73208
 	907579787	kast3	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\kast3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw\kast3		29674
 	974860179	kast1	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\kast1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\followers\throw\kast1		29674
 	995230590	blopstep2	C:\Users\vikto\Documents\Gitgrejer\GMTGameJam2021\Wwise\GMT Jam\GMT Jam II\.cache\Windows\SFX\blopstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\steptester\step_05\blopstep2		14328
