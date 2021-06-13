@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FollowerPlacement.unity
     guid: 545c346eacb14b945938ea49c35a12f7
+  - enabled: 1
+    path: Assets/Scenes/ChestPlacement.unity
+    guid: b53932f38fe8ac744985aaae37ebcd7a
   m_configObjects: {}

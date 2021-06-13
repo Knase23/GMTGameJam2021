@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e012963ddb375c4ebd4697ab3496e3bb
     GuidInternal: 
-    m_lastTime: -8585780735171705995
+    m_lastTime: -8585780265300457037
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -103,7 +103,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 220045352ee83b48a80b78d1ccb68e75
     GuidInternal: 
-    m_lastTime: -8585780735171755863
+    m_lastTime: -8585780265300496992
     List:
     - name: bgm_main
       guid: 7eb0616277ab86419fd59cdc7c82a89d
@@ -116,6 +116,54 @@ MonoBehaviour:
       - ElementName: bgm_main
         ObjectType: 3
       Path: Default Work Unit\MUSIC\bgm_main
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: button_pressed
+      guid: 26c981a68e3a064187469ff6d2404fae
+      id: 1250089922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      - ElementName: button_pressed
+        ObjectType: 3
+      Path: Default Work Unit\SFX\world interaction\button_pressed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: button_up
+      guid: e37f404ee61dae4f8231d27b0ff7c92f
+      id: 1972958575
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      - ElementName: button_up
+        ObjectType: 3
+      Path: Default Work Unit\SFX\world interaction\button_up
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: chest_open
+      guid: e9b1b16a6fbf5946acea54852575ca06
+      id: 2728948375
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: world interaction
+        ObjectType: 4
+      - ElementName: chest_open
+        ObjectType: 3
+      Path: Default Work Unit\SFX\world interaction\chest_open
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -202,6 +250,34 @@ MonoBehaviour:
       - ElementName: MUSIC
         ObjectType: 4
       Path: Default Work Unit\MUSIC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ogre_aggro
+      guid: 88fa685e38c10f49b1222aa4760636ba
+      id: 1244648727
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: META
+        ObjectType: 4
+      - ElementName: ogre_aggro
+        ObjectType: 3
+      Path: Default Work Unit\META\ogre_aggro
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ogre_defeat
+      guid: e0cbf199f6fe7249bd44a3b7938250a3
+      id: 3884605250
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: META
+        ObjectType: 4
+      - ElementName: ogre_defeat
+        ObjectType: 3
+      Path: Default Work Unit\META\ogre_defeat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -603,7 +679,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f865fd6d8b0882458656b878ecb437f5
     GuidInternal: 
-    m_lastTime: -8585780735171765819
+    m_lastTime: -8585780265300496992
     List:
     - name: followers
       guid: 91df98568236984c9cd5641b5c72dc8d
@@ -623,6 +699,33 @@ MonoBehaviour:
       - ElementName: inside_building
         ObjectType: 13
       Path: Default Work Unit\inside_building
+    - name: master_v
+      guid: 124d221024c44144ad237ccfe7bdf168
+      id: 4219476312
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: master_v
+        ObjectType: 13
+      Path: Default Work Unit\master_v
+    - name: music_v
+      guid: e2bfe317776e1b48a539a859526a9f08
+      id: 508837873
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_v
+        ObjectType: 13
+      Path: Default Work Unit\music_v
+    - name: SFX_v
+      guid: d25dc15b852a33438123d890dea53ad3
+      id: 1124208233
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_v
+        ObjectType: 13
+      Path: Default Work Unit\SFX_v
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -631,8 +734,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fd58f679bc2bbe4680ffe5a3d7242dc0
     GuidInternal: 
-    m_lastTime: -8585781016245115504
+    m_lastTime: -8585780265299787032
     List:
+    - name: ogre
+      guid: 491312e6efff704fb9a071fd96d07226
+      id: 3461823680
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ogre
+        ObjectType: 9
+      Path: Default Work Unit\ogre
+      values:
+      - name: no
+        guid: aef097affed6fe49b026ee54bd86fccb
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: no
+          ObjectType: 8
+      - name: None
+        guid: 1bcc5039c8c2144ca1bac64d343790b7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: yes
+        guid: 784997f187cd934394c67b57b8831d76
+        id: 979470758
+        PathAndIcons:
+        - ElementName: yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: reverbstates
       guid: 347364396046214eb2228115e0c5c314
       id: 3366828627

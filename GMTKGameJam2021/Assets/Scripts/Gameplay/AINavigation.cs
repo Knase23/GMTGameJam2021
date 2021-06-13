@@ -20,6 +20,7 @@ public class AINavigation : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        targetPosition = transform.position;
         path = new NavMeshPath();
     }
 
