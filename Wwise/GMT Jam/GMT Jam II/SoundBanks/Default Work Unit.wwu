@@ -6,19 +6,25 @@
 				<SoundBank Name="Den_coola_starka_banken" ID="{7CCB99F2-1851-4F02-A583-0DBE60ACFE40}">
 					<ObjectInclusionList>
 						<ObjectRef Name="MUSIC" ID="{2906232E-1965-4009-BBEF-8D8C45FF5DCC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemies" ID="{D70914DD-4721-40CD-9B32-D13ABD4C2584}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="button_pressed" ID="{A681C926-3A8E-4106-8746-9FF6D2404FAE}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="item_pickup" ID="{1891C9F5-DD7A-410B-99D7-DF24674AFF07}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="building_updog" ID="{EA55C6F2-B53C-414B-86B9-FBD135E42104}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb states" ID="{93B6CFE6-5B15-4162-A2BB-2FB46247C27D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="bgm_main" ID="{6261B07E-AB77-4186-9FD5-9CDC7C82A89D}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower_pickup" ID="{131E38A7-3A50-420F-B684-228DF7B76097}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ogre" ID="{E8C652F1-2CB1-4214-8581-1313F0BD9C11}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="steps" ID="{EBF72494-481F-4314-AFA7-98FBFB53AE2E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="building_impact" ID="{3151A696-0D81-4344-BAD3-AB9B8A1869CC}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="building_rotate" ID="{226709A3-480E-4361-8D94-DA4750ADD00F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="META" ID="{90E32769-EA9C-438D-8FC1-B32FFFD04EB1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower_throw_impact" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb_small" ID="{9A4800F8-8C97-4445-A484-4B8F0B33F46B}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="world interaction" ID="{BD5011AC-CCFD-4478-A00F-E22ECA91B64C}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_Music" ID="{694EDEE6-BB60-453F-8144-6B92D3D491AB}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ogre_attack" ID="{2FEF7B73-7937-45B2-ACBF-5BF59CDC0A0F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_02" ID="{D8F39F3F-C8BB-45DA-A40E-8FDEEFFD615F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_exit" ID="{1D19579A-3731-45DE-8269-322D6E035F08}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="chest_open" ID="{6AB1B1E9-BF6F-4659-ACEA-54852575CA06}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
@@ -34,6 +40,7 @@
 						<ObjectRef Name="ogre_defeat" ID="{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step_04" ID="{00E9B7AB-D09F-4A22-87D4-6098C56D2CF0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb_off" ID="{1D2C64DF-9ACC-4A87-A310-50050FE658E3}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ogre_damaged" ID="{8C35975E-6467-4AA2-AF23-59DA2142A150}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{DE8E64AE-B82F-4CA9-BDBE-A5E9A7EE014E}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_throw_impact" ID="{A57C21FB-4A0A-4CC5-8B10-B4FAD5926738}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Origin="Manual" Filter="7"/>
@@ -47,6 +54,7 @@
 						<ObjectRef Name="step_00" ID="{386217FA-E2F9-4F3F-8660-3700E6EC16D1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_All" ID="{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="button_up" ID="{4E407FE3-1DE6-4FAE-8231-D27B0FF7C92F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="bgm_game_over" ID="{86E9686C-806D-4FBF-9077-3B20B00EA224}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test2" ID="{B4B0A5E7-185B-4FDB-89DF-E658ED96E838}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

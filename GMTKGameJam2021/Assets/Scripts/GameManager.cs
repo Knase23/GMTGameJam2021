@@ -41,6 +41,12 @@ public class GameManager : MonoBehaviour
         }
          
     }
+
+    public void GameOver()
+    {
+        //Do GameOverStuff!
+    }
+    
     // Update is called once per frame
     void Update()
     {

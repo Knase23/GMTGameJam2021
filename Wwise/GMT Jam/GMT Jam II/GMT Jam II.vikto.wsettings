@@ -12,7 +12,10 @@
 				<Property Name="Event Action List\{1BC4B39B-44F1-4DD7-B125-71D9B68B8033}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1D19579A-3731-45DE-8269-322D6E035F08}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1D2C64DF-9ACC-4A87-A310-50050FE658E3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{226709A3-480E-4361-8D94-DA4750ADD00F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2C521FAE-6ACB-4D05-B61D-914DB20CE0E1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2FEF7B73-7937-45B2-ACBF-5BF59CDC0A0F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3151A696-0D81-4344-BAD3-AB9B8A1869CC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{386217FA-E2F9-4F3F-8660-3700E6EC16D1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{44C21185-B3EC-4584-AD74-4393D1261F73}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E407FE3-1DE6-4FAE-8231-D27B0FF7C92F}\x64_Expand States" Type="string" Value=""/>
@@ -21,6 +24,8 @@
 				<Property Name="Event Action List\{694EDEE6-BB60-453F-8144-6B92D3D491AB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6AB1B1E9-BF6F-4659-ACEA-54852575CA06}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{742E8C6A-3586-4F6F-9F4C-5B9B2B53ACBD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{86E9686C-806D-4FBF-9077-3B20B00EA224}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8C35975E-6467-4AA2-AF23-59DA2142A150}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{91D043A9-4E4A-4E20-9C04-BFB2F5CA801E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{99F1CBE0-FEF6-4972-BD44-A3B7938250A3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9A4800F8-8C97-4445-A484-4B8F0B33F46B}\x64_Expand States" Type="string" Value=""/>
@@ -62,6 +67,7 @@
 				<Property Name="Interactive Music\x64_{751D6428-C7D3-4FF0-9FA8-014694AC8489} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPyZY/bT3vyxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{918ABE02-9C20-48D3-A335-7F0197445BB4} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP9vWvz3vHitAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{C48A6796-7385-4515-A40D-7B3F9B11A24D} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP9vWvz3vHitAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{C97C9C0C-FFE0-4D43-A2B9-3585C889B72E} - SegmentEditorZoomInfo" Type="string" Value="hKE5mUBhEkAAAAAAAADwP92WRmSESjZAAAAAAAAA8D8AAAAAAKynQAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -78,6 +84,7 @@
 				<Property Name="Music Transition List\{47019046-FBD5-40A5-9879-246CB9686558}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{497C8694-549D-4919-8504-36FA6FF29C29}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{689980B8-AFFD-48EA-BB19-230EB6683F05}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{BD225EF8-73DE-4693-8F69-B8003B5020B9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{E7F224BA-673A-46B8-84CC-CA286DB5340D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{FD1B0450-8FDE-45E8-8ECC-931E6C1FC678}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
