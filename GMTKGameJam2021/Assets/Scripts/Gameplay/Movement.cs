@@ -18,6 +18,7 @@ namespace Gameplay
         void Update()
         {
             Vector2 inputDirection = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
+            inputDirection.Normalize();
             Vector3 velocity = new Vector3(inputDirection.x, 0, inputDirection.y);
             _rigidbody.velocity = velocity * speed;
         }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6632127039234333072}
   - component: {fileID: 1676754565842364801}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,8 @@ GameObject:
   - component: {fileID: 6554553776482064021}
   - component: {fileID: 6554553776482064019}
   - component: {fileID: 6554553776482064018}
-  m_Layer: 0
+  - component: {fileID: 3238994689173934627}
+  m_Layer: 10
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +90,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6554553776482064018
 MonoBehaviour:
@@ -103,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b669a56fd670e44bebe7d7e253d9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnType: 0
   totalChestValue: 11
   opened: 0
   contentPrefabs:
@@ -113,6 +115,33 @@ MonoBehaviour:
   - {fileID: 5762061131493504233, guid: 58248e06651053047a25c36a9f9754d4, type: 3}
   rend: {fileID: 6554553777344149651}
   openChestSprite: {fileID: 4714410783012859700, guid: 4d70794623155a64fb2a5552631974ea, type: 3}
+  OnOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3238994689173934627}
+        m_TargetAssemblyTypeName: AudioCall, Assembly-CSharp
+        m_MethodName: PlayAudio
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: chest_open
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3238994689173934627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6554553776482064017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca60663fd3b8a44d96aa60c94568e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6554553777344149649
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6554553777344149650}
   - component: {fileID: 6554553777344149651}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

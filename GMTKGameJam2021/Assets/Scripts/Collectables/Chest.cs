@@ -4,6 +4,7 @@ using System.Linq;
 using Gameplay;
 using Gameplay.Utility;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Collectables
 {
@@ -16,10 +17,14 @@ namespace Collectables
         public SpriteRenderer rend;
         public Sprite openChestSprite;
 
+
+        public UnityEvent OnOpen;
+        
         public override void OnCollect(Collect collector)
         {
             if (opened) return;
             opened = true;
+            OnOpen?.Invoke();
             do
             {
                 List<Collectible> availableAlternatives = contentPrefabs.Where(x => x.GetNumericValue() <= totalChestValue).ToList();

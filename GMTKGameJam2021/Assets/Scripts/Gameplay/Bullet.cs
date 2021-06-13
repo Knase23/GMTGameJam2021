@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Gameplay
@@ -10,10 +11,13 @@ namespace Gameplay
         private Rigidbody _rigidbody;
         public State current;
 
-        public float speed;
-
-        private float timer;
+        public static List<Bullet> currentAvailableBullets = new List<Bullet>();
         
+        
+        public float speed;
+        private float timer;
+
+        public Transform holder;
         public enum State
         {
             Bullet,
@@ -23,7 +27,14 @@ namespace Gameplay
         public void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
+            currentAvailableBullets.Add(this);
+            CollectState();
         }
+        private void OnDestroy()
+        {
+            currentAvailableBullets.Remove(this);
+        }
+
         public void Throw(Vector3 startPosition, Vector3 direction)
         {
             transform.position = startPosition + direction;
@@ -48,6 +59,7 @@ namespace Gameplay
 
         public void CollectState()
         {
+            holder = null;
             current = State.Collect;
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.isKinematic = true;
@@ -76,19 +88,7 @@ namespace Gameplay
                 }
 
                 CollectState();
-
-                
             }
-            if (current == State.Collect)
-            {
-                Collect collect = other.GetComponent<Collect>();
-                if (collect)
-                {
-                    collect.shooter.CollectBullet(this);
-                    //Do Something
-                }
-            }
-            
         }
     }
 }

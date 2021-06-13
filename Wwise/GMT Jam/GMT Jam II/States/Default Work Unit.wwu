@@ -15,6 +15,13 @@
 						<State Name="large" ID="{DE3DB0DD-36C0-4A2A-A740-6712C49815DC}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="ogre" ID="{E6121349-FFEF-4F70-B9A0-71FD96D07226}">
+					<ChildrenList>
+						<State Name="None" ID="{3950CC1B-C2C8-4C14-A1BA-C64D343790B7}"/>
+						<State Name="yes" ID="{F1974978-CD87-4393-94C6-7B57B8831D76}"/>
+						<State Name="no" ID="{AF97F0AE-D6FE-49FE-B026-EE54BD86FCCB}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

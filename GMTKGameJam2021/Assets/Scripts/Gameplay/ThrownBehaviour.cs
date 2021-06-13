@@ -83,7 +83,7 @@ public class ThrownBehaviour : MonoBehaviour
         Follower.ActivateTrigger();
         rigi.velocity = Vector3.zero;
         nav.enabled = true;
-        nav.inputDirection = Vector3.zero;
+        nav.targetPosition = Vector3.zero;
         enabled = false;
         ServiceLocator.GetService<IAudioService>().PlaySFX("follower_throw_Impact");
     }
