@@ -20,12 +20,9 @@ public enum MusicState
 
 public enum StopEvents
 {
-    MUSIC,
+    Music,
     SFX,
-    VOICE,
-    ALL,
-    ALL_WITH_FADE,
-    All_VICTORY_SCREEN,
+    All,
 }
 public enum MixerName
 {

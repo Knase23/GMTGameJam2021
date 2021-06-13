@@ -34,7 +34,8 @@ namespace Gameplay
             else
             {
                 healthPoint -= value;
-
+                
+                ServiceLocator.GetService<IAudioService>().PlaySFX("ogre_damaged");
                 if (healthPoint <= 0)
                 {
                     OnDeath?.Invoke();
