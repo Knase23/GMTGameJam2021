@@ -257,10 +257,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1672692086" Name="player_lvlup" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_lvlup" DurationType="OneShot" DurationMin="1.043469" DurationMax="1.043469">
+					<IncludedMemoryFiles>
+						<File Id="757297882" Language="SFX">
+							<ShortName>lvlup.wav</ShortName>
+							<Path>SFX\lvlup_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="573298149" Name="reverb_large" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_large" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4066469909" Name="reverb_medium" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_medium" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2902570199" Name="reverb_off" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_off" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="933527613" Name="reverb_small" ObjectPath="\Events\Default Work Unit\META\reverb states\reverb_small" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1633597097" Name="rock_pickup" ObjectPath="\Events\Default Work Unit\SFX\throwing rocks\rock_pickup" DurationType="OneShot" DurationMin="0.130454" DurationMax="0.130454">
+					<IncludedMemoryFiles>
+						<File Id="1005337253" Language="SFX">
+							<ShortName>rock_pickup.wav</ShortName>
+							<Path>SFX\rock_pickup_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4064012791" Name="rock_throw" ObjectPath="\Events\Default Work Unit\SFX\throwing rocks\rock_throw" DurationType="OneShot" DurationMin="0.137847" DurationMax="0.379481">
 					<IncludedMemoryFiles>
 						<File Id="789381214" Language="SFX">
@@ -374,6 +390,8 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3808637105" Name="stop_all_finale" ObjectPath="\Events\Default Work Unit\META\stop_all_finale" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="819404461" Name="stop_all_with_fade" ObjectPath="\Events\Default Work Unit\META\stop_all_with_fade" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1" DurationType="OneShot" DurationMin="1.384646" DurationMax="10.948209">

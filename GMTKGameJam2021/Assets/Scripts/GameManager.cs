@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Services;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,13 +25,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
         ServiceLocator.Initialize();
         IAudioService audioService = ServiceLocator.GetService<IAudioService>();
         audioService.PlayMusic("bgm_main");
-        audioService.PlayMusic("reverb_off");
+        audioService.PlaySFX("reverb_off");
     }
     public void OnFollowerAmount(int amount)
     {
@@ -42,17 +44,42 @@ public class GameManager : MonoBehaviour
          
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("ArenaInteractive", LoadSceneMode.Single);
+    }
+
     public void GameOver()
     {
-        //Do GameOverStuff!
+        if (!gameOver)
+        {
+            gameOver = true;
+            //Do GameOverStuff!
+            ServiceLocator.GetService<IAudioService>().PlayMusic("bgm_game_over");
+        }
+
     }
     
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            //ServiceLocator.GetService<IAudioService>().PlaySFX("test1");
+            ServiceLocator.GetService<IAudioService>().Stop(StopEvents.SFX);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            Debug.Log("Restart");
+            Restart();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit Game");
+#if !UNITY_EDITOR
+            Application.Quit();
+#endif
         }
     }
 

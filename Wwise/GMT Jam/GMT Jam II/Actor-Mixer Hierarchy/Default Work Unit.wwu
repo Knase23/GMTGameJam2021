@@ -80,17 +80,7 @@
 					<ChildrenList>
 						<ActorMixer Name="footsteps" ID="{FEB1ADDC-8076-4F58-AC2B-2FB27734DC3A}" ShortID="144519049">
 							<PropertyList>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
+								<Property Name="MakeUpGain" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{38D5D8C5-7598-4516-9C34-313BE79986A5}" ShortID="371475828">
 											<ReferenceList>
@@ -105,31 +95,41 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0.0733</YPos>
+														<YPos>-1.4014</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>2</XPos>
-														<YPos>-6</YPos>
+														<YPos>-5.75999999999999</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>10</XPos>
-														<YPos>-15</YPos>
+														<YPos>-14.4</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Exp1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>50</XPos>
-														<YPos>-15</YPos>
+														<YPos>-14.4</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
 											</Curve>
 										</RTPC>
 									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -706,6 +706,39 @@
 														<Value>38</Value>
 													</ValueList>
 												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{4CABEAE2-265E-4F49-B3E2-909D2BD83508}" ShortID="39846900">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="followers" ID="{5698DF91-3682-4C98-9CD5-641B5C72DC8D}" WorkUnitID="{6DFD65F8-088B-4582-8656-B878ECB437F5}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3A873701-6202-43F5-8F69-34C9AE399719}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-7</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.1428571428571</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>-380</Value>
@@ -810,7 +843,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-12</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1008,7 +1041,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1191,7 +1224,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-19</Value>
+												<Value>-11</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1305,7 +1338,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1385,6 +1418,47 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="landa-08" ID="{F283BEE2-A243-4027-BDC7-BEC850A32AB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="pickup" ID="{D3E4B33D-E170-4A72-9697-914E6534CB1C}" ShortID="537885191">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="rock_pickup" ID="{61D1EBE5-6374-495E-A3ED-061C1F1EF05F}" ShortID="776823432">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rock_pickup" ID="{3FC32A07-D209-4950-973F-88A20A2FB07B}">
+													<Language>SFX</Language>
+													<AudioFile>rock_pickup.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1005337253"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rock_pickup" ID="{3FC32A07-D209-4950-973F-88A20A2FB07B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1683,6 +1757,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1825,6 +1904,13 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<BlendContainer Name="turn" ID="{6AAE40F9-C352-4C78-A95E-47E8A2940474}" ShortID="555285483">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -1987,6 +2073,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<RandomSequenceContainer Name="loc" ID="{B4EA0486-3D67-4CDE-ABAA-A3DFE8E2CD26}" ShortID="827266667">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -2023,6 +2116,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="enemies" ID="{29CC2919-40FA-42AD-9C46-6180F864AE41}" ShortID="682528096">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -2163,6 +2263,52 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="UI" ID="{770C0EEC-5F44-4AB5-8507-A42E1FBEC2B5}" ShortID="955172611">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="lvlup" ID="{FDF7B4EC-F7D3-47B3-8307-A84617CA3619}" ShortID="29380485">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="lvlup" ID="{B7758B35-9C83-48A9-A6D2-826847E5D697}" ShortID="527314624">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D9612E0-37DB-4E5C-BD46-97AB3496E3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lvlup" ID="{368E346A-AA39-4AE7-95BB-3939B619323E}">
+													<Language>SFX</Language>
+													<AudioFile>lvlup.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="757297882"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lvlup" ID="{368E346A-AA39-4AE7-95BB-3939B619323E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

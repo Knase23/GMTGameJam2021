@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Gameplay;
+using Services;
 using UnityEngine;
 
 public class AIAttack : MonoBehaviour
@@ -46,6 +47,7 @@ public class AIAttack : MonoBehaviour
             {
                 timer = 0;
                 target.TakeDamage(1);
+                ServiceLocator.GetService<IAudioService>().PlaySFX("ogre_attack");
             }
         }
         else

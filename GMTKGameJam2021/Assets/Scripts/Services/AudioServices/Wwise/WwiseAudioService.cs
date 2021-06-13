@@ -14,6 +14,8 @@ namespace Services.AudioServices.Wwise
         public void PlayMusic(string musicName)
         {
             Debug.Log("Start " + musicName);
+            
+            Stop(StopEvents.Music);
             AkSoundEngine.PostEvent(musicName, objRef);
         }
 
@@ -38,7 +40,7 @@ namespace Services.AudioServices.Wwise
 
         public void Stop(StopEvents stopEvent)
         {
-            string code = "stop_" + stopEvent.ToString().ToLower();
+            string code = "stop_" + stopEvent;
             AkSoundEngine.PostEvent(code, objRef);
         }
         
