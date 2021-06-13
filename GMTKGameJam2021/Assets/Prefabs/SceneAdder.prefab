@@ -43,8 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e012f6e7fa5a74fa6bb7c2f1c77ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  additiveSceneIndex: 1
   ScenesToLoad:
   - FollowerPlacement
   - Arena_Static
   - ChestPlacement
+  - EnemyPlacement
+  - Puzzles

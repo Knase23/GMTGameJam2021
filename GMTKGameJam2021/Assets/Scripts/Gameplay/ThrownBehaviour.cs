@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Gameplay;
 using Services;
 using UnityEngine;
 
@@ -76,7 +77,7 @@ public class ThrownBehaviour : MonoBehaviour
         Follower.ActivateTrigger();
         rigi.velocity = Vector3.zero;
         nav.enabled = true;
-        nav.targetPosition = Vector3.zero;
+        nav.Pause();
         enabled = false;
         ServiceLocator.GetService<IAudioService>().PlaySFX("follower_throw_Impact");
     }
@@ -84,6 +85,12 @@ public class ThrownBehaviour : MonoBehaviour
     {
         if (enabled == false) return;
         Debug.Log("Hit:" + other.gameObject.name, this);
+
+        if (other.gameObject.layer == 9)
+        {
+            other.gameObject.GetComponent<Health>().TakeDamage(1);
+        }
+        
         hitSomething = true;
         ThrownDone();
     }

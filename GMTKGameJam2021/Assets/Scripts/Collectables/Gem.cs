@@ -1,5 +1,6 @@
 using System.Collections;
 using Gameplay;
+using Services;
 using UnityEngine;
 
 namespace Collectables
@@ -12,6 +13,7 @@ namespace Collectables
         {
             // add exp based on value;
             collector.experience.Add(value);
+            ServiceLocator.GetService<IAudioService>().PlaySFX("item_pickup");
             base.OnCollect(collector);
         }
 
