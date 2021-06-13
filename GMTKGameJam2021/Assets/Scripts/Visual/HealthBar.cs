@@ -56,6 +56,9 @@ public class HealthBar : MonoBehaviour
 
     private void SetSpritesToRepresentHealth()
     {
+        this.gameObject.transform.localScale = Vector3.one;
+        LeanTween.scale(this.gameObject, Vector3.one * 1.3f, 0.3f).setEase(LeanTweenType.punch);
+
         foreach (var item in healthContainers)
         {
             item.sprite = container_invisible;

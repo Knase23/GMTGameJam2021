@@ -17,7 +17,7 @@ public class SpinBuildingOpen : MonoBehaviour
 
     void Start()
     {
-
+        floorLevel.value = 1;
     }
 
     void Update()

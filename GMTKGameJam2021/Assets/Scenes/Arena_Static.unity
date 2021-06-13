@@ -22458,7 +22458,7 @@ PrefabInstance:
       objectReference: {fileID: 1218635305}
     - target: {fileID: 4612569989991969563, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: fadeAwayWithMaterial.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4612569989991969563, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: fadeAwayWithMaterial.Array.data[2]
@@ -22467,6 +22467,10 @@ PrefabInstance:
     - target: {fileID: 4612569990077869660, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612569990290652834, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
+      propertyPath: totalChestValue
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4612569990290652837, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51222,7 +51226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27a8a9706b1a8d45a9b73514fcc571d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 3
+  level: 2
 --- !u!65 &1289386179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78858,7 +78862,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -100
   m_Sprite: {fileID: 2568923268102916374, guid: a27ee56c148eeb342a9875239fea5d88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

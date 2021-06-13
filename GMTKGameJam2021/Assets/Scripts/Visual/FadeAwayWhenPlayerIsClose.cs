@@ -43,6 +43,7 @@ public class FadeAwayWhenPlayerIsClose : MonoBehaviour
     {
         cameraBackgroundBaseColor = Camera.main.backgroundColor;
         ground = GameObject.FindWithTag("Ground").GetComponent<Renderer>();
+        fadeTimer = 1f;
     }
 
     private void Update()
@@ -78,6 +79,7 @@ public class FadeAwayWhenPlayerIsClose : MonoBehaviour
         {
             foreach (var item in fadeAwayWithMaterial)
             {
+                if (item == null) continue;
                 item.material.color = new Color(1, 1, 1, 1 - fadeTimer);
             }
         }

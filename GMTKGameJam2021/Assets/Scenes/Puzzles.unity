@@ -252,7 +252,7 @@ MonoBehaviour:
   pressedSprite: {fileID: -2172838111481808343, guid: 885ff74861a9d5f419165f43d1ef8bb7, type: 3}
   rend: {fileID: 114229189}
   currentFloor: {fileID: 11400000, guid: 6f05f0f2551d10b4ca1f81445237e540, type: 2}
-  direction: -1
+  direction: 1
 --- !u!4 &509747637
 Transform:
   m_ObjectHideFlags: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   notPressedSprite: {fileID: -6769221904418894149, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
   pressedSprite: {fileID: 710386083244611422, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
   rend: {fileID: 2015480430}
-  direction: -1
+  direction: 1
   rotationAngle: 15
   topLevel: {fileID: 1317738276}
 --- !u!65 &728726013
@@ -332,6 +332,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &739054807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7298474458575208414, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+  m_PrefabInstance: {fileID: 1297840169569738776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &739054813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739054807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27a8a9706b1a8d45a9b73514fcc571d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
 --- !u!1 &1064676640
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +478,7 @@ MonoBehaviour:
   notPressedSprite: {fileID: 8228735524934738271, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
   pressedSprite: {fileID: 2609041225830746574, guid: 8f855b47012d70348a9b0dce121576ce, type: 3}
   rend: {fileID: 1827538707}
-  direction: 1
+  direction: -1
   rotationAngle: 15
   topLevel: {fileID: 1317738276}
 --- !u!4 &1102363806
@@ -481,6 +499,11 @@ Transform:
 --- !u!1 &1317738276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2216812338361724647, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+  m_PrefabInstance: {fileID: 1297840169569738776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1425647299 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1297840170033529057, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
   m_PrefabInstance: {fileID: 1297840169569738776}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1483035650
@@ -5415,7 +5438,7 @@ MonoBehaviour:
   pressedSprite: {fileID: -4982725089127880633, guid: 885ff74861a9d5f419165f43d1ef8bb7, type: 3}
   rend: {fileID: 1064676641}
   currentFloor: {fileID: 11400000, guid: 6f05f0f2551d10b4ca1f81445237e540, type: 2}
-  direction: 1
+  direction: -1
 --- !u!4 &1672096073
 Transform:
   m_ObjectHideFlags: 0
@@ -5600,6 +5623,11 @@ Transform:
   m_Father: {fileID: 728726014}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 47.662, y: 0, z: 0}
+--- !u!212 &2065589036 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1297840171455681004, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+  m_PrefabInstance: {fileID: 1297840169569738776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1297840169569738776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5680,6 +5708,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1483035652}
     - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: fadeAwaySprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: fadeAwaySprites.Array.data[0]
       value: 
       objectReference: {fileID: 2015480430}
@@ -5695,9 +5727,25 @@ PrefabInstance:
       propertyPath: fadeAwaySprites.Array.data[3]
       value: 
       objectReference: {fileID: 1064676641}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: fadeAwaySprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 2065589036}
+    - target: {fileID: 1503911848736026908, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: fadeAwaySprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 1425647299}
     - target: {fileID: 5552807079748247468, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873170717526216949, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.232
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873170717526216949, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.234
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1297840170439456609, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}

@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549329064816129047, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
       propertyPath: value
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7549329064816129047, guid: 6bfc76142e7784f47b487c8b8b21753a, type: 3}
       propertyPath: spawnType

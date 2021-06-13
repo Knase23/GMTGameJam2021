@@ -5,16 +5,12 @@ using UnityEngine;
 
 public enum ReverbLevels { None, Small, Medium, Large };
 
-[RequireComponent(typeof(BoxCollider))]
 public class Reverb : MonoBehaviour
 {
-    BoxCollider col;
     public ReverbLevels level;
     // Start is called before the first frame update
     void Start()
     {
-        col = GetComponent<BoxCollider>();
-        col.isTrigger = true;
     }
 
     private void OnTriggerEnter(Collider other)
