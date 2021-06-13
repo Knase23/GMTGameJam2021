@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnFollowerAmount(int amount)
     {
-        if (amount >= 3)
+        if (amount >= 7)
         {
             
             bridgeCondition.flag = true;
