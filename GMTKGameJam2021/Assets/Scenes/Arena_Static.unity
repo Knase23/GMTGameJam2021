@@ -22458,7 +22458,7 @@ PrefabInstance:
       objectReference: {fileID: 1218635305}
     - target: {fileID: 4612569989991969563, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: fadeAwayWithMaterial.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4612569989991969563, guid: 9a71fe450b13d9b44aff38f552eaac4b, type: 3}
       propertyPath: fadeAwayWithMaterial.Array.data[2]
