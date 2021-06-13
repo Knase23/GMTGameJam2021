@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Follower : MonoBehaviour
 {
     public FollowersHandler _handler;
-    private AINavigation nav;
+    public AINavigation nav;
 
     public Follower frontFollower;
     public Follower behindFollower;
@@ -13,12 +14,20 @@ public class Follower : MonoBehaviour
     public ThrownBehaviour thrownBehaviour;
     public float minimumDistance = 1;
 
+    public NavMeshAgent agent;
+
+    private NavMeshPath path;
+    private int pathIndex;
+
+    private float elapsed;
+
     // Start is called before the first frame update
     void Start()
     {
         nav = GetComponent<AINavigation>();
         thrownBehaviour = GetComponent<ThrownBehaviour>();
         thrownBehaviour.enabled = false;
+        path = new NavMeshPath();
     }
 
     private float _catchUpDelay = 0.2f;
@@ -27,37 +36,61 @@ public class Follower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_handler == null) return;
-
-        if (frontFollower == null)
+        if (_handler == null)
         {
-            if (Vector3.Distance(_handler.transform.position, transform.position) < minimumDistance)
+            nav.Pause();
+            return;
+        };
+        Follower targetFollow = frontFollower;
+        Transform targeto = null;
+        do
+        {
+            if (targetFollow == null)
             {
-                nav.inputDirection = Vector3.zero;
-                _catchUpTimer = 0;
+                // If its the first in the line
+                targeto = _handler.transform;
             }
             else
             {
-                if (_catchUpTimer > _catchUpDelay)
-                    nav.inputDirection = _handler.transform.position - transform.position;
-                _catchUpTimer += Time.deltaTime;
+                if (targetFollow.enabled)
+                {
+                    // If the target in front is following the player
+                    targeto = targetFollow.transform;
+                }
+                else
+                {
+                    if (targetFollow.frontFollower == null)
+                    {
+                        // If the targets om front is the player
+                        targeto = _handler.transform;
+                    }
+                    else
+                    {
+                        // If the targets on front is another follower
+                        targetFollow = targetFollow.frontFollower;
+                    }
+                }
             }
+        } while (targeto == null);
+        
+        MoveToTarget(targeto);
+    }
+
+    public void MoveToTarget(Transform target)
+    {
+        if (Vector3.Distance(target.position, transform.position) < minimumDistance)
+        {
+            nav.Pause();
+            _catchUpTimer = 0;
         }
         else
         {
-            if (Vector3.Distance(frontFollower.transform.position, transform.position) < minimumDistance)
-            {
-                nav.inputDirection = Vector3.zero;
-                _catchUpTimer = 0;
-            }
-            else
-            {
-                if (_catchUpTimer > _catchUpDelay)
-                    nav.inputDirection = frontFollower.transform.position - transform.position;
-                _catchUpTimer += Time.deltaTime;
-            }
+            if (_catchUpTimer > _catchUpDelay)
+                nav.Move(target.position);
+            _catchUpTimer += Time.deltaTime;
         }
     }
+
 
     public void RemoveFollower()
     {

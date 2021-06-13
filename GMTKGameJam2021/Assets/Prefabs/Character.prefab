@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61287156286831770}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7453759133000580793}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -143,13 +143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepType: 0
+  rigi: {fileID: 0}
   speed: 6
   rotationAngle: 15
   bobbingHeight: 0.3
   localLerpPos: {x: 0, y: 0, z: 0}
   prevPos: {x: 0, y: 0, z: 0}
   readyForTouch: 0
-  fartDust: {fileID: 0}
+  fartDust: {fileID: 7453759133942995389}
 --- !u!114 &7453759133000580789
 MonoBehaviour:
   m_ObjectHideFlags: 0
