@@ -61,13 +61,21 @@ public class SearchForStones : MonoBehaviour
             {
                 _follower.enabled = false;
                 _follower.nav.Move(choosenBullet.transform.position);
-
+                
                 if (Vector3.Distance(choosenBullet.transform.position, transform.position) < 1)
                 {
                     playerShooter.prepAmmo--;
                     playerShooter.CollectBullet(choosenBullet);
                     _follower.enabled = true;
                     choosenBullet = null;
+                }
+                else if (Vector3.Distance(choosenBullet.transform.position, transform.position) > ammotDetectionRange + 1)
+                {
+                    choosenBullet.holder = null;
+                    choosenBullet = null;
+                    _follower.enabled = true;
+                    playerShooter.prepAmmo--;
+
                 }
             }
         }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arena_Static.unity
     guid: 2e78f9a621a95474ca466a35edfb2a43
+  - enabled: 1
+    path: Assets/Scenes/FollowerPlacement.unity
+    guid: 545c346eacb14b945938ea49c35a12f7
   m_configObjects: {}

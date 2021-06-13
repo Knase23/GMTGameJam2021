@@ -24,14 +24,16 @@ public class PlayerDetection : MonoBehaviour
             _catchUpTimer = 0;
             return;
         }
-
         if (!Physics.Linecast(transform.position + Vector3.up * 0.1f, target.position + Vector3.up * 0.1f, out RaycastHit hit ,LayerMask.GetMask("Default","Player"))) return;
         if (hit.transform == target)
         {
             if (distanceFromTarget < detectionDistance)
             {
+                Debug.Log("Player In Range!");
+                
                 if (_catchUpTimer > _catchUpDelay)
                     nav.Move(target.position);
+                
                 _catchUpTimer += Time.deltaTime;
             }
         }
