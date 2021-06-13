@@ -880,5 +880,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /GMT Jam II
+  - /GMT Jam II/Events
+  - /GMT Jam II/Events/Default Work Unit
+  - /GMT Jam II/Events/Default Work Unit/SFX
+  - /GMT Jam II/Events/Default Work Unit/SFX/throwing rocks
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

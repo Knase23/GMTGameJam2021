@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 namespace Gameplay
@@ -25,7 +26,7 @@ namespace Gameplay
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Perform();
             }
@@ -56,6 +57,9 @@ namespace Gameplay
             }
             Bullet bullet = storedBullets[0];
             storedBullets.Remove(bullet);
+            
+            ServiceLocator.GetService<IAudioService>().PlaySFX("rock_throw");
+            
             Vector3 inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             bullet.gameObject.SetActive(true);
             bullet.Throw(transform.position, inputDirection);
