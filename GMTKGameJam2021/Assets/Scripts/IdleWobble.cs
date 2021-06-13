@@ -7,6 +7,7 @@ public class IdleWobble : MonoBehaviour
     float idleTimer;
     bool idling;
     Vector3 startScale;
+    public float magnitude;
 
     float sineTimer;
     float sine;
@@ -16,6 +17,7 @@ public class IdleWobble : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (magnitude == 0) magnitude = 1f;
         wobblemagnitude = 0.20f;
         sineSpeed = 8.5f;
         idling = true;
@@ -38,7 +40,7 @@ public class IdleWobble : MonoBehaviour
             sineTimer += Time.deltaTime * sineSpeed;
             sine = Mathf.Sin((sineTimer) + 1) / 2;
             sine += 0.5f;
-            transform.localScale = startScale + (Vector3.up * wobblemagnitude * sine);
+            transform.localScale = startScale + (Vector3.up * wobblemagnitude * magnitude * sine);
         }
     }
 }

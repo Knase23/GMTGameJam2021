@@ -436,7 +436,7 @@ TextureImporter:
     second: GMTK_sprites_143
   - first:
       213: 6198230676086290047
-    second: GMTK_sprites_144
+    second: DashTimer
   - first:
       213: -2355217806441358316
     second: GMTK_sprites_145
@@ -3820,15 +3820,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMTK_sprites_144
+      name: DashTimer
       rect:
         serializedVersion: 2
         x: 0
         y: 208
-        width: 16
+        width: 32
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3836,27 +3836,6 @@ TextureImporter:
       bones: []
       spriteID: f767d04d5f9840650800000000000000
       internalID: 6198230676086290047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GMTK_sprites_145
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41c536e22e5905fd0800000000000000
-      internalID: -2355217806441358316
       vertices: []
       indices: 
       edges: []
