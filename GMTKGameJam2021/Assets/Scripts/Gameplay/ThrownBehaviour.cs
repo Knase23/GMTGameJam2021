@@ -14,11 +14,11 @@ public class ThrownBehaviour : MonoBehaviour
 
     public Transform billboardCharacter;
     public bool hitSomething;
-    
+
     public float timeInAir = 0.55f;
     public float timer;
     public float maxJumpHeight = 5;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,14 +44,15 @@ public class ThrownBehaviour : MonoBehaviour
     {
         if (timer < timeInAir && hitSomething == false)
         {
+            gameObject.layer = 7;
             //Fly up
             timer += Time.deltaTime;
 
             if (timer > timeInAir)
                 timer = timeInAir;
-            
-            float percentHalf = timer/(timeInAir *0.5f);
-            
+
+            float percentHalf = timer / (timeInAir * 0.5f);
+
             if (percentHalf > 1)
             {
                 float remover = percentHalf - 1;
@@ -61,18 +62,6 @@ public class ThrownBehaviour : MonoBehaviour
             pos.y = percentHalf * maxJumpHeight;
             billboardCharacter.position = pos;
         }
-        else if (hitSomething)
-        {
-            Vector3 pos = billboardCharacter.position;
-            pos.y -= 10 * Time.deltaTime;
-            if (pos.y < 0)
-            {
-                pos.y = 0;
-                hitSomething = false;
-                timer = timeInAir;
-            }
-            billboardCharacter.position = pos;
-        }
         else
         {
             ThrownDone();
@@ -80,6 +69,10 @@ public class ThrownBehaviour : MonoBehaviour
     }
     public void ThrownDone()
     {
+        Vector3 pos = billboardCharacter.position;
+        pos.y = 0;
+        billboardCharacter.position = pos;
+        gameObject.layer = 8;
         Follower.ActivateTrigger();
         rigi.velocity = Vector3.zero;
         nav.enabled = true;

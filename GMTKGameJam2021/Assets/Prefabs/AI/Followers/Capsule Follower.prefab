@@ -41,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069337, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_Name
-      value: Follower
+      value: Capsule Follower
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069338, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_Center.y
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.y
@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9169827813387069339, guid: 20f24a40a3c320d4d900165356d95356, type: 3}
       propertyPath: m_LocalRotation.w

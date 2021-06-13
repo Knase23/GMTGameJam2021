@@ -16,7 +16,9 @@ public class AIAttack : MonoBehaviour
     private void Start()
     {
         timer = timeBetweenAttacks;
+        target = Player.Instance.GetComponent<Health>();
     }
+    
 
     // Update is called once per frame
     void Update()

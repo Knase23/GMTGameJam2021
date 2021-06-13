@@ -51,23 +51,18 @@ namespace Services.AudioServices.Wwise
         {
             AkSoundEngine.SetRTPCValue(name, value);
         }
-        
-        
         public void SetVolume(MixerName mixer, float volume)
         {
             switch (mixer)
             {
                 case MixerName.MASTER:
-                    AkSoundEngine.SetRTPCValue("MASTER_VOLUME", volume);
+                    AkSoundEngine.SetRTPCValue("master_v", volume);
                     break;
                 case MixerName.SFX:
-                    AkSoundEngine.SetRTPCValue("SFX_VOLUME", volume);
+                    AkSoundEngine.SetRTPCValue("SFX_v", volume);
                     break;
                 case MixerName.MUSIC:
-                    AkSoundEngine.SetRTPCValue("MUSIC_VOLUME", volume);
-                    break;
-                case MixerName.VOICE:
-                    AkSoundEngine.SetRTPCValue("VOX_VOLUME", volume);
+                    AkSoundEngine.SetRTPCValue("music_v", volume);
                     break;
                 default:
                     break;
