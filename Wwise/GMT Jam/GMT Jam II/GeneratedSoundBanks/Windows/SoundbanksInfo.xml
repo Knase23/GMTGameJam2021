@@ -19,7 +19,10 @@
 				<AuxBus Id="2943096322" Name="SFXreverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\SFXreverb"/>
 			</IncludedAuxBusses>
 			<GameParameters>
+				<GameParameter Id="508837873" Name="music_v" ObjectPath="\Game Parameters\Default Work Unit\music_v"/>
+				<GameParameter Id="1124208233" Name="SFX_v" ObjectPath="\Game Parameters\Default Work Unit\SFX_v"/>
 				<GameParameter Id="2629562184" Name="inside_building" ObjectPath="\Game Parameters\Default Work Unit\inside_building"/>
+				<GameParameter Id="4219476312" Name="master_v" ObjectPath="\Game Parameters\Default Work Unit\master_v"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2773919638" Language="SFX">
@@ -32,6 +35,10 @@
 						<File Id="126464705" Language="SFX">
 							<ShortName>Bas.wav</ShortName>
 							<Path>SFX\Bas_D79FB2B7.wem</Path>
+						</File>
+						<File Id="213712804" Language="SFX">
+							<ShortName>vs ogre.wav</ShortName>
+							<Path>SFX\vs ogre_D79FB2B7.wem</Path>
 						</File>
 						<File Id="289605687" Language="SFX">
 							<ShortName>3+ followers.wav</ShortName>
@@ -48,6 +55,59 @@
 						<File Id="1051104496" Language="SFX">
 							<ShortName>1 follower.wav</ShortName>
 							<Path>SFX\1 follower_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1054756914" Language="SFX">
+							<ShortName>ogre sting.wav</ShortName>
+							<Path>SFX\ogre sting_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{AF97F0AE-D6FE-49FE-B026-EE54BD86FCCB}">
+							<Media>
+								<File Id="126464705"/>
+								<File Id="1051104496"/>
+								<File Id="289605687"/>
+								<File Id="610486827"/>
+								<File Id="602874163"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F1974978-CD87-4393-94C6-7B57B8831D76}">
+							<Media>
+								<File Id="126464705"/>
+								<File Id="1051104496"/>
+								<File Id="289605687"/>
+								<File Id="610486827"/>
+								<File Id="602874163"/>
+								<File Id="213712804"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1250089922" Name="button_pressed" ObjectPath="\Events\Default Work Unit\SFX\world interaction\button_pressed" DurationType="OneShot" DurationMin="0.400935" DurationMax="0.513679">
+					<IncludedMemoryFiles>
+						<File Id="848653732" Language="SFX">
+							<ShortName>Medium Button 004.wav</ShortName>
+							<Path>SFX\Medium Button 004_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1972958575" Name="button_up" ObjectPath="\Events\Default Work Unit\SFX\world interaction\button_up" DurationType="OneShot" DurationMin="0.282686" DurationMax="0.351868">
+					<IncludedMemoryFiles>
+						<File Id="848653732" Language="SFX">
+							<ShortName>Medium Button 004.wav</ShortName>
+							<Path>SFX\Medium Button 004_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2728948375" Name="chest_open" ObjectPath="\Events\Default Work Unit\SFX\world interaction\chest_open" DurationType="OneShot" DurationMin="1.384646" DurationMax="1.384646">
+					<IncludedMemoryFiles>
+						<File Id="338668546" Language="SFX">
+							<ShortName>chest blip.wav</ShortName>
+							<Path>SFX\chest blip_10C4C929.wem</Path>
+						</File>
+						<File Id="848653732" Language="SFX">
+							<ShortName>Medium Button 004.wav</ShortName>
+							<Path>SFX\Medium Button 004_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -91,6 +151,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1244648727" Name="ogre_aggro" ObjectPath="\Events\Default Work Unit\META\ogre_aggro" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3884605250" Name="ogre_defeat" ObjectPath="\Events\Default Work Unit\META\ogre_defeat" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1802791965" Name="player_enter" ObjectPath="\Events\Default Work Unit\SFX\world interaction\player_enter" DurationType="OneShot" DurationMin="0.230792" DurationMax="0.230792">
 					<IncludedMemoryFiles>
 						<File Id="360293457" Language="SFX">
@@ -226,11 +288,15 @@
 				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1" DurationType="OneShot" DurationMin="10.948209" DurationMax="10.948209">
+				<Event Id="576110586" Name="test1" ObjectPath="\Events\Default Work Unit\TEst\test1" DurationType="OneShot" DurationMin="1.384646" DurationMax="10.948209">
 					<IncludedMemoryFiles>
 						<File Id="261746829" Language="SFX">
 							<ShortName>heavy-pissbaby.wav</ShortName>
 							<Path>SFX\heavy-pissbaby_10C4C929.wem</Path>
+						</File>
+						<File Id="338668546" Language="SFX">
+							<ShortName>chest blip.wav</ShortName>
+							<Path>SFX\chest blip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -239,6 +305,15 @@
 			<GameParameters>
 				<GameParameter Id="1840721638" Name="followers" ObjectPath="\Game Parameters\Default Work Unit\followers"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3461823680" Name="ogre" ObjectPath="\States\Default Work Unit\ogre">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\ogre\None"/>
+						<State Id="979470758" Name="yes" ObjectPath="\States\Default Work Unit\ogre\yes"/>
+						<State Id="1668749452" Name="no" ObjectPath="\States\Default Work Unit\ogre\no"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
