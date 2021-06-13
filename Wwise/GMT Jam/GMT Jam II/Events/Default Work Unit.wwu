@@ -143,6 +143,18 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="stop_all_finale" ID="{B5A8FF44-7A33-43B9-A71A-9B4AF3ECA9B0}">
+							<ChildrenList>
+								<Action Name="" ID="{496319FC-67D3-4BDF-BD68-7FF8449B0585}" ShortID="507949314">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="15"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" ShortID="801514613">

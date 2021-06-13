@@ -390,6 +390,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="452547817" Name="stop_All" ObjectPath="\Events\Default Work Unit\META\stop_All" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3808637105" Name="stop_all_finale" ObjectPath="\Events\Default Work Unit\META\stop_all_finale" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="819404461" Name="stop_all_with_fade" ObjectPath="\Events\Default Work Unit\META\stop_all_with_fade" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\META\stop_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="287728669" Name="stop_SFX" ObjectPath="\Events\Default Work Unit\META\stop_SFX" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

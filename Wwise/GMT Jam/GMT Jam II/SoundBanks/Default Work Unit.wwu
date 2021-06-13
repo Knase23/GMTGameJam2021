@@ -20,6 +20,7 @@
 						<ObjectRef Name="reverb_large" ID="{C090AECF-E9B5-4357-BE0C-58C939910AD8}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="building_rotate" ID="{226709A3-480E-4361-8D94-DA4750ADD00F}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="META" ID="{90E32769-EA9C-438D-8FC1-B32FFFD04EB1}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_all_finale" ID="{B5A8FF44-7A33-43B9-A71A-9B4AF3ECA9B0}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="follower_throw_impact" ID="{016CAD85-D046-43F5-BBA6-71C9F0FA8E73}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="reverb_small" ID="{9A4800F8-8C97-4445-A484-4B8F0B33F46B}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TEst" ID="{0AEF5509-1BBB-445F-A9F9-C17A06A18DBD}" WorkUnitID="{35450022-E82E-483B-A80B-78D1CCB68E75}" Origin="Manual" Filter="7"/>
