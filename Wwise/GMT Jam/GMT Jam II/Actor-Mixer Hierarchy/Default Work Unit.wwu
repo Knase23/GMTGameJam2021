@@ -721,8 +721,13 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-3</YPos>
+																		<YPos>-7</YPos>
 																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.1428571428571</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>50</XPos>
@@ -838,7 +843,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-12</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1219,7 +1224,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-19</Value>
+												<Value>-11</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1333,7 +1338,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1418,6 +1423,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="pickup" ID="{D3E4B33D-E170-4A72-9697-914E6534CB1C}" ShortID="537885191">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -1745,6 +1757,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1887,6 +1904,13 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<BlendContainer Name="turn" ID="{6AAE40F9-C352-4C78-A95E-47E8A2940474}" ShortID="555285483">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
@@ -2049,6 +2073,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<RandomSequenceContainer Name="loc" ID="{B4EA0486-3D67-4CDE-ABAA-A3DFE8E2CD26}" ShortID="827266667">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B7F1B0A-8937-4940-8CBB-4A6A4DE509B8}"/>
