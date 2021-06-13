@@ -29,12 +29,18 @@ public class Dash : MonoBehaviour
     void Update()
     {
         if (level.value < 1) return;
-        dashing = (Input.GetKey(KeyCode.LeftShift));
-
+        
+        dashing = Input.GetAxis("Fire3") > 0;
+        
         dashTimer += dashing ? -Time.deltaTime * 1f : Time.deltaTime * 2f;
         dashTimer = dashTimer > 2.5f ? 2.5f : dashTimer;
 
         if (dashTimer < 0) dashing = false;
+        
+        
+        
+        
+        
         dashTimer = dashTimer < -1f ? -1f : dashTimer;
 
 
