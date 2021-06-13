@@ -83,6 +83,54 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4069743418" Name="building_impact" ObjectPath="\Events\Default Work Unit\SFX\world interaction\building_impact" DurationType="OneShot" DurationMin="0.814562" DurationMax="0.814562">
+					<IncludedMemoryFiles>
+						<File Id="1005570654" Language="SFX">
+							<ShortName>building lock.wav</ShortName>
+							<Path>SFX\building lock_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="419618697" Name="building_rotate" ObjectPath="\Events\Default Work Unit\SFX\world interaction\building_rotate" DurationType="OneShot" DurationMin="1.777229" DurationMax="2.307688">
+					<IncludedMemoryFiles>
+						<File Id="174708817" Language="SFX">
+							<ShortName>turn_1-01.wav</ShortName>
+							<Path>SFX\turn_1-01_10C4C929.wem</Path>
+						</File>
+						<File Id="321108963" Language="SFX">
+							<ShortName>building-07.wav</ShortName>
+							<Path>SFX\building-07_10C4C929.wem</Path>
+						</File>
+						<File Id="764476897" Language="SFX">
+							<ShortName>turn_1-04.wav</ShortName>
+							<Path>SFX\turn_1-04_10C4C929.wem</Path>
+						</File>
+						<File Id="1003117076" Language="SFX">
+							<ShortName>building-01.wav</ShortName>
+							<Path>SFX\building-01_10C4C929.wem</Path>
+						</File>
+						<File Id="1071424145" Language="SFX">
+							<ShortName>building-04.wav</ShortName>
+							<Path>SFX\building-04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1497713943" Name="building_updog" ObjectPath="\Events\Default Work Unit\SFX\world interaction\building_updog" DurationType="OneShot" DurationMin="1.777229" DurationMax="2.307688">
+					<IncludedMemoryFiles>
+						<File Id="321108963" Language="SFX">
+							<ShortName>building-07.wav</ShortName>
+							<Path>SFX\building-07_10C4C929.wem</Path>
+						</File>
+						<File Id="1003117076" Language="SFX">
+							<ShortName>building-01.wav</ShortName>
+							<Path>SFX\building-01_10C4C929.wem</Path>
+						</File>
+						<File Id="1071424145" Language="SFX">
+							<ShortName>building-04.wav</ShortName>
+							<Path>SFX\building-04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1250089922" Name="button_pressed" ObjectPath="\Events\Default Work Unit\SFX\world interaction\button_pressed" DurationType="OneShot" DurationMin="0.400935" DurationMax="0.513679">
 					<IncludedMemoryFiles>
 						<File Id="848653732" Language="SFX">
@@ -148,6 +196,14 @@
 						<File Id="866110534" Language="SFX">
 							<ShortName>landa-02.wav</ShortName>
 							<Path>SFX\landa-02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="566396871" Name="item_pickup" ObjectPath="\Events\Default Work Unit\SFX\world interaction\item_pickup" DurationType="OneShot" DurationMin="0.979092" DurationMax="0.979092">
+					<IncludedMemoryFiles>
+						<File Id="338668546" Language="SFX">
+							<ShortName>chest blip.wav</ShortName>
+							<Path>SFX\chest blip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

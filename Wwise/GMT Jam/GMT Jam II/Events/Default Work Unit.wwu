@@ -472,6 +472,19 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="item_pickup" ID="{1891C9F5-DD7A-410B-99D7-DF24674AFF07}">
+									<ChildrenList>
+										<Action Name="" ID="{8BD38E6B-D005-4187-86A1-4E9A3DE13EBF}" ShortID="284516471">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="small pickup" ID="{35FCA713-3AB7-4DB7-84C3-E6D62513C6A3}" WorkUnitID="{CB0692CE-5EB2-40A5-9628-73EB33EDAF65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="building_y" ID="{EA55C6F2-B53C-414B-86B9-FBD135E42104}"/>
+								<Event Name="building_x" ID="{226709A3-480E-4361-8D94-DA4750ADD00F}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="throwing rocks" ID="{1FF8E0F2-3228-4666-B484-76D33866FA19}" ShortID="264608202">
