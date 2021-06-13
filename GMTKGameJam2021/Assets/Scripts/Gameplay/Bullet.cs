@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 namespace Gameplay
@@ -16,7 +17,11 @@ namespace Gameplay
         
         public float speed;
         private float timer;
+        public float airTime = 1;
+        public float peakHeight = 2;
 
+        public Transform billboard;
+        
         public Transform holder;
         public enum State
         {
@@ -46,12 +51,28 @@ namespace Gameplay
         {
             if (current == State.Bullet)
             {
-
-                timer += Time.deltaTime;
-
-                if (timer > 1)
+                if (timer < airTime && hitSomething == false)
                 {
-                    timer = 0;
+                    gameObject.layer = 7;
+                    //Fly up
+                    timer += Time.deltaTime;
+
+                    if (timer > airTime)
+                        timer = airTime;
+
+                    float percentHalf = timer / (airTime * 0.5f);
+
+                    if (percentHalf > 1)
+                    {
+                        float remover = percentHalf - 1;
+                        percentHalf -= remover * 2;
+                    }
+                    Vector3 pos = billboard.position;
+                    pos.y = percentHalf * peakHeight;
+                    billboard.position = pos;
+                }
+                else
+                {
                     CollectState();
                 }
             }
@@ -59,6 +80,10 @@ namespace Gameplay
 
         public void CollectState()
         {
+            Vector3 pos = billboard.position;
+            timer = 0;
+            pos.y = 0;
+            billboard.position = pos;
             holder = null;
             current = State.Collect;
             _rigidbody.velocity = Vector3.zero;
@@ -82,11 +107,13 @@ namespace Gameplay
                 Health health = other.GetComponent<Health>();
                 if (health)
                 {
+                    
                     Debug.Log("Destroy!");
                     health.TakeDamage(1);
                     Destroy(gameObject);
                 }
 
+                ServiceLocator.GetService<IAudioService>().PlaySFX("rock_throw_impact");
                 CollectState();
             }
         }
