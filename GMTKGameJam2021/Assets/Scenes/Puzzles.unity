@@ -332,6 +332,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875124607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5552807079748247468, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+  m_PrefabInstance: {fileID: 1297840169569738776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70233001d73c6f4a9e24106834106c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064676640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,6 +5628,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297840170677484241, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: wobble
+      value: 
+      objectReference: {fileID: 875124607}
     - target: {fileID: 1297840170890269357, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
       propertyPath: m_Name
       value: ImprovedSpinBuilding
@@ -5685,5 +5700,10 @@ PrefabInstance:
       propertyPath: fadeAwaySprites.Array.data[3]
       value: 
       objectReference: {fileID: 1064676641}
-    m_RemovedComponents: []
+    - target: {fileID: 5552807079748247468, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1297840170439456609, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ece0b5324a1ba0f40a3919cdc404ab91, type: 3}

@@ -8,6 +8,11 @@ public class DetatchOnPlayerCollision : MonoBehaviour
 
     public IdleWobble wobble;
 
+    private void Start()
+    {
+        wobble.enabled = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
