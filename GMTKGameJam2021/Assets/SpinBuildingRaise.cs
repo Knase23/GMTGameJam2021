@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public class SpinBuildingRaise : MonoBehaviour
@@ -8,6 +9,8 @@ public class SpinBuildingRaise : MonoBehaviour
     public Integer level;
     public ParticleSystem smoke;
     ParticleSystem.EmissionModule emission;
+
+    private bool impact;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +41,19 @@ public class SpinBuildingRaise : MonoBehaviour
             default:
                 break;
         }
+        
         this.transform.position = Vector3.Lerp(this.transform.position, target, Time.deltaTime * 2);
         emission.enabled = Vector3.Distance(this.transform.position, target) > 0.1f;
 
-
+        if (Vector3.Distance(this.transform.position, target) < 0.1f && !impact)
+        {
+            impact = true;
+            ServiceLocator.GetService<IAudioService>().PlaySFX("building_impact");
+        }
+        else if(Vector3.Distance(this.transform.position, target) > 0.1f)
+        {
+            impact = false;
+        }
 
     }
 }

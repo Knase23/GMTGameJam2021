@@ -40,8 +40,6 @@ public class PlayerDetection : MonoBehaviour
                     OnPlayerDetection?.Invoke();
                     detected = true;
                 }
-                
-                Debug.Log("Player In Range!");
                 if (_catchUpTimer > _catchUpDelay)
                     nav.Move(target.position);
                 

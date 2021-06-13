@@ -84,6 +84,7 @@ MonoBehaviour:
   minimumAttackDistance: 3
   timeBetweenAttacks: 1
   timer: 0
+  angrySprite: {fileID: 21300000, guid: cf79623e6824efd4aae1747e24f9e6c5, type: 3}
   rend: {fileID: 6540504253876770227}
 --- !u!114 &4446631215122472626
 MonoBehaviour:

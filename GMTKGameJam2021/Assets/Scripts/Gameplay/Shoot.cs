@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 namespace Gameplay
@@ -12,7 +13,8 @@ namespace Gameplay
         
 
         public int prepAmmo;
-        
+
+        public bool perform;
         // Start is called before the first frame update
         void Start()
         {
@@ -25,9 +27,17 @@ namespace Gameplay
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetAxis("Fire1") > 0)
             {
-                Perform();
+                if (!perform)
+                {
+                    Perform();
+                    perform = true;
+                }
+            }
+            else
+            {
+                perform = false;
             }
         }
 
@@ -56,6 +66,9 @@ namespace Gameplay
             }
             Bullet bullet = storedBullets[0];
             storedBullets.Remove(bullet);
+            
+            ServiceLocator.GetService<IAudioService>().PlaySFX("rock_throw");
+            
             Vector3 inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             bullet.gameObject.SetActive(true);
             bullet.Throw(transform.position, inputDirection);

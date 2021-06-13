@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
 
 public class RaiseBuildingButton : GameButton
@@ -19,6 +20,7 @@ public class RaiseBuildingButton : GameButton
         if (currentFloor.value + direction > 4) return;
 
         Debug.Log("up down pressed");
+        ServiceLocator.GetService<IAudioService>().PlaySFX("building_updog");
         if (direction == 1)
         {
             currentFloor.value++;

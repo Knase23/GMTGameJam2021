@@ -12,7 +12,7 @@ public class WalkingAnimation : MonoBehaviour
     public StepType stepType;
 
     public Rigidbody rigi;
-    
+
     private float rotationTimer;
     private float rotationSine;
     private float bobbingTimer;
@@ -31,6 +31,12 @@ public class WalkingAnimation : MonoBehaviour
     public bool readyForTouch;
 
     public ParticleSystem fartDust;
+
+    private void Start()
+    {
+        rotationTimer = Random.value * 3.14f;
+        speed = speed * Random.Range(0.9f, 1.1f);
+    }
 
     void FixedUpdate()
     {

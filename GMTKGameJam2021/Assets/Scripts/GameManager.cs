@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     private static GameManager _singeltonInstance;
 
+    public Boolean bridgeCondition;
+    
     private void Awake()
     {
         if (_singeltonInstance)
@@ -30,7 +32,21 @@ public class GameManager : MonoBehaviour
         audioService.PlayMusic("bgm_main");
         audioService.PlayMusic("reverb_off");
     }
+    public void OnFollowerAmount(int amount)
+    {
+        if (amount >= 7)
+        {
+            
+            bridgeCondition.flag = true;
+        }
+         
+    }
 
+    public void GameOver()
+    {
+        //Do GameOverStuff!
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -39,4 +55,5 @@ public class GameManager : MonoBehaviour
             //ServiceLocator.GetService<IAudioService>().PlaySFX("test1");
         }
     }
+
 }

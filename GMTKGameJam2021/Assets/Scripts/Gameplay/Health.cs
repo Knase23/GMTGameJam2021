@@ -1,4 +1,5 @@
 using System;
+using Services;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,7 +25,7 @@ namespace Gameplay
             {
                 healthScore.value -= value;
                 ScreenShake.Shake(0.25f,speed:50,noiseMagnitude:3,maxMagnitude:1.51f);
-
+                ServiceLocator.GetService<IAudioService>().PlaySFX("follower_throw_Impact");
                 if (healthScore.value <= 0)
                 {
                     OnDeath?.Invoke();
