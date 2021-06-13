@@ -9,7 +9,7 @@ namespace Gameplay
         public List<Bullet> storedBullets = new List<Bullet>();
         public Integer currentAmmoCount;
         public Integer maxAmmo;
-
+        
 
         public int prepAmmo;
         

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Follower : MonoBehaviour
 {
@@ -13,12 +14,20 @@ public class Follower : MonoBehaviour
     public ThrownBehaviour thrownBehaviour;
     public float minimumDistance = 1;
 
+    public NavMeshAgent agent;
+
+    private NavMeshPath path;
+    private int pathIndex;
+
+    private float elapsed;
+
     // Start is called before the first frame update
     void Start()
     {
         nav = GetComponent<AINavigation>();
         thrownBehaviour = GetComponent<ThrownBehaviour>();
         thrownBehaviour.enabled = false;
+        path = new NavMeshPath();
     }
 
     private float _catchUpDelay = 0.2f;
@@ -27,7 +36,11 @@ public class Follower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_handler == null) return;
+        if (_handler == null)
+        {
+            nav.Pause();
+            return;
+        };
         Follower targetFollow = frontFollower;
         Transform targeto = null;
         do
@@ -65,22 +78,19 @@ public class Follower : MonoBehaviour
 
     public void MoveToTarget(Transform target)
     {
-        
         if (Vector3.Distance(target.position, transform.position) < minimumDistance)
         {
-            nav.inputDirection = Vector3.zero;
+            nav.Pause();
             _catchUpTimer = 0;
         }
         else
         {
             if (_catchUpTimer > _catchUpDelay)
-                nav.inputDirection = target.position - transform.position;
+                nav.Move(target.position);
             _catchUpTimer += Time.deltaTime;
         }
-        
-        
     }
-    
+
 
     public void RemoveFollower()
     {

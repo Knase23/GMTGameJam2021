@@ -20,7 +20,7 @@ public class PlayerDetection : MonoBehaviour
         float distanceFromTarget = Vector3.Distance(transform.position, target.position);
         if (distanceFromTarget < 2f)
         {
-            nav.inputDirection = Vector3.zero;
+            nav.Pause();
             _catchUpTimer = 0;
             return;
         }
@@ -31,13 +31,13 @@ public class PlayerDetection : MonoBehaviour
             if (distanceFromTarget < detectionDistance)
             {
                 if (_catchUpTimer > _catchUpDelay)
-                    nav.inputDirection = target.position - transform.position;
+                    nav.Move(target.position);
                 _catchUpTimer += Time.deltaTime;
             }
         }
         else
         {
-            nav.inputDirection = Vector3.zero;
+            nav.Pause();
             _catchUpTimer = 0;
         }
     }

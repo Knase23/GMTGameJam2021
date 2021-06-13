@@ -159,6 +159,7 @@ MonoBehaviour:
   trigger: {fileID: 1676619989947091840}
   thrownBehaviour: {fileID: 1731761576019118471}
   minimumDistance: 1.5
+  agent: {fileID: 0}
 --- !u!114 &1731761576019118471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerShooter: {fileID: 0}
   choosenBullet: {fileID: 0}
+  ammotDetectionRange: 20
 --- !u!114 &6849221164614396098
 MonoBehaviour:
   m_ObjectHideFlags: 0

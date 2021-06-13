@@ -60,7 +60,7 @@ public class SearchForStones : MonoBehaviour
             if (choosenBullet)
             {
                 _follower.enabled = false;
-                _follower.nav.inputDirection = choosenBullet.transform.position - transform.position;
+                _follower.nav.Move(choosenBullet.transform.position);
 
                 if (Vector3.Distance(choosenBullet.transform.position, transform.position) < 1)
                 {
