@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6632127039234333072}
   - component: {fileID: 1676754565842364801}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 6554553776482064021}
   - component: {fileID: 6554553776482064019}
   - component: {fileID: 6554553776482064018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b669a56fd670e44bebe7d7e253d9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnType: 0
   totalChestValue: 11
   opened: 0
   contentPrefabs:
@@ -123,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6554553777344149650}
   - component: {fileID: 6554553777344149651}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

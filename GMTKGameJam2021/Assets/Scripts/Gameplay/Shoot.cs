@@ -10,6 +10,9 @@ namespace Gameplay
         public Integer currentAmmoCount;
         public Integer maxAmmo;
 
+
+        public int prepAmmo;
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -28,10 +31,16 @@ namespace Gameplay
             }
         }
 
+        public bool HaveEnoughAmmo()
+        {
+            return currentAmmoCount.value + prepAmmo >= maxAmmo;
+        }
+
         public bool CollectBullet(Bullet bullet)
         {
             if (storedBullets.Count > maxAmmo || storedBullets.Contains(bullet)) return false;
             storedBullets.Add(bullet);
+            bullet.holder = transform;
             bullet.gameObject.SetActive(false);
             currentAmmoCount.value = storedBullets.Count;
             return true;
@@ -39,7 +48,12 @@ namespace Gameplay
 
         public void Perform()
         {
-            if (storedBullets.Count == 0) return;
+            currentAmmoCount.value = storedBullets.Count;
+            if (storedBullets.Count == 0)
+            {
+                currentAmmoCount.value = storedBullets.Count;
+                return;
+            }
             Bullet bullet = storedBullets[0];
             storedBullets.Remove(bullet);
             Vector3 inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));

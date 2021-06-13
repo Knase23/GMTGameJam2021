@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 3946769209832548437}
   - component: {fileID: 7701344324456481159}
   - component: {fileID: 5589313732266921908}
+  - component: {fileID: 2875612493719698261}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -203,6 +204,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthScore: {fileID: 11400000, guid: 7a39cc2c621752749b809ac8f0125f64, type: 2}
+  maxHealth: {fileID: 11400000, guid: bcd27e2c8f550754da736b930286aa47, type: 2}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  healthPoint: 0
 --- !u!114 &5198322054336319028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +267,19 @@ MonoBehaviour:
   storedBullets: []
   currentAmmoCount: {fileID: 11400000, guid: 60c90de698dbf544daabd18af690c3e2, type: 2}
   maxAmmo: {fileID: 11400000, guid: af91be7ebccdb0c40963bdf0298c8f60, type: 2}
+  prepAmmo: 0
+--- !u!114 &2875612493719698261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844768291179892261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70233001d73c6f4a9e24106834106c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &844768290201529428
 PrefabInstance:
   m_ObjectHideFlags: 0
