@@ -13,7 +13,8 @@ namespace Gameplay
         
 
         public int prepAmmo;
-        
+
+        public bool perform;
         // Start is called before the first frame update
         void Start()
         {
@@ -26,9 +27,17 @@ namespace Gameplay
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetAxis("Fire1") > 0)
             {
-                Perform();
+                if (!perform)
+                {
+                    Perform();
+                    perform = true;
+                }
+            }
+            else
+            {
+                perform = false;
             }
         }
 

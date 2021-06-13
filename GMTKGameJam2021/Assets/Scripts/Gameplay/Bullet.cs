@@ -116,6 +116,15 @@ namespace Gameplay
                 ServiceLocator.GetService<IAudioService>().PlaySFX("rock_throw_impact");
                 CollectState();
             }
+
+            if (current == State.Collect)
+            {
+                Collect collect = other.GetComponent<Collect>();
+                if (collect)
+                {
+                    collect.shooter.CollectBullet(this);
+                }
+            }
         }
     }
 }
